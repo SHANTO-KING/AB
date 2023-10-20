@@ -28,11 +28,11 @@ from rich.text import Text as tekz
 pretty.install()
 CON=sol()
 #------------------[ USER-AGENT ]-------------------#
-##ua = "[FBAN/FB4A;FBAV/303.0.0.3.124;FBBV/533556795;FBDM/{density=2.3,width=1080,height=1478};FBLC/en_GB;FBRV/968917366;FBCR/Jazz;FBMF/Xiaomi;FBBD/Xiaomi;FBPN/com.facebook.katana;FBDV/M2003J15SC;FBSV/11;FBOP/1;FBCA/arm64-v8a:;]",
-##ua = "[FBAN/FB4A;FBAV/326.0.0.3.115;FBBV/836847866;FBDM/{density=3.2,width=1080,height=1421};FBLC/en_PK;FBRV/736010837;FBCR/Telenor;FBMF/Xiaomi;FBBD/xiaomi;FBPN/com.facebook.katana;FBDV/M2101K9G;FBSV/12;FBOP/1;FBCA/arm64-v8a:;]",
-##ua = "[FBAN/FB4A;FBAV/384.0.0.8.140;FBBV/514507241;FBDM/{density=3.3,width=1080,height=1458};FBLC/en_US;FBRV/974470275;FBCR/Vi India;FBMF/Xiaomi;FBBD/Xiaomi;FBPN/com.facebook.katana;FBDV/Redmi Note 4;FBSV/9;FBOP/1;FBCA/arm64-v8a:;]",
- ##ua = "[FBAN/FB4A;FBAV/201.0.0.4.185;FBBV/721475978;FBDM/{density=3.2,width=1080,height=1430};FBLC/en_GB;FBRV/549098911;FBCR/Jazz;FBMF/Xiaomi;FBBD/xiaomi;FBPN/com.facebook.katana;FBDV/Redmi 6A;FBSV/10;FBOP/1;FBCA/arm64-v8a:;]",
-##ua = "[FBAN/FB4A;FBAV/369.0.0.9.146;FBBV/754616649;FBDM/{density=2.3,width=1080,height=1458};FBLC/he_IL;FBRV/302189657;FBCR/Telenor;FBMF/Xiaomi;FBBD/Xiaomi;FBPN/com.facebook.katana;FBDV/M2101K7AG;FBSV/12;FBOP/1;FBCA/arm64-v8a:;]",
+ua = "[FBAN/FB4A;FBAV/303.0.0.3.124;FBBV/533556795;FBDM/{density=2.3,width=1080,height=1478};FBLC/en_GB;FBRV/968917366;FBCR/Jazz;FBMF/Xiaomi;FBBD/Xiaomi;FBPN/com.facebook.katana;FBDV/M2003J15SC;FBSV/11;FBOP/1;FBCA/arm64-v8a:;]",
+ua = "[FBAN/FB4A;FBAV/326.0.0.3.115;FBBV/836847866;FBDM/{density=3.2,width=1080,height=1421};FBLC/en_PK;FBRV/736010837;FBCR/Telenor;FBMF/Xiaomi;FBBD/xiaomi;FBPN/com.facebook.katana;FBDV/M2101K9G;FBSV/12;FBOP/1;FBCA/arm64-v8a:;]",
+ua = "[FBAN/FB4A;FBAV/384.0.0.8.140;FBBV/514507241;FBDM/{density=3.3,width=1080,height=1458};FBLC/en_US;FBRV/974470275;FBCR/Vi India;FBMF/Xiaomi;FBBD/Xiaomi;FBPN/com.facebook.katana;FBDV/Redmi Note 4;FBSV/9;FBOP/1;FBCA/arm64-v8a:;]",
+ ua = "[FBAN/FB4A;FBAV/201.0.0.4.185;FBBV/721475978;FBDM/{density=3.2,width=1080,height=1430};FBLC/en_GB;FBRV/549098911;FBCR/Jazz;FBMF/Xiaomi;FBBD/xiaomi;FBPN/com.facebook.katana;FBDV/Redmi 6A;FBSV/10;FBOP/1;FBCA/arm64-v8a:;]",
+ua = "[FBAN/FB4A;FBAV/369.0.0.9.146;FBBV/754616649;FBDM/{density=2.3,width=1080,height=1458};FBLC/he_IL;FBRV/302189657;FBCR/Telenor;FBMF/Xiaomi;FBBD/Xiaomi;FBPN/com.facebook.katana;FBDV/M2101K7AG;FBSV/12;FBOP/1;FBCA/arm64-v8a:;]",
 ugen2=[]
 ugen=[]
 cokbrut=[]
