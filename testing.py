@@ -34,17 +34,7 @@ ua = "[FBAN/FB4A;FBAV/384.0.0.8.140;FBBV/514507241;FBDM/{density=3.3,width=1080,
 ua = "[FBAN/FB4A;FBAV/201.0.0.4.185;FBBV/721475978;FBDM/{density=3.2,width=1080,height=1430};FBLC/en_GB;FBRV/549098911;FBCR/Jazz;FBMF/Xiaomi;FBBD/xiaomi;FBPN/com.facebook.katana;FBDV/Redmi 6A;FBSV/10;FBOP/1;FBCA/arm64-v8a:;]",
 ua = "[FBAN/FB4A;FBAV/369.0.0.9.146;FBBV/754616649;FBDM/{density=2.3,width=1080,height=1458};FBLC/he_IL;FBRV/302189657;FBCR/Telenor;FBMF/Xiaomi;FBBD/Xiaomi;FBPN/com.facebook.katana;FBDV/M2101K7AG;FBSV/12;FBOP/1;FBCA/arm64-v8a:;]",
 ugen2=[]
-ugen=[]
-cokbrut=[]
-ses=requests.Session()
-princp=[]
-try:
-	prox= requests.get('https://github.com/Pro-Max-420/Api/blob/main/prox.txt').text
-	open('.prox.txt','w').write(prox)
-	
-except Exception as e:
-	print('[[\x1b[1;92m+\x1b[1;97m] [\x1b[1;96mRIFAT')
-prox=open('.prox.txt','r').read().splitlines()
+ugen = []
 for agent in range(random.randint(89999, 100000)):
     a='Mozilla/5.0 (iPod/'
     aa=random.choice(['7.1','8.0','9.2','10.3','11.4','12.5','13.2','14.7','15.1','16.0'])
