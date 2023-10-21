@@ -468,8 +468,8 @@ class main_crack():
                 headers = {'User-Agent':randFBAN(),
 'Content-Type': 'application/x-www-form-urlencoded',
 'Host': 'graph.facebook.com',
-'X-FB-Net-HNI': '38763'),
-'X-FB-SIM-HNI': '29337'),
+'X-FB-Net-HNI': '38763'
+'X-FB-SIM-HNI': '29337'
 'X-FB-Connection-Type': 'MOBILE.LTE',
 'X-Tigon-Is-Retry': 'False',
 'x-fb-session-id': 'nid=jiZ+yNNBgbwC;pid=Main;tid=132;nc=1;fc=0;bc=0;cid=d29d67d37eca387482a8a5b740f84f62',
