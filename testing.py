@@ -305,11 +305,11 @@ for agent in range(random.randint(89999, 100000)):
     ugen.append(fullagent)
     
 def randBuildLSB():
-   vchrome = "83.0.0." + str(random.randint(1, 8)) + "." + str(random.randint(40, 150))
-   VAPP = random.randint(410000000, 499999999)
-   END = '[FBAN/FB4A;FBAV/76.0.0.7677;FBBV/5559051;[FBAN/FB4A;FBAV/352.0.0.21.117;FBBV/348184932;FBDM/{density=3.0,width=1080,height=2102};FBLC/en_IN;FBRV/0;FBCR/MLS;FBMF/Magic;FBBD/Magic;FBPN/com.facebook.katana;FBDV/iQ3204;FBSV/5.1;FBOP/1;FBCA/armeabi-v7a:armeabi;]'
-   ua = f'Mozilla/5.0 (Linux; Android {random.randint(4, 13)}; {random.choice(model2)}) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{vchrome} Mobile Safari/537.36 ' + END
-   return ua
+    vchrome = str(random.randint(100,925))+".0.0."+str(random.randint(1,8))+"."+str(random.randint(40,150))
+    VAPP = random.randint(410000000,499999999)
+    END = '[FBAN/FB4A;FBAV/76.0.0.7677;FBBV/5559051;[FBAN/FB4A;FBAV/352.0.0.21.117;FBBV/348184932;FBDM/{density=3.0,width=1080,height=2102};FBLC/en_IN;FBRV/0;FBCR/MLS;FBMF/Magic;FBBD/Magic;FBPN/com.facebook.katana;FBDV/iQ3204;FBSV/5.1;FBOP/1;FBCA/armeabi-v7a:armeabi;]'
+    ua = f'Dalvik/2.1.0 (Linux; U; Android {random.randint(4,13)}; {random.choice(model2)} Build/SP1A.{random.randint(111111,999999)}.{random.randint(111,999)}) '+END
+    return ua
 
 def randFBAN():
   VAPP = random.randint(410000000,499999999)
