@@ -298,22 +298,6 @@ for xd in range(1000):
 	uaku=(f'{a}{b}.{c} {d}{e}{f}{g}.{h}.{i}.{j} {k}')
 	ugen2.append(uaku)
  
- 
-    aa = 'Mozilla/5.0 (iPhone; CPU iPhone OS 16_5_1 like Mac OS X)'
-    b = random.choice(['6', '7', '8', '9', '10', '11', '12'])
-    c = ' en-us; GT-'
-    d = random.choice(['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
-    e = random.randrange(1, 999)
-    f = random.choice(['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
-    g = 'AppleWebKit/605.1.15 (KHTML, like Gecko) Chrome/'
-    h = random.randrange(73, 100)
-    i = '0'
-    j = random.randrange(4200, 4900)
-    k = random.randrange(40, 150)
-    l = 'Mobile/20F75 Puffin/'
-    uaku2 = f'{aa} {b}; {c}{d}{e}{f}) {g}{h}.{i}.{j}.{k} {l}'
-    ugen.append(uaku2)
-
 for agent in range(random.randint(89999, 100000)):
     a='Mozilla/5.0 (iPod/'
     aa=random.choice(['7.1','8.0','9.2','10.3','11.4','12.5','13.2','14.7','15.1','16.0'])
