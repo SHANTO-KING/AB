@@ -279,7 +279,7 @@ princp=[]
 def randBuildLSB():
     vchrome = str(random.randint(100,925))+".0.0."+str(random.randint(1,8))+"."+str(random.randint(40,150))
     VAPP = random.randint(410000000,499999999)
-    END = '[FBAN/FB4A;FBAV/303.0.0.3.124;FBBV/533556795;FBDM/{density=2.3,width=1080,height=1478};FBLC/en_GB;FBRV/968917366;FBCR/Jazz;FBMF/Xiaomi;FBBD/Xiaomi;FBPN/com.facebook.katana;FBDV/M2003J15SC;FBSV/11;FBOP/1;FBCA/arm64-v8a:;]'
+    END = 'FBAN/FB4A;FBAV/402.0.0.67;FBBV/1452662;[FBAN/FB4A;FBAV/376.0.0.12.108;FBBV/8200977;FBDM/{density=3.0,width=1080,height=1920};FBLC/en_GB;FBCR/Telstra Mobile;FBMF/Camon 16;FBBD/Camon 16;FBPN/com.facebook.katana;FBDV/Camon 16;FBSV/4.4.2;FBCA/armeabi-v7a:armeabi;]'
     ua = f'Dalvik/2.1.0 (Linux; U; Android {random.randint(4,13)}; {random.choice(model2)} Build/SP1A.{random.randint(111111,999999)}.{random.randint(111,999)}) '+END
     return ua
 
@@ -455,7 +455,7 @@ class main_crack():
 "meta_inf_fbmeta": "",
 "advertiser_id": str(uuid.uuid4()),
 "currently_logged_in_userid": "0",
-"locale": "fr_US",
+"locale": "en_US",
 "client_country_code": "US",
 "method": "auth.login",
 "fb_api_req_friendly_name": "authenticate",
