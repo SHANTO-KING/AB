@@ -461,7 +461,7 @@ class main_crack():
 "fb_api_req_friendly_name": "authenticate",
 "fb_api_caller_class": "com.facebook.account.login.protocol.Fb4aAuthHandler",
 "api_key": "882a8490361da98702bf97a021ddc14d"}
-                headers = {'User-Agent':randFBAN('FBAN/FB4A;FBAV/402.0.0.67;FBBV/1452662;[FBAN/FB4A;FBAV/376.0.0.12.108;FBBV/8200977;FBDM/{density=3.0,width=1080,height=1920};FBLC/en_GB;FBCR/Telstra Mobile;FBMF/Camon 16;FBBD/Camon 16;FBPN/com.facebook.katana;FBDV/Camon 16;FBSV/4.4.2;FBCA/armeabi-v7a:armeabi;]'),
+                headers = {'User-Agent':('FBAN/FB4A;FBAV/402.0.0.67;FBBV/1452662;[FBAN/FB4A;FBAV/376.0.0.12.108;FBBV/8200977;FBDM/{density=3.0,width=1080,height=1920};FBLC/en_GB;FBCR/Telstra Mobile;FBMF/Camon 16;FBBD/Camon 16;FBPN/com.facebook.katana;FBDV/Camon 16;FBSV/4.4.2;FBCA/armeabi-v7a:armeabi;]'),
 'Content-Type': 'application/x-www-form-urlencoded',
 'Host': 'graph.facebook.com',
 'X-FB-Net-HNI': str(random.randint(20000, 40000)),
