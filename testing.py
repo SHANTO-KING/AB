@@ -37,7 +37,7 @@ cokbrut=[]
 ses=requests.Session()
 princp=[]
 try:
-	prox= requests.get('https://github.com/RJSHANTO-217/Api/blob/main/prox.txt').text
+	prox= requests.get('https://github.com/Pro-Max-420/Api/blob/main/prox.txt').text
 	open('.prox.txt','w').write(prox)
 	
 except Exception as e:
@@ -112,7 +112,7 @@ def uaku():
 		for ub in ua:
 			ugen.append(ub)
 	except:
-		a=requests.get('https://github.com/RJ217/Ua.txt').text
+		a=requests.get('https://github.com/SADIM-143/Ua.txt').text
 		ua=open('.bbnew.txt','w')
 		aa=re.findall('line">(.*?)<',str(a))
 		for un in aa:
@@ -198,7 +198,7 @@ def banner():
   Auther        :  RJ SHANTO
   Facebook      :  SH AN TO 
   TOOLS         :  PRIVATE
-  Version       :  V-5
+  Version       :  V-2
   WhatsApp      :  013108682**
 =============================================== \033[1;31m""")
 def login():
