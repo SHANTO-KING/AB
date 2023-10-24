@@ -27,17 +27,14 @@ from rich.text import Text as tekz
 pretty.install()
 CON=sol()
 #------------------[ USER-AGENT ]-------------------#
-ua = 'Mozilla/5.0 (Linux; Android 13; Nokia XR20 Build/TKQ1.220807.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/113.0.5672.131 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/415.0.0.34.107;]'
-ua = 'Mozilla/5.0 (Linux; Android 11; Nokia C2 2nd Edition Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/114.0.5735.196 Mobile Safari/537.36[FBAN/EMA;FBLC/en_US;FBAV/364.0.0.14.77;]'
-ua = 'Mozilla/5.0 (Linux; Android 11; Nokia C1 2nd Edition Build/RP1A.201005.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/90.0.4430.210 Mobile Safari/537.36[FBAN/EMA;FBLC/en_US;FBAV/354.0.0.8.108;]'
-ua = 'Mozilla/5.0 (Linux; Android 12; Nokia XR21 Build/SKQ1.220201.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/113.0.5672.163 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/416.0.0.35.85;]'
+ua = "Davik/2.1.0 (Linux; U; Android 12.0.1; Infinix X676C Build/SP1A.210812.016) [FBAN/FB4A;FBAV/148.0.0.94.498;FBBV/346484979;FBDM/{density=3.0,width=1080,height=2376};FBLC/en_GB;FBRV/47141262;FBCR/Zong;FBMF/INFINIX;FBBD/Infinix;FBPN/com.facebook.katana;FBDV/Infinix X676C;FBSV/12;FBOP/19;FBCA/arm64-v8a:armeabi-v7a:armeabi;]'
 ugen2=[]
 ugen=[]
 cokbrut=[]
 ses=requests.Session()
 princp=[]
 try:
-	prox= requests.get('https://github.com/Pro-Max-420/Api/blob/main/prox.txt').text
+	prox= requests.get('https://github.com/RJSHANTO-217/Api/blob/main/prox.txt').text
 	open('.prox.txt','w').write(prox)
 	
 except Exception as e:
@@ -58,23 +55,24 @@ for xd in range(1000):
 	uaku=(f'{a}{b}.{c} {d}{e}{f}{g}.{h}.{i}.{j} {k}')
 	ugen2.append(uaku)
  
-	aa='Mozilla/5.0 (Linux; Android 8.0.0; SAMSUNG SM-G930U)'
+ 
+	aa='Mozilla/5.0 (iPhone; CPU iPhone OS 12_4 like Mac OS X)'
 	b=random.choice(['6','7','8','9','10','11','12'])
 	c=' en-us; GT-'
 	d=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
 	e=random.randrange(1, 999)
 	f=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
-	g='AppleWebKit/537.36 (KHTML, like Gecko) Chrome/'
+	g='AppleWebKit/605.1.15 (KHTML, like Gecko) Chrome/'
 	h=random.randrange(73,100)
 	i='0'
 	j=random.randrange(4200,4900)
 	k=random.randrange(40,150)
-	l='Mobile/G930U Safari/537.36'
+	l='Mobile/15E148 Safari/605.1'
 	uaku2=f'{aa} {b}; {c}{d}{e}{f}) {g}{h}.{i}.{j}.{k} {l}'
 	ugen.append(uaku2)
 
 for agent in range(random.randint(89999, 100000)):
-    a='Mozilla/5.0 (iPhone'
+    a='Mozilla/5.0 (iPod/'
     aa=random.choice(['7.1','8.0','9.2','10.3','11.4','12.5','13.2','14.7','15.1','16.0'])
     a1='; CPU iPhone OS'
     b=random.choice(['3_1','3_2','3_3','16_5','13_4','3_0','4_0','15_0','11_0','12_1','13_3','14_2'])
@@ -111,7 +109,7 @@ def uaku():
 		for ub in ua:
 			ugen.append(ub)
 	except:
-		a=requests.get('https://github.com/SADIM-143/Ua.txt').text
+		a=requests.get('https://github.com/RJ217/Ua.txt').text
 		ua=open('.bbnew.txt','w')
 		aa=re.findall('line">(.*?)<',str(a))
 		for un in aa:
@@ -197,7 +195,7 @@ def banner():
   Auther        :  RJ SHANTO
   Facebook      :  SH AN TO 
   TOOLS         :  PRIVATE
-  Version       :  V-2
+  Version       :  V-5
   WhatsApp      :  013108682**
 =============================================== \033[1;31m""")
 def login():
