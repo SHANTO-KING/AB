@@ -98,7 +98,7 @@ for agent in range(random.randint(89999, 100000)):
     l1=random.randrange(1,9)
     l2=random.randrange(111111111,999999999)
     l3='Mobile/'
-    l4=random.choice(['6A1B3C'',9X5Y2Z'',4P8Q7R'',2M6N9O'',1D7E5F'',3G8H4I'',0J6K2L'',5U9V3W'',2S4T7A'',1X0Y5Z'',3B6C9D','8P2Q4R'',7M1N5O'',9E3F8G'',2H4I7J'',6K0L9U'',4V5W3S'',1T7A2X'',6Y8Z3B'',5C9D4E"])
+    l4=random.choice(['18C79','18B92','18A374','17D47','16E23','15F91','14G60','13H15','12I82','11J33','10K04','09L78'])
     l5='Safari/'
     s=random.randrange(535,605)
     t=random.randrange(1,9)
