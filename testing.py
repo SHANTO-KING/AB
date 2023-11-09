@@ -75,14 +75,14 @@ def space():
     print("\n")
 
 
-number=int("+8801944981090")
+number=int("+8801310868232")
 
 devoloper_info={
-DEVELOPER    :   Not Found
-TOOLS        :   FILE-CLONE
-VERSION      :   1.0
-WORKING      :   DATA/WIFI
-number     :   
+    "Name" :  'HIRDOY HOSEN SHANTO',
+    "Number" :  number,
+    "Status" :  '24-ONLINE',
+    "GitHub Url":  'https://github.com/TEAM-ELITE1',
+    "Facebook" :  'facebook.com/Freestyle.0fficial',
     }
     
 date={
