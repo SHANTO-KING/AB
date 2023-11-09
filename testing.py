@@ -78,11 +78,11 @@ def space():
 number=int("+8801944981090")
 
 devoloper_info={
-DEVELOPER    :   \033[1;31mNot Found
-TOOLS        :   \033[1;32mFILE-CLONE
-VERSION      :   \033[1;33m1.0
-WORKING      :   \033[1;34mDATA/WIFI
-WHATSAPP     :   \033[1;35m013108682**
+DEVELOPER    :   Not Found
+TOOLS        :   FILE-CLONE
+VERSION      :   1.0
+WORKING      :   DATA/WIFI
+WHATSAPP     :   01310868232
     }
     
 date={
