@@ -82,7 +82,7 @@ DEVELOPER    :   Not Found
 TOOLS        :   FILE-CLONE
 VERSION      :   1.0
 WORKING      :   DATA/WIFI
-WHATSAPP     :   01310868232
+number     :   
     }
     
 date={
