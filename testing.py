@@ -64,26 +64,18 @@ def clear():
 
 def logo():
     clear()
-    print("""          \033[1;37m____ \033[1;32m                       \033[1;37m____          
-
-        ░█▀▀▀█ ░█─░█ ─█▀▀█ ░█▄─░█ ▀▀█▀▀ ░█▀▀▀█ 
-        ─▀▀▀▄▄ ░█▀▀█ ░█▄▄█ ░█░█░█ ─░█── ░█──░█ 
-        ░█▄▄▄█ ░█─░█ ░█─░█ ░█──▀█ ─░█── ░█▄▄▄█ 0.1
-    """)
-    
-def space():
-    print("\n")
-
-
-number=int("+8801944981090")
-
-devoloper_info={
-    "Developer" :  'HERON AFRIDI',
-    "Number" :  number,
-    "Status" :  '24-ONLINE',
-    "GitHub Url":  'https://github.com/TEAM-ELITE1',
-    "Facebook" :  'facebook.com/Freestyle.0fficial',
-    }
+    print("""
+\033[1;33m  ░█▀▀▀█ ░█─░█ ─█▀▀█ ░█▄─░█ ▀▀█▀▀ ░█▀▀▀█ 
+\033[1;32m  ─▀▀▀▄▄ ░█▀▀█ ░█▄▄█ ░█░█░█ ─░█── ░█──░█ 
+\033[1;36m  ░█▄▄▄█ ░█─░█ ░█─░█ ░█──▀█ ─░█── ░█▄▄▄█
+\033[1;33m~~~~\033[1;32mD\033[1;33mA \033[1;34mN \033[1;35mG \033[1;36mE \033[1;37mR~~~\033[1;37m[X\033[1;37mD]
+\033[1;32m--------------------------------------------------------
+\033[1;37m[\033[1;31m•\033[1;37m]\033[1;31m  DEVELOPER    :   \033[1;31mNot Found
+\033[1;37m[\033[1;32m•\033[1;37m]\033[1;32m  TOOLS        :   \033[1;32mFILE-CLONE
+\033[1;37m[\033[1;33m•\033[1;37m]\033[1;33m  VERSION      :   \033[1;33m0.1
+\033[1;37m[\033[1;34m•\033[1;37m]\033[1;34m  WORKING      :   \033[1;34mDATA/WIFI
+\033[1;37m[\033[1;35m•\033[1;37m]\033[1;35m  WHATSAPP     :   \033[1;35m013108682**
+\033[1;32m------------------------------------------------------"""
 
 date={
     "Day":datea,
@@ -326,7 +318,7 @@ def need(uid,pwx,fb,tl):
                 print("\r\r\n\n")
                 print(Panel(f"\r\r\n[white reverse][🔷]=UID/PAS[/white reverse] [bold green]{xd} [cyan]• [black reverse]{ps}[/black reverse] \n[yellow reverse]COOKIES=[🔶][/yellow reverse][bold green]{coki}\n",title=f"[red reverse][TOTAL-OK {hh}]"))
                 #print(f"\r\r\n[white reverse][🔷]=UID/PAS[/white reverse] [bold green]{xd} [cyan]• [black reverse]{ps}[/black reverse] \n[yellow reverse]COOKIES=[🔶][/yellow reverse][bold green]{coki}\n")
-                open('/sdcard/SHANTO_OK_ids_M2.txt','a').write(sid+'|'+ps+'\n');open('/sdcard/SHANTO_iDs_COOKiEs_M2.txt','a').write(sid+'|'+ps+'|'+cookie+'\n')
+                open('/sdcard/XHANTO-OK.txt', 'a').write(cid+' | '+ps+' | '+coki+'\n')
                 ok.append(uid)
                 break
             
