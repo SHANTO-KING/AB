@@ -326,7 +326,7 @@ def need(uid,pwx,fb,tl):
                 print("\r\r\n\n")
                 print(Panel(f"\r\r\n[white reverse][🔷]=UID/PAS[/white reverse] [bold green]{xd} [cyan]• [black reverse]{ps}[/black reverse] \n[yellow reverse]COOKIES=[🔶][/yellow reverse][bold green]{coki}\n",title=f"[red reverse][TOTAL-OK {hh}]"))
                 #print(f"\r\r\n[white reverse][🔷]=UID/PAS[/white reverse] [bold green]{xd} [cyan]• [black reverse]{ps}[/black reverse] \n[yellow reverse]COOKIES=[🔶][/yellow reverse][bold green]{coki}\n")
-                
+                open(f'/sdcard/RJ•OK•M2.txt', 'a').write(uids+'|'+pas+'\n')
                 ok.append(uid)
                 break
             
