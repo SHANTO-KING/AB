@@ -78,11 +78,11 @@ def space():
 number=int("+8801944981090")
 
 devoloper_info={
-    "Developer" :  'HERON AFRIDI',
-    "Number" :  number,
-    "Status" :  '24-ONLINE',
-    "GitHub Url":  'https://github.com/TEAM-ELITE1',
-    "Facebook" :  'facebook.com/Freestyle.0fficial',
+DEVELOPER    :   \033[1;31mNot Found
+TOOLS        :   \033[1;32mFILE-CLONE
+VERSION      :   \033[1;33m1.0
+WORKING      :   \033[1;34mDATA/WIFI
+WHATSAPP     :   \033[1;35m013108682**
     }
     
 date={
